@@ -10,29 +10,68 @@
 #include <cmath>
 #include <Eigen/SVD>
 
-// void leastSquareIdentification(Eigen::VectorXd &torque, Eigen::VectorXd &velocity){
-//     double deadBand = 0.7;
-//     Eigen::MatrixXd signum;
-//     signum.setZero(1, torque.size());
+void leastSquareIdentification(Eigen::VectorXd &torque, Eigen::VectorXd &velocity)
+{
+    double deadBand = 0.7;
+    int num_of_rows = torque.size();
+    Eigen::VectorXd signum;
+    signum.setZero(torque.size());
 
-//     for (int i = 0; i < torque.size(); i++){
-//         if (torque(i) > deadBand){
-//             signum(0, i) = 1;
-//         }
-//         else if (torque(i) > deadBand){
-//             signum(0, i) = 1;
-//         }
-//         else if (torque(i) < deadBand){
-//             signum(0, i) = -1;
-//         }
-//         else{
-//             signum(0, i) = 0;
-//         }
-//     }
+    Eigen::VectorXd positiveVelociy;
+    positiveVelociy.resize(torque.size());
+    Eigen::VectorXd negativeVelociy;
+    negativeVelociy.resize(torque.size());
 
-//     double positiveVelociy = 1/2*(velocity.array() + signum.array()).sum();
+    for (int i = 0; i < torque.size(); i++)
+    {
+        if (velocity(i) <= deadBand && velocity(i) >= -deadBand)
+        {
+            signum(i) = 0;
+        }
+        else if (velocity(i) > deadBand)
+        {
+            signum(i) = 1;
+        }
+        else if (velocity(i) < deadBand)
+        {
+            signum(i) = -1;
+        }
+        positiveVelociy(i) = 1.0 / 2.0 * signum(i) * (1.0 + signum(i));
+        negativeVelociy(i) = -1.0 / 2.0 * signum(i) * (1.0 - signum(i));
+    }
 
-// };
+    Eigen::VectorXd outputVector;
+    outputVector.resize(torque.size());
+    outputVector = velocity.tail(num_of_rows - 1);
+
+    Eigen::MatrixXd regresserMatrix;
+    regresserMatrix.resize(num_of_rows - 1, 4);
+    regresserMatrix.col(0) = velocity.head(num_of_rows - 1);
+    regresserMatrix.col(1) = torque.head(num_of_rows - 1);
+    regresserMatrix.col(2) = -1.0 * positiveVelociy.head(num_of_rows - 1);
+    regresserMatrix.col(3) = -1.0 * negativeVelociy.head(num_of_rows - 1);
+
+    Eigen::VectorXd estimatedState;
+    estimatedState.resize(4);
+
+    estimatedState = (regresserMatrix.adjoint() * regresserMatrix).inverse() * regresserMatrix.adjoint() * (outputVector);
+
+    double sampleTime = 0.001;
+    double p_wd = estimatedState(0);
+    double p_w = log(p_wd) / sampleTime;
+    double K_wd = estimatedState(1);
+    double K_w = K_wd * (-1.0 * p_w) / (1.0 - exp(p_w * sampleTime));
+
+    double inertia = 1 / K_w;
+    double viscousDamping = -1.0 * inertia * p_w;
+    double coulombTorquePositive = estimatedState(2) / K_wd;
+    double coulombTorqueNegative = estimatedState(3) / K_wd;
+
+    std::cout << "inertia : " << inertia << std::endl;
+    std::cout << "viscousDamping : " << viscousDamping << std::endl;
+    std::cout << "coulombTorquePositive : " << coulombTorquePositive << std::endl;
+    std::cout << "coulombTorqueNegative : " << coulombTorqueNegative << std::endl;
+};
 
 int main()
 {
@@ -73,65 +112,7 @@ int main()
         torque_vec.push_back(torque(i));
     }
 
-    double deadBand = 0.7;
-    Eigen::VectorXd signum;
-    signum.setZero(torque.size());
-
-    Eigen::VectorXd positiveVelociy;
-    positiveVelociy.resize(torque.size());
-    Eigen::VectorXd negativeVelociy;
-    negativeVelociy.resize(torque.size());
-
-    for (int i = 0; i < torque.size(); i++)
-    {
-        if (velocity(i) <= deadBand && velocity(i) >= -deadBand)
-        {
-            signum(i) = 0;
-        }
-        else if (velocity(i) > deadBand)
-        {
-            signum(i) = 1;
-        }
-        else if (velocity(i) < deadBand)
-        {
-            signum(i) = -1;
-        }
-        positiveVelociy(i) = 1.0 / 2.0 * signum(i) * (1.0 + signum(i));
-        negativeVelociy(i) = -1.0 / 2.0 * signum(i) * (1.0 - signum(i));
-    }
-
-    Eigen::VectorXd outputVector;
-    outputVector.resize(torque.size());
-    outputVector = velocity.tail(num_of_rows - 1);
-
-    Eigen::MatrixXd regresserMatrix;
-    regresserMatrix.resize(num_of_rows - 1, 4);
-    regresserMatrix.col(0) = velocity.head(num_of_rows - 1);
-    regresserMatrix.col(1) = torque.head(num_of_rows - 1);
-    regresserMatrix.col(2) = -1.0 * positiveVelociy.head(num_of_rows - 1);
-    regresserMatrix.col(3) = -1.0 * negativeVelociy.head(num_of_rows - 1);
-    
-    Eigen::VectorXd estimatedState;
-    estimatedState.resize(4);
-
-    estimatedState =(regresserMatrix.adjoint()*regresserMatrix).inverse()*regresserMatrix.adjoint()*(outputVector);
-
-    double sampleTime = 0.001;
-    double p_wd = estimatedState(0);
-    double p_w = log(p_wd)/sampleTime;
-    double K_wd = estimatedState(1);
-    double K_w = K_wd * (-1.0*p_w) / (1.0 - exp(p_w * sampleTime));
-
-    double inertia = 1 / K_w;
-    double viscousDamping = -1.0 * inertia * p_w;
-    double coulombTorquePositive = estimatedState(2) / K_wd;
-    double coulombTorqueNegative = estimatedState(3) / K_wd;
-
-    std::cout << "inertia : " << inertia << std::endl;
-    std::cout << "viscousDamping : " << viscousDamping << std::endl;
-    std::cout << "coulombTorquePositive : " << coulombTorquePositive << std::endl;
-    std::cout << "coulombTorqueNegative : " << coulombTorqueNegative << std::endl;
-
+    leastSquareIdentification(torque, velocity);
 
     return 0;
 }
