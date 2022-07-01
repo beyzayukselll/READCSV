@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o CMakeFiles/test.dir/main.cpp.o -c /home/bcd/programming/least_square_identification/main.cpp",
+  "file": "/home/bcd/programming/least_square_identification/main.cpp"
+}
+]
