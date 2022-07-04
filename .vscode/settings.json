@@ -55,7 +55,9 @@
         "fft": "cpp",
         "cinttypes": "cpp",
         "list": "cpp",
-        "*.inc": "cpp"
+        "*.inc": "cpp",
+        "dense": "cpp",
+        "svd": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }

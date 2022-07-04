@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+../LeastSquareID.h
+iostream
+-
+Eigen/Dense
+-
+
+../ReadData.h
+iostream
+-
+Eigen/Dense
+-
+
 ../include/matplotlibcpp.h
 Python.h
 -
@@ -144,6 +156,10 @@ complex
 cmath
 -
 Eigen/SVD
+-
+LeastSquareID.h
+-
+ReadData.h
 -
 
 /usr/include/python3.8/Python.h
