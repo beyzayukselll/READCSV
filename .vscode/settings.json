@@ -57,7 +57,8 @@
         "list": "cpp",
         "*.inc": "cpp",
         "dense": "cpp",
-        "svd": "cpp"
+        "svd": "cpp",
+        "core": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }
