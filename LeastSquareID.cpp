@@ -1,12 +1,10 @@
 #include "LeastSquareID.h"
 
-// LeastSquareID::LeastSquareID()
-// {
-// }
-
-// LeastSquareID::~LeastSquareID()
-// {
-// }
+LeastSquareID::LeastSquareID(Eigen::VectorXd torque, Eigen::VectorXd velocity)
+{
+    Torque = torque;
+    Velocity = velocity;
+}
 
 void LeastSquareID::setTorque(Eigen::VectorXd torque)
 {

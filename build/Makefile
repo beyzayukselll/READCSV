@@ -123,6 +123,33 @@ test/fast:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
+Data.o: Data.cpp.o
+
+.PHONY : Data.o
+
+# target to build an object file
+Data.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Data.cpp.o
+.PHONY : Data.cpp.o
+
+Data.i: Data.cpp.i
+
+.PHONY : Data.i
+
+# target to preprocess a source file
+Data.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Data.cpp.i
+.PHONY : Data.cpp.i
+
+Data.s: Data.cpp.s
+
+.PHONY : Data.s
+
+# target to generate assembly for a file
+Data.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/Data.cpp.s
+.PHONY : Data.cpp.s
+
 LeastSquareID.o: LeastSquareID.cpp.o
 
 .PHONY : LeastSquareID.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... Data.o"
+	@echo "... Data.i"
+	@echo "... Data.s"
 	@echo "... LeastSquareID.o"
 	@echo "... LeastSquareID.i"
 	@echo "... LeastSquareID.s"

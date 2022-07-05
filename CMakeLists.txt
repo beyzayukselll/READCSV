@@ -14,7 +14,7 @@ include_directories(${CMAKE_SOURCE_DIR}
                     /usr/include/python3.8
                     )
 
-set(SOURCE_FILES main.cpp LeastSquareID.cpp)
+set(SOURCE_FILES main.cpp LeastSquareID.cpp Data.cpp)
 
 add_executable(test ${SOURCE_FILES})
 
