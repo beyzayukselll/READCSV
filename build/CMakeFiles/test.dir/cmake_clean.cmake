@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test.dir/LeastSquareID.cpp.o"
   "CMakeFiles/test.dir/main.cpp.o"
   "test"
   "test.pdb"

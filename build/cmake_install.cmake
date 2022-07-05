@@ -1,4 +1,4 @@
-# Install script for directory: /home/kose/programming/least_square_identification
+# Install script for directory: /home/bcd/programming/least_square_identification
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/kose/programming/least_square_identification/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/bcd/programming/least_square_identification/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

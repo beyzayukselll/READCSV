@@ -9,21 +9,21 @@
 #include <complex>
 #include <cmath>
 #include <Eigen/SVD>
-#include <LeastSquareID.h>
-#include <ReadData.h>
-
+#include "LeastSquareID.h"
+#include "ReadData.h"
 
 int main()
 {
     ReadData data;
-    data.File = "/home/kose/programming/least_square_identification/leastSquare_y_v5_500interval_24062022.csv";
+    data.File = "/home/bcd/programming/least_square_identification/leastSquare_y_v5_500interval_24062022.csv";
     data.dataRead();
     Eigen::VectorXd torque = data.getTorque();
     Eigen::VectorXd velocity = data.getVelocity();
 
     LeastSquareID ls;
-    ls.Torque = torque;
-    ls.Velocity = velocity;
+
+    ls.setTorque(torque);
+    ls.setVelocity(velocity);
     ls.leastSquareIdentification();
     ls.getInfo();
 

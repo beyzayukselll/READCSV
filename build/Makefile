@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kose/programming/least_square_identification
+CMAKE_SOURCE_DIR = /home/bcd/programming/least_square_identification
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kose/programming/least_square_identification/build
+CMAKE_BINARY_DIR = /home/bcd/programming/least_square_identification/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kose/programming/least_square_identification/build/CMakeFiles /home/kose/programming/least_square_identification/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bcd/programming/least_square_identification/build/CMakeFiles /home/bcd/programming/least_square_identification/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kose/programming/least_square_identification/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bcd/programming/least_square_identification/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,33 @@ test/fast:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
+LeastSquareID.o: LeastSquareID.cpp.o
+
+.PHONY : LeastSquareID.o
+
+# target to build an object file
+LeastSquareID.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/LeastSquareID.cpp.o
+.PHONY : LeastSquareID.cpp.o
+
+LeastSquareID.i: LeastSquareID.cpp.i
+
+.PHONY : LeastSquareID.i
+
+# target to preprocess a source file
+LeastSquareID.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/LeastSquareID.cpp.i
+.PHONY : LeastSquareID.cpp.i
+
+LeastSquareID.s: LeastSquareID.cpp.s
+
+.PHONY : LeastSquareID.s
+
+# target to generate assembly for a file
+LeastSquareID.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/LeastSquareID.cpp.s
+.PHONY : LeastSquareID.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... LeastSquareID.o"
+	@echo "... LeastSquareID.i"
+	@echo "... LeastSquareID.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

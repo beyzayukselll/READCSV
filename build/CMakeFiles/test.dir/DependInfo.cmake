@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kose/programming/least_square_identification/main.cpp" "/home/kose/programming/least_square_identification/build/CMakeFiles/test.dir/main.cpp.o"
+  "/home/bcd/programming/least_square_identification/LeastSquareID.cpp" "/home/bcd/programming/least_square_identification/build/CMakeFiles/test.dir/LeastSquareID.cpp.o"
+  "/home/bcd/programming/least_square_identification/main.cpp" "/home/bcd/programming/least_square_identification/build/CMakeFiles/test.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -13,7 +14,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../"
   "../include"
   "/usr/include/python3.8"
-  "/home/kose/.local/lib/python3.8/site-packages/numpy/core/include"
+  "/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include"
   "/usr/local/include/eigen3"
   )
 
