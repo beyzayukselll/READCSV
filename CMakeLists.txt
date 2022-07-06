@@ -16,7 +16,9 @@ include_directories(${CMAKE_SOURCE_DIR}
 
 set(SOURCE_FILES main.cpp LeastSquareID.cpp Data.cpp)
 
-add_executable(test ${SOURCE_FILES})
+add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
-target_link_libraries(test ${Python3_LIBRARIES})
-target_link_libraries (test Eigen3::Eigen)
+target_link_libraries(${PROJECT_NAME}  ${Python3_LIBRARIES})
+target_link_libraries (${PROJECT_NAME}  Eigen3::Eigen)
+
+add_subdirectory("test")

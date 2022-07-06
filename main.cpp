@@ -12,7 +12,7 @@
 int main()
 {
     Data data;
-    data.setFile("/home/bcd/programming/least_square_identification/leastSquare_y_v5_500interval_24062022.csv");
+    data.setFile("/home/beyza/least_square/least_square_identification/leastSquare_y_v5_500interval_24062022.csv");
     data.dataRead();
     Eigen::VectorXd torque = data.getTorque();
     Eigen::VectorXd velocity = data.getVelocity();
