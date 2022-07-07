@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/fft_project.dir/main.cpp.o CMakeFiles/fft_project.dir/LeastSquareID.cpp.o CMakeFiles/fft_project.dir/Data.cpp.o  -o fft_project  /usr/lib/x86_64-linux-gnu/libpython3.8.so 

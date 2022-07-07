@@ -1,4 +1,4 @@
-# Install script for directory: /home/beyza/least_square/least_square_identification
+# Install script for directory: /home/bcd/programming/least_square_identification
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/beyza/least_square/least_square_identification/build/test/cmake_install.cmake")
+  include("/home/bcd/programming/least_square_identification/build/test/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/beyza/least_square/least_square_identification/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/bcd/programming/least_square_identification/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

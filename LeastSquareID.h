@@ -6,20 +6,28 @@
 class LeastSquareID
 {
 private:
-    double Inertia;
-    double ViscousDamping;
-    double CoulombTorquePositive;
-    double CoulombTorqueNegative;
-    Eigen::VectorXd Torque;
-    Eigen::VectorXd Velocity;
+    double mInertia;
+    double mViscousDamping;
+    double mCoulombTorquePositive;
+    double mCoulombTorqueNegative;
+    Eigen::VectorXd mTorque;
+    Eigen::VectorXd mVelocity;
+    Eigen::VectorXd mCalculationResult;
+    void calculateLeastSquareIdentification();
 
 public:
     LeastSquareID(Eigen::VectorXd torque, Eigen::VectorXd velocity);
     void setTorque(Eigen::VectorXd torque);
     void setVelocity(Eigen::VectorXd velocity);
+
     Eigen::VectorXd getTorque();
     Eigen::VectorXd getVelocity();
-    void leastSquareIdentification();
+
+    Eigen::VectorXd &getTorqueRef();
+    Eigen::VectorXd &getVelocityRef();
+
+    const Eigen::VectorXd &getCalculationResult()const;
+
     void getInfo();
     
 };

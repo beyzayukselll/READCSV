@@ -36,7 +36,7 @@ void Data::dataRead()
     Eigen::VectorXd time;
     time = res.col(0);
 
-    Velocity = res.col(29) / 10000.0 * 5.0 / 60.0;
+    Velocity = res.col(29) / 10000.0 * 2.0 * atan(1)*4.0 / 60.0;
 
     Torque = res.col(11) / 1000.0 * 2.37;
 }

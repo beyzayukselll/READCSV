@@ -1,6 +1,6 @@
-/home/beyza/least_square/least_square_identification/build/CMakeFiles/rebuild_cache.dir
-/home/beyza/least_square/least_square_identification/build/CMakeFiles/edit_cache.dir
-/home/beyza/least_square/least_square_identification/build/CMakeFiles/fft_project.dir
-/home/beyza/least_square/least_square_identification/build/test/CMakeFiles/rebuild_cache.dir
-/home/beyza/least_square/least_square_identification/build/test/CMakeFiles/edit_cache.dir
-/home/beyza/least_square/least_square_identification/build/test/CMakeFiles/test.dir
+/home/bcd/programming/least_square_identification/build/CMakeFiles/rebuild_cache.dir
+/home/bcd/programming/least_square_identification/build/CMakeFiles/edit_cache.dir
+/home/bcd/programming/least_square_identification/build/CMakeFiles/main.dir
+/home/bcd/programming/least_square_identification/build/test/CMakeFiles/rebuild_cache.dir
+/home/bcd/programming/least_square_identification/build/test/CMakeFiles/edit_cache.dir
+/home/bcd/programming/least_square_identification/build/test/CMakeFiles/test.dir
