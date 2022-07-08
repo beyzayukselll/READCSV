@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bcd/programming/least_square_identification
+CMAKE_SOURCE_DIR = /home/kose/programming/least_square_identification
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bcd/programming/least_square_identification/build
+CMAKE_BINARY_DIR = /home/kose/programming/least_square_identification/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bcd/programming/least_square_identification/build/CMakeFiles /home/bcd/programming/least_square_identification/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kose/programming/least_square_identification/build/CMakeFiles /home/kose/programming/least_square_identification/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bcd/programming/least_square_identification/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kose/programming/least_square_identification/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named system_identification
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
+system_identification: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 system_identification
+.PHONY : system_identification
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+system_identification/fast:
+	$(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/build
+.PHONY : system_identification/fast
 
 #=============================================================================
 # Target rules for targets named test
@@ -136,87 +136,6 @@ test/fast:
 	$(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/build
 .PHONY : test/fast
 
-Data.o: Data.cpp.o
-
-.PHONY : Data.o
-
-# target to build an object file
-Data.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Data.cpp.o
-.PHONY : Data.cpp.o
-
-Data.i: Data.cpp.i
-
-.PHONY : Data.i
-
-# target to preprocess a source file
-Data.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Data.cpp.i
-.PHONY : Data.cpp.i
-
-Data.s: Data.cpp.s
-
-.PHONY : Data.s
-
-# target to generate assembly for a file
-Data.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/Data.cpp.s
-.PHONY : Data.cpp.s
-
-LeastSquareID.o: LeastSquareID.cpp.o
-
-.PHONY : LeastSquareID.o
-
-# target to build an object file
-LeastSquareID.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LeastSquareID.cpp.o
-.PHONY : LeastSquareID.cpp.o
-
-LeastSquareID.i: LeastSquareID.cpp.i
-
-.PHONY : LeastSquareID.i
-
-# target to preprocess a source file
-LeastSquareID.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LeastSquareID.cpp.i
-.PHONY : LeastSquareID.cpp.i
-
-LeastSquareID.s: LeastSquareID.cpp.s
-
-.PHONY : LeastSquareID.s
-
-# target to generate assembly for a file
-LeastSquareID.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LeastSquareID.cpp.s
-.PHONY : LeastSquareID.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -225,17 +144,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... main"
+	@echo "... system_identification"
 	@echo "... test"
-	@echo "... Data.o"
-	@echo "... Data.i"
-	@echo "... Data.s"
-	@echo "... LeastSquareID.o"
-	@echo "... LeastSquareID.i"
-	@echo "... LeastSquareID.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 .PHONY : help
 
 

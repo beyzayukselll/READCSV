@@ -44,30 +44,49 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bcd/programming/least_square_identification
+CMAKE_SOURCE_DIR = /home/kose/programming/least_square_identification
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bcd/programming/least_square_identification/build
+CMAKE_BINARY_DIR = /home/kose/programming/least_square_identification/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/main.dir/all
+all: src/all
 all: test/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
+preinstall: src/preinstall
 preinstall: test/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/main.dir/clean
+clean: src/clean
 clean: test/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src
+
+# Recursive "all" directory target.
+src/all: src/CMakeFiles/system_identification.dir/all
+
+.PHONY : src/all
+
+# Recursive "preinstall" directory target.
+src/preinstall:
+
+.PHONY : src/preinstall
+
+# Recursive "clean" directory target.
+src/clean: src/CMakeFiles/system_identification.dir/clean
+
+.PHONY : src/clean
 
 #=============================================================================
 # Directory level rules for directory test
@@ -88,31 +107,31 @@ test/clean: test/CMakeFiles/test.dir/clean
 .PHONY : test/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/main.dir
+# Target rules for target src/CMakeFiles/system_identification.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=1,2,3,4 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
+src/CMakeFiles/system_identification.dir/all:
+	$(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/depend
+	$(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kose/programming/least_square_identification/build/CMakeFiles --progress-num=1,2,3,4 "Built target system_identification"
+.PHONY : src/CMakeFiles/system_identification.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bcd/programming/least_square_identification/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bcd/programming/least_square_identification/build/CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
+src/CMakeFiles/system_identification.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kose/programming/least_square_identification/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/system_identification.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kose/programming/least_square_identification/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/system_identification.dir/rule
 
 # Convenience name for target.
-main: CMakeFiles/main.dir/rule
+system_identification: src/CMakeFiles/system_identification.dir/rule
 
-.PHONY : main
+.PHONY : system_identification
 
 # clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
+src/CMakeFiles/system_identification.dir/clean:
+	$(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/clean
+.PHONY : src/CMakeFiles/system_identification.dir/clean
 
 #=============================================================================
 # Target rules for target test/CMakeFiles/test.dir
@@ -121,14 +140,14 @@ CMakeFiles/main.dir/clean:
 test/CMakeFiles/test.dir/all:
 	$(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/depend
 	$(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=5,6,7,8 "Built target test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kose/programming/least_square_identification/build/CMakeFiles --progress-num=5,6,7,8 "Built target test"
 .PHONY : test/CMakeFiles/test.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bcd/programming/least_square_identification/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kose/programming/least_square_identification/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bcd/programming/least_square_identification/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kose/programming/least_square_identification/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/test.dir/rule
 
 # Convenience name for target.

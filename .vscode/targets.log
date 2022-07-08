@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul  4 23:33:16 2022
+# Make data base, printed on Fri Jul  8 13:14:02 2022
 
 # Variables
 
@@ -28,8 +28,6 @@ XDG_SESSION_CLASS = user
 SNAP_COMMON = /var/snap/code/common
 # environment
 XDG_SESSION_TYPE = x11
-# environment
-VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -45,13 +43,13 @@ CURDIR := /home/kose/programming/least_square_identification
 # makefile
 SHELL = /bin/sh
 # environment
-SNAP_DATA = /var/snap/code/99
+SNAP_DATA = /var/snap/code/100
 # environment
 VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:42585
+JOURNAL_STREAM = 8:43315
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -71,11 +69,9 @@ MAKELEVEL := 0
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=c2597015e66db0efac453fc162c31a81
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=084eb9c0a8009dc872fd704462c7e2c8
 # environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-MANAGERPID = 1218
+MANAGERPID = 1212
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -83,7 +79,7 @@ LC_NAME = tr_TR.UTF-8
 # environment
 VSCODE_CWD = /home/kose/programming/least_square_identification
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/99/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/100/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -91,27 +87,25 @@ PATH = /home/kose/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/kose:@/tmp/.ICE-unix/1461,unix/kose:/tmp/.ICE-unix/1461
+SESSION_MANAGER = local/kose:@/tmp/.ICE-unix/1458,unix/kose:/tmp/.ICE-unix/1458
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/kose/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-SNAP = /snap/code/99
+SNAP = /snap/code/100
 # environment
-SNAP_VERSION = 30d9c6cd
+SNAP_VERSION = 92d25e35
 # environment
 XDG_MENU_PREFIX = gnome-
-# environment
-VSCODE_LOG_STACK = false
 # environment
 DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = fe516223a030406f8636c04f3fdf525d
+INVOCATION_ID = 6069c5b3ad0c4d6daadfc8d9e5b8c050
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/99/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/100/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -125,15 +119,13 @@ SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
 DISPLAY = :0
 # environment
-VSCODE_PIPE_LOGGING = true
-# environment
 SNAP_INSTANCE_KEY = 
 # environment
 PWD = /home/kose/programming/least_square_identification
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1423
+SSH_AGENT_PID = 1420
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -147,11 +139,11 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /home/kose/.config/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+VSCODE_CODE_CACHE_PATH = /home/kose/.config/Code/CachedData/92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9
 # environment
 LOGNAME = kose
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # environment
@@ -181,19 +173,17 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SNAP_USER_DATA = /home/kose/snap/code/99
+SNAP_USER_DATA = /home/kose/snap/code/100
 # environment
 SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-9753c3c3-559c-4d3e-bfbd-79f2b8e17231.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
 USER = kose
 # environment
-SNAP_REVISION = 99
+SNAP_REVISION = 100
 # environment
 LC_MONETARY = tr_TR.UTF-8
 # makefile
@@ -213,7 +203,7 @@ OLDPWD = /home/kose/programming
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-64809cb3-1.68.1-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-64809cb3-1.69.0-main.sock
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -226,6 +216,8 @@ MFLAGS = -pqrR
 GDK_BACKEND = x11
 # environment
 LC_PAPER = tr_TR.UTF-8
+# environment
+NO_AT_BRIDGE = 1
 # environment
 QT_ACCESSIBILITY = 1
 # default
@@ -245,11 +237,11 @@ LC_ALL = C
 # environment
 DBUS_STARTER_BUS_TYPE = session
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/6b68b372_df55_477f_bd3d_516498482b83
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/ee51f459_3676_444c_b0fa_da310279ac8f
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.98
+GNOME_TERMINAL_SERVICE = :1.91
 # default
 SUFFIXES := 
 # environment
@@ -271,11 +263,11 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 9352
+VSCODE_PID = 4004
 # environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=c2597015e66db0efac453fc162c31a81
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=084eb9c0a8009dc872fd704462c7e2c8
 # variable set hash-table stats:
-# Load=131/1024=13%, Rehash=0, Collisions=19/153=12%
+# Load=127/1024=12%, Rehash=0, Collisions=18/149=12%
 
 # Pattern-specific Variable Values
 
@@ -283,15 +275,15 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=c2597015e66db0efac453fc
 
 # Directories
 
-# . (device 2054, inode 4850443): 15 files, no impossibilities.
+# . (device 2054, inode 4592565): 14 files, no impossibilities.
 
-# 15 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
+ 
 # Implicit Rules
 
 # No implicit rules.
 
- 
 # Files
 
 # Not a target:
@@ -336,12 +328,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 23 / storage = 337 B / avg = 14 B
-# current buf: size = 8162 B / used = 337 B / count = 23 / avg = 14 B
+# strcache buffers: 1 (0) / strings = 22 / storage = 241 B / avg = 10 B
+# current buf: size = 8162 B / used = 241 B / count = 22 / avg = 10 B
 
-# strcache performance: lookups = 26 / hit rate = 11%
+# strcache performance: lookups = 25 / hit rate = 12%
 # hash-table stats:
-# Load=23/8192=0%, Rehash=0, Collisions=1/26=4%
-# Finished Make data base on Mon Jul  4 23:33:16 2022
+# Load=22/8192=0%, Rehash=0, Collisions=1/25=4%
+# Finished Make data base on Fri Jul  8 13:14:02 2022
 
  

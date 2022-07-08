@@ -4,19 +4,19 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/bcd/programming/least_square_identification/Data.cpp" "/home/bcd/programming/least_square_identification/build/test/CMakeFiles/test.dir/__/Data.cpp.o"
-  "/home/bcd/programming/least_square_identification/LeastSquareID.cpp" "/home/bcd/programming/least_square_identification/build/test/CMakeFiles/test.dir/__/LeastSquareID.cpp.o"
-  "/home/bcd/programming/least_square_identification/test/read_test.cpp" "/home/bcd/programming/least_square_identification/build/test/CMakeFiles/test.dir/read_test.cpp.o"
+  "/home/kose/programming/least_square_identification/src/Data.cpp" "/home/kose/programming/least_square_identification/build/test/CMakeFiles/test.dir/__/src/Data.cpp.o"
+  "/home/kose/programming/least_square_identification/src/LeastSquareID.cpp" "/home/kose/programming/least_square_identification/build/test/CMakeFiles/test.dir/__/src/LeastSquareID.cpp.o"
+  "/home/kose/programming/least_square_identification/test/read_test.cpp" "/home/kose/programming/least_square_identification/build/test/CMakeFiles/test.dir/read_test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../"
-  "../include"
+  "../src"
+  "../vendor"
   "/usr/include/python3.8"
-  "/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include"
-  "../test/include"
+  "/home/kose/.local/lib/python3.8/site-packages/numpy/core/include"
+  "../"
   "/usr/local/include/eigen3"
   )
 

@@ -1,24 +1,13 @@
+
 cmake_minimum_required(VERSION 3.16.3)
-project(main)  
 
-find_package(Python3 REQUIRED
-COMPONENTS Interpreter Development NumPy)
-find_package(PythonLibs     3.8     REQUIRED)
-find_package(PythonInterp   3.8     REQUIRED)
-find_package (Eigen3 3.4 REQUIRED NO_MODULE)
+project(system_identification)  
 
-include_directories(${CMAKE_SOURCE_DIR}
-                    ${CMAKE_SOURCE_DIR}/include
-                    ${Python3_INCLUDE_DIRS} include
-                    ${Python3_NumPy_INCLUDE_DIRS} include
-                    /usr/include/python3.8
-                    )
+# set(SOURCE_DIR "${PROJECT_SOURCE_DIR}/src")
+# set(TEST_DIR "${PROJECT_SOURCE_DIR}/test")
+# set(3RD_PARTY_DIR "${PROJECT_SOURCE_DIR}/vendor")
+# set(DATA_DIR "${PROJECT_SOURCE_DIR}/data")
 
-set(SOURCE_FILES main.cpp LeastSquareID.cpp Data.cpp)
 
-add_executable(${PROJECT_NAME} ${SOURCE_FILES})
-
-target_link_libraries(${PROJECT_NAME}  ${Python3_LIBRARIES})
-target_link_libraries (${PROJECT_NAME}  Eigen3::Eigen)
-
-add_subdirectory("test")
+add_subdirectory(src)
+add_subdirectory(test)
