@@ -77,7 +77,7 @@ TEST_CASE_METHOD(LeastSquareTestFixture, "square result test", "[read test]")
             realRefDeger(i) = realResultValue[i];
             THEN(ResultName[i])
             {
-                CHECK((fabs(myresult(i)) - fabs(realRefDeger(i))) < ROOT_TOLERANCE);
+                CHECK(fabs((myresult(i) - realRefDeger(i))) < ROOT_TOLERANCE);
             }
         }
     }

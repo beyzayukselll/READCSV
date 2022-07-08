@@ -140,32 +140,6 @@ _numpyconfig.h
 
 /home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/utils.h
 
-/home/kose/programming/least_square_identification/src/Data.cpp
-Data.h
-/home/kose/programming/least_square_identification/src/Data.h
-
-/home/kose/programming/least_square_identification/src/Data.h
-iostream
--
-Eigen/Dense
--
-fstream
--
-iterator
--
-vector
--
-
-/home/kose/programming/least_square_identification/src/LeastSquareID.cpp
-LeastSquareID.h
-/home/kose/programming/least_square_identification/src/LeastSquareID.h
-
-/home/kose/programming/least_square_identification/src/LeastSquareID.h
-iostream
--
-Eigen/Dense
--
-
 /home/kose/programming/least_square_identification/test/catch.hpp
 TargetConditionals.h
 -
