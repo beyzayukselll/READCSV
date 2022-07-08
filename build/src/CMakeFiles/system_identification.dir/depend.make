@@ -503,7 +503,7 @@ src/CMakeFiles/system_identification.dir/LeastSquareID.cpp.o: /usr/local/include
 src/CMakeFiles/system_identification.dir/LeastSquareID.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 src/CMakeFiles/system_identification.dir/LeastSquareID.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/ReshapedMethods.h
 
-src/CMakeFiles/system_identification.dir/main.cpp.o: ../vendor/matplotlibcpp.h
+src/CMakeFiles/system_identification.dir/main.cpp.o: ../include/matplotlibcpp.h
 src/CMakeFiles/system_identification.dir/main.cpp.o: /home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/__multiarray_api.h
 src/CMakeFiles/system_identification.dir/main.cpp.o: /home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
 src/CMakeFiles/system_identification.dir/main.cpp.o: /home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/_numpyconfig.h

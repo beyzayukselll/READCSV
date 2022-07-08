@@ -8,7 +8,7 @@ find_package(PythonInterp   3.8     REQUIRED)
 find_package (Eigen3 3.4 REQUIRED NO_MODULE)
 
 include_directories(${CMAKE_SOURCE_DIR}/src
-                    ${CMAKE_SOURCE_DIR}/vendor
+                    ${CMAKE_SOURCE_DIR}/include
                     ${Python3_INCLUDE_DIRS} 
                     ${Python3_NumPy_INCLUDE_DIRS} 
                     /usr/include/python3.8

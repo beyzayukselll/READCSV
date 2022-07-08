@@ -504,7 +504,7 @@ src/CMakeFiles/system_identification.dir/LeastSquareID.cpp.o
  /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
  /usr/local/include/eigen3/Eigen/src/plugins/ReshapedMethods.h
 src/CMakeFiles/system_identification.dir/main.cpp.o
- ../vendor/matplotlibcpp.h
+ ../include/matplotlibcpp.h
  /home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/__multiarray_api.h
  /home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
  /home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/_numpyconfig.h

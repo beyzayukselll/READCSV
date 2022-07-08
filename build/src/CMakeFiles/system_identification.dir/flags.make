@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/kose/programming/least_square_identification -I/home/kose/programming/least_square_identification/vendor -I/usr/include/python3.8 -I/home/kose/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3 
+CXX_INCLUDES = -I/home/kose/programming/least_square_identification -I/home/kose/programming/least_square_identification/include -I/usr/include/python3.8 -I/home/kose/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3 
 

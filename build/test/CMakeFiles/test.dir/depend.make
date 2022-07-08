@@ -503,9 +503,9 @@ test/CMakeFiles/test.dir/__/src/LeastSquareID.cpp.o: /usr/local/include/eigen3/E
 test/CMakeFiles/test.dir/__/src/LeastSquareID.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 test/CMakeFiles/test.dir/__/src/LeastSquareID.cpp.o: /usr/local/include/eigen3/Eigen/src/plugins/ReshapedMethods.h
 
+test/CMakeFiles/test.dir/read_test.cpp.o: ../include/matplotlibcpp.h
 test/CMakeFiles/test.dir/read_test.cpp.o: ../src/Data.h
 test/CMakeFiles/test.dir/read_test.cpp.o: ../src/LeastSquareID.h
-test/CMakeFiles/test.dir/read_test.cpp.o: ../vendor/matplotlibcpp.h
 test/CMakeFiles/test.dir/read_test.cpp.o: /home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/__multiarray_api.h
 test/CMakeFiles/test.dir/read_test.cpp.o: /home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
 test/CMakeFiles/test.dir/read_test.cpp.o: /home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/_numpyconfig.h
