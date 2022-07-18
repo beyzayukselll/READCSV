@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kose/programming/least_square_identification
+CMAKE_SOURCE_DIR = /home/bcd/programming/least_square_identification
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kose/programming/least_square_identification/build
+CMAKE_BINARY_DIR = /home/bcd/programming/least_square_identification/build
 
 # Include any dependencies generated for this target.
 include test/CMakeFiles/test.dir/depend.make
@@ -59,47 +59,61 @@ include test/CMakeFiles/test.dir/flags.make
 
 test/CMakeFiles/test.dir/__/src/Data.cpp.o: test/CMakeFiles/test.dir/flags.make
 test/CMakeFiles/test.dir/__/src/Data.cpp.o: ../src/Data.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kose/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/test.dir/__/src/Data.cpp.o"
-	cd /home/kose/programming/least_square_identification/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/__/src/Data.cpp.o -c /home/kose/programming/least_square_identification/src/Data.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/test.dir/__/src/Data.cpp.o"
+	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/__/src/Data.cpp.o -c /home/bcd/programming/least_square_identification/src/Data.cpp
 
 test/CMakeFiles/test.dir/__/src/Data.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/__/src/Data.cpp.i"
-	cd /home/kose/programming/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kose/programming/least_square_identification/src/Data.cpp > CMakeFiles/test.dir/__/src/Data.cpp.i
+	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bcd/programming/least_square_identification/src/Data.cpp > CMakeFiles/test.dir/__/src/Data.cpp.i
 
 test/CMakeFiles/test.dir/__/src/Data.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/__/src/Data.cpp.s"
-	cd /home/kose/programming/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kose/programming/least_square_identification/src/Data.cpp -o CMakeFiles/test.dir/__/src/Data.cpp.s
+	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bcd/programming/least_square_identification/src/Data.cpp -o CMakeFiles/test.dir/__/src/Data.cpp.s
 
 test/CMakeFiles/test.dir/__/src/LeastSquareID.cpp.o: test/CMakeFiles/test.dir/flags.make
 test/CMakeFiles/test.dir/__/src/LeastSquareID.cpp.o: ../src/LeastSquareID.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kose/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/test.dir/__/src/LeastSquareID.cpp.o"
-	cd /home/kose/programming/least_square_identification/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/__/src/LeastSquareID.cpp.o -c /home/kose/programming/least_square_identification/src/LeastSquareID.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/test.dir/__/src/LeastSquareID.cpp.o"
+	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/__/src/LeastSquareID.cpp.o -c /home/bcd/programming/least_square_identification/src/LeastSquareID.cpp
 
 test/CMakeFiles/test.dir/__/src/LeastSquareID.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/__/src/LeastSquareID.cpp.i"
-	cd /home/kose/programming/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kose/programming/least_square_identification/src/LeastSquareID.cpp > CMakeFiles/test.dir/__/src/LeastSquareID.cpp.i
+	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bcd/programming/least_square_identification/src/LeastSquareID.cpp > CMakeFiles/test.dir/__/src/LeastSquareID.cpp.i
 
 test/CMakeFiles/test.dir/__/src/LeastSquareID.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/__/src/LeastSquareID.cpp.s"
-	cd /home/kose/programming/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kose/programming/least_square_identification/src/LeastSquareID.cpp -o CMakeFiles/test.dir/__/src/LeastSquareID.cpp.s
+	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bcd/programming/least_square_identification/src/LeastSquareID.cpp -o CMakeFiles/test.dir/__/src/LeastSquareID.cpp.s
+
+test/CMakeFiles/test.dir/__/src/Write.cpp.o: test/CMakeFiles/test.dir/flags.make
+test/CMakeFiles/test.dir/__/src/Write.cpp.o: ../src/Write.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/test.dir/__/src/Write.cpp.o"
+	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/__/src/Write.cpp.o -c /home/bcd/programming/least_square_identification/src/Write.cpp
+
+test/CMakeFiles/test.dir/__/src/Write.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/__/src/Write.cpp.i"
+	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bcd/programming/least_square_identification/src/Write.cpp > CMakeFiles/test.dir/__/src/Write.cpp.i
+
+test/CMakeFiles/test.dir/__/src/Write.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/__/src/Write.cpp.s"
+	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bcd/programming/least_square_identification/src/Write.cpp -o CMakeFiles/test.dir/__/src/Write.cpp.s
 
 test/CMakeFiles/test.dir/read_test.cpp.o: test/CMakeFiles/test.dir/flags.make
 test/CMakeFiles/test.dir/read_test.cpp.o: ../test/read_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kose/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/test.dir/read_test.cpp.o"
-	cd /home/kose/programming/least_square_identification/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/read_test.cpp.o -c /home/kose/programming/least_square_identification/test/read_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/CMakeFiles/test.dir/read_test.cpp.o"
+	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/read_test.cpp.o -c /home/bcd/programming/least_square_identification/test/read_test.cpp
 
 test/CMakeFiles/test.dir/read_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/read_test.cpp.i"
-	cd /home/kose/programming/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kose/programming/least_square_identification/test/read_test.cpp > CMakeFiles/test.dir/read_test.cpp.i
+	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bcd/programming/least_square_identification/test/read_test.cpp > CMakeFiles/test.dir/read_test.cpp.i
 
 test/CMakeFiles/test.dir/read_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/read_test.cpp.s"
-	cd /home/kose/programming/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kose/programming/least_square_identification/test/read_test.cpp -o CMakeFiles/test.dir/read_test.cpp.s
+	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bcd/programming/least_square_identification/test/read_test.cpp -o CMakeFiles/test.dir/read_test.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
 "CMakeFiles/test.dir/__/src/Data.cpp.o" \
 "CMakeFiles/test.dir/__/src/LeastSquareID.cpp.o" \
+"CMakeFiles/test.dir/__/src/Write.cpp.o" \
 "CMakeFiles/test.dir/read_test.cpp.o"
 
 # External object files for target test
@@ -107,12 +121,13 @@ test_EXTERNAL_OBJECTS =
 
 test/test: test/CMakeFiles/test.dir/__/src/Data.cpp.o
 test/test: test/CMakeFiles/test.dir/__/src/LeastSquareID.cpp.o
+test/test: test/CMakeFiles/test.dir/__/src/Write.cpp.o
 test/test: test/CMakeFiles/test.dir/read_test.cpp.o
 test/test: test/CMakeFiles/test.dir/build.make
 test/test: /usr/lib/x86_64-linux-gnu/libpython3.8.so
 test/test: test/CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kose/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test"
-	cd /home/kose/programming/least_square_identification/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable test"
+	cd /home/bcd/programming/least_square_identification/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/CMakeFiles/test.dir/build: test/test
@@ -120,10 +135,10 @@ test/CMakeFiles/test.dir/build: test/test
 .PHONY : test/CMakeFiles/test.dir/build
 
 test/CMakeFiles/test.dir/clean:
-	cd /home/kose/programming/least_square_identification/build/test && $(CMAKE_COMMAND) -P CMakeFiles/test.dir/cmake_clean.cmake
+	cd /home/bcd/programming/least_square_identification/build/test && $(CMAKE_COMMAND) -P CMakeFiles/test.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/test.dir/clean
 
 test/CMakeFiles/test.dir/depend:
-	cd /home/kose/programming/least_square_identification/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kose/programming/least_square_identification /home/kose/programming/least_square_identification/test /home/kose/programming/least_square_identification/build /home/kose/programming/least_square_identification/build/test /home/kose/programming/least_square_identification/build/test/CMakeFiles/test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bcd/programming/least_square_identification/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bcd/programming/least_square_identification /home/bcd/programming/least_square_identification/test /home/bcd/programming/least_square_identification/build /home/bcd/programming/least_square_identification/build/test /home/bcd/programming/least_square_identification/build/test/CMakeFiles/test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/CMakeFiles/test.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/kose/programming/least_square_identification/test
+# Install script for directory: /home/bcd/programming/least_square_identification/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

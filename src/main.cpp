@@ -9,6 +9,7 @@
 #include "LeastSquareID.h"
 #include "Data.h"
 #include <vector>
+#include "Write.h"
 // int functionExampleShallowCopy (LeastSquareID &myparameter )
 //  {
 //      Data data;
@@ -25,7 +26,7 @@
 int main()
 {
     Data data;
-    data.setFile("/home/kose/programming/least_square_identification/data/leastSquare_y_v5_500interval_24062022.csv");
+    data.setFile("/home/bcd/programming/least_square_identification/data/leastSquare_y_v5_500interval_24062022.csv");
     data.dataRead();
     Eigen::VectorXd torque = data.getTorque();
     Eigen::VectorXd velocity = data.getVelocity();
@@ -47,6 +48,15 @@ int main()
     //     functionExampleDeepCopy(*curAxisId);
 
     // }
+
+    Write write;
+    // std::string fileName = "/home/bcd/programming/least_square_identification/data/test.json";
+    std::string fileName1 = "/home/bcd/programming/least_square_identification/data/write.json";
+
+    // write.dataWrite(myr,fileName);
+    write.dataWriteNew(myr, fileName1);
+    
+
 
     return 0;
 }

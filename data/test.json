@@ -1,0 +1,9 @@
+{
+"leastSquareResult":
+{
+	"inertia":0.000450506,
+	"ViscousDamping":0.00194586,
+	"CoulombTorquePositive":0.598744,
+	"CoulombTorqueNegative":-0.575498
+}
+}

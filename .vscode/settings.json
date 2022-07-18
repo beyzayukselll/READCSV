@@ -58,7 +58,19 @@
         "*.inc": "cpp",
         "dense": "cpp",
         "svd": "cpp",
-        "core": "cpp"
+        "core": "cpp",
+        "iomanip": "cpp",
+        "any": "cpp",
+        "bitset": "cpp",
+        "codecvt": "cpp",
+        "condition_variable": "cpp",
+        "forward_list": "cpp",
+        "regex": "cpp",
+        "future": "cpp",
+        "mutex": "cpp",
+        "shared_mutex": "cpp",
+        "valarray": "cpp",
+        "variant": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }
