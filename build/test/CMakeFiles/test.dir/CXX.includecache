@@ -57,6 +57,12 @@ iostream
 -
 Eigen/Dense
 -
+matplotlibcpp.h
+-
+vector
+-
+algorithm
+-
 
 /home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/__multiarray_api.h
 
@@ -578,6 +584,28 @@ boost/property_tree/json_parser.hpp
 boost/property_tree/ptree.hpp
 -
 
+/home/bcd/programming/least_square_identification/src/read.cpp
+read.h
+/home/bcd/programming/least_square_identification/src/read.h
+
+/home/bcd/programming/least_square_identification/src/read.h
+iostream
+-
+string.h
+-
+iterator
+-
+fstream
+-
+../include/json.hpp
+/home/bcd/programming/least_square_identification/include/json.hpp
+exception
+-
+boost/property_tree/json_parser.hpp
+-
+boost/property_tree/ptree.hpp
+-
+
 /home/bcd/programming/least_square_identification/src/signal.cpp
 signal.h
 /home/bcd/programming/least_square_identification/src/signal.h
@@ -586,6 +614,12 @@ signal.h
 iostream
 -
 Eigen/Dense
+-
+matplotlibcpp.h
+-
+vector
+-
+algorithm
 -
 
 /home/bcd/programming/least_square_identification/test/catch.hpp

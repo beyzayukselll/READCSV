@@ -206,6 +206,33 @@ __/src/Write.cpp.s:
 	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/Write.cpp.s
 .PHONY : __/src/Write.cpp.s
 
+__/src/read.o: __/src/read.cpp.o
+
+.PHONY : __/src/read.o
+
+# target to build an object file
+__/src/read.cpp.o:
+	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/read.cpp.o
+.PHONY : __/src/read.cpp.o
+
+__/src/read.i: __/src/read.cpp.i
+
+.PHONY : __/src/read.i
+
+# target to preprocess a source file
+__/src/read.cpp.i:
+	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/read.cpp.i
+.PHONY : __/src/read.cpp.i
+
+__/src/read.s: __/src/read.cpp.s
+
+.PHONY : __/src/read.s
+
+# target to generate assembly for a file
+__/src/read.cpp.s:
+	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/read.cpp.s
+.PHONY : __/src/read.cpp.s
+
 __/src/signal.o: __/src/signal.cpp.o
 
 .PHONY : __/src/signal.o
@@ -278,6 +305,9 @@ help:
 	@echo "... __/src/Write.o"
 	@echo "... __/src/Write.i"
 	@echo "... __/src/Write.s"
+	@echo "... __/src/read.o"
+	@echo "... __/src/read.i"
+	@echo "... __/src/read.s"
 	@echo "... __/src/signal.o"
 	@echo "... __/src/signal.i"
 	@echo "... __/src/signal.s"

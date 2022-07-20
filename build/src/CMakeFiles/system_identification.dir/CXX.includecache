@@ -569,10 +569,32 @@ Write.h
 /home/bcd/programming/least_square_identification/src/Write.h
 signal.h
 /home/bcd/programming/least_square_identification/src/signal.h
+read.h
+/home/bcd/programming/least_square_identification/src/read.h
 
-/home/bcd/programming/least_square_identification/src/signal.cpp
-signal.h
-/home/bcd/programming/least_square_identification/src/signal.h
+/home/bcd/programming/least_square_identification/src/read.cpp
+read.h
+/home/bcd/programming/least_square_identification/src/read.h
+
+/home/bcd/programming/least_square_identification/src/read.h
+iostream
+-
+string.h
+-
+string
+-
+iterator
+-
+fstream
+-
+../include/json.hpp
+/home/bcd/programming/least_square_identification/include/json.hpp
+exception
+-
+boost/property_tree/json_parser.hpp
+-
+boost/property_tree/ptree.hpp
+-
 
 /home/bcd/programming/least_square_identification/src/signal.h
 iostream

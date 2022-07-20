@@ -776,6 +776,7 @@ src/CMakeFiles/system_identification.dir/main.cpp.o: ../src/Data.h
 src/CMakeFiles/system_identification.dir/main.cpp.o: ../src/LeastSquareID.h
 src/CMakeFiles/system_identification.dir/main.cpp.o: ../src/Write.h
 src/CMakeFiles/system_identification.dir/main.cpp.o: ../src/main.cpp
+src/CMakeFiles/system_identification.dir/main.cpp.o: ../src/read.h
 src/CMakeFiles/system_identification.dir/main.cpp.o: ../src/signal.h
 src/CMakeFiles/system_identification.dir/main.cpp.o: /usr/include/python3.8/Python.h
 src/CMakeFiles/system_identification.dir/main.cpp.o: /usr/include/python3.8/abstract.h
@@ -1184,6 +1185,10 @@ src/CMakeFiles/system_identification.dir/main.cpp.o: /usr/local/include/eigen3/u
 src/CMakeFiles/system_identification.dir/main.cpp.o: /usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_fftw_impl.h
 src/CMakeFiles/system_identification.dir/main.cpp.o: /usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_kissfft_impl.h
 src/CMakeFiles/system_identification.dir/main.cpp.o: /usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_pocketfft_impl.h
+
+src/CMakeFiles/system_identification.dir/read.cpp.o: ../include/json.hpp
+src/CMakeFiles/system_identification.dir/read.cpp.o: ../src/read.cpp
+src/CMakeFiles/system_identification.dir/read.cpp.o: ../src/read.h
 
 src/CMakeFiles/system_identification.dir/signal.cpp.o: ../include/matplotlibcpp.h
 src/CMakeFiles/system_identification.dir/signal.cpp.o: /home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/__multiarray_api.h

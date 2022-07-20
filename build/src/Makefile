@@ -233,6 +233,33 @@ main.cpp.s:
 	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+read.o: read.cpp.o
+
+.PHONY : read.o
+
+# target to build an object file
+read.cpp.o:
+	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/read.cpp.o
+.PHONY : read.cpp.o
+
+read.i: read.cpp.i
+
+.PHONY : read.i
+
+# target to preprocess a source file
+read.cpp.i:
+	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/read.cpp.i
+.PHONY : read.cpp.i
+
+read.s: read.cpp.s
+
+.PHONY : read.s
+
+# target to generate assembly for a file
+read.cpp.s:
+	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/read.cpp.s
+.PHONY : read.cpp.s
+
 signal.o: signal.cpp.o
 
 .PHONY : signal.o
@@ -281,6 +308,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... read.o"
+	@echo "... read.i"
+	@echo "... read.s"
 	@echo "... signal.o"
 	@echo "... signal.i"
 	@echo "... signal.s"

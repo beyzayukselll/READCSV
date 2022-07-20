@@ -11,6 +11,7 @@
 #include <vector>
 #include "Write.h"
 #include "signal.h"
+#include "read.h"
 // int functionExampleShallowCopy (LeastSquareID &myparameter )
 //  {
 //      Data data;
@@ -49,23 +50,35 @@ int main()
 
     // }
 
+    std::vector<double> d;
+
+    Read read;
+    std::string fileName = "/home/bcd/programming/least_square_identification/data/file.json";
+    read.readJson(fileName);
+    d = read.d;
+    std::vector <std::string> inputName = read.inputName;
     // Write write;
-    //  std::string fileName = "/home/bcd/programming/least_square_identification/data/test.json";
+    // std::string fileName = "/home/bcd/programming/least_square_identification/data/test.json";
     // std::string fileName1 = "/home/bcd/programming/least_square_identification/data/write.json";
 
     // write.dataWrite(myr,fileName);
     // write.dataWriteNew(myr, fileName1);
 
     Signal signal;
-    signal.maxTorque = 50;
-    signal.minTorque = 5;
-    signal.pulseNumber = 12;
-    signal.duration = 200;
+  
+   
+    signal.maxTorque = d[0];
+    signal.minTorque = d[1];
+    signal.pulseNumber = d[2];
+    signal.duration = d[3];
 
     signal.setTorqueInput();
-    signal.plotTorqueInput();
 
-    std::cout << signal.torqueInput.size() << std::endl;
+    std::cout << signal.torqueInput << std::endl;
+    signal.plotTorqueInput();
   
+    
+  
+
     return 0;
 }

@@ -49,7 +49,7 @@ void Signal::setTorqueInput()
     }
 
     torqueInput.tail((totalTime/2)+1) = temp1.tail((totalTime/2)+1);
-    
+
 }
 
 Eigen::VectorXd Signal::getTorqueInput()
@@ -74,6 +74,7 @@ void Signal::plotTorqueInput()
     matplotlibcpp::figure();
     matplotlibcpp::plot(x);
     matplotlibcpp::xlabel("Time [s]");
+    matplotlibcpp::ylabel("Torque [Nm]");
     matplotlibcpp::grid(true);
     matplotlibcpp::title("Trajectory");
     matplotlibcpp::show();

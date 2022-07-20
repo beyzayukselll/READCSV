@@ -777,6 +777,7 @@ src/CMakeFiles/system_identification.dir/main.cpp.o
  /home/bcd/programming/least_square_identification/src/LeastSquareID.h
  /home/bcd/programming/least_square_identification/src/Write.h
  /home/bcd/programming/least_square_identification/src/main.cpp
+ /home/bcd/programming/least_square_identification/src/read.h
  /home/bcd/programming/least_square_identification/src/signal.h
  /usr/include/python3.8/Python.h
  /usr/include/python3.8/abstract.h
@@ -1185,6 +1186,10 @@ src/CMakeFiles/system_identification.dir/main.cpp.o
  /usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_fftw_impl.h
  /usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_kissfft_impl.h
  /usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_pocketfft_impl.h
+src/CMakeFiles/system_identification.dir/read.cpp.o
+ /home/bcd/programming/least_square_identification/include/json.hpp
+ /home/bcd/programming/least_square_identification/src/read.cpp
+ /home/bcd/programming/least_square_identification/src/read.h
 src/CMakeFiles/system_identification.dir/signal.cpp.o
  ../include/matplotlibcpp.h
  /home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/__multiarray_api.h
