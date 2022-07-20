@@ -65,7 +65,7 @@ int main()
     signal.setTorqueInput();
     signal.plotTorqueInput();
 
-    // std::cout << signal.torqueInput.size() << std::endl;
+    std::cout << signal.torqueInput.size() << std::endl;
   
     // Eigen::VectorXd torque;
     // torque = signal.getTorqueInput();

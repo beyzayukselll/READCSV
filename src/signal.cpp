@@ -4,7 +4,6 @@
 void Signal::setTorqueInput()
 {
     totalTime = 4 * pulseNumber * duration;
-    Eigen::VectorXd torqueInput;
     torqueInput.resize(totalTime);
 
     for (int i = 0; i < totalTime; ++i)
@@ -50,12 +49,7 @@ void Signal::setTorqueInput()
     }
 
     torqueInput.tail((totalTime/2)+1) = temp1.tail((totalTime/2)+1);
-
-    // for (int i = 0; i < totalTime; ++i)
-    // {
-    //     std::cout << torqueInput(i) << " ";
-    // }
- 
+    
 }
 
 Eigen::VectorXd Signal::getTorqueInput()
