@@ -40,7 +40,7 @@ void Write::dataWriteNew(Eigen::VectorXd leastSquareResult, std::string fileName
     pt::ptree root;
 
     // Create a node
-    pt::ptree animals_node;
+    pt::ptree least_square_node;
 
     std::vector<std::pair<std::string, std::string>> leastSquareResults;
 
@@ -55,9 +55,9 @@ void Write::dataWriteNew(Eigen::VectorXd leastSquareResult, std::string fileName
 
     // Add animals as childs
     for (auto &animal : leastSquareResults)
-        animals_node.put(animal.first, animal.second);
+        least_square_node.put(animal.first, animal.second);
     // Add the new node to the root
-    root.add_child("leastSquareResults", animals_node);
-
+    root.add_child("leastSquareResults", least_square_node);
+    
     pt::write_json("/home/bcd/programming/least_square_identification/data/write.json", root);
 }

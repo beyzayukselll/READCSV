@@ -70,7 +70,15 @@
         "mutex": "cpp",
         "shared_mutex": "cpp",
         "valarray": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "csetjmp": "cpp",
+        "csignal": "cpp",
+        "cfenv": "cpp",
+        "charconv": "cpp",
+        "cuchar": "cpp",
+        "unordered_set": "cpp",
+        "scoped_allocator": "cpp",
+        "typeindex": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }

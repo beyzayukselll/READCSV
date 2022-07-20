@@ -233,6 +233,33 @@ main.cpp.s:
 	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+signal.o: signal.cpp.o
+
+.PHONY : signal.o
+
+# target to build an object file
+signal.cpp.o:
+	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/signal.cpp.o
+.PHONY : signal.cpp.o
+
+signal.i: signal.cpp.i
+
+.PHONY : signal.i
+
+# target to preprocess a source file
+signal.cpp.i:
+	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/signal.cpp.i
+.PHONY : signal.cpp.i
+
+signal.s: signal.cpp.s
+
+.PHONY : signal.s
+
+# target to generate assembly for a file
+signal.cpp.s:
+	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/signal.cpp.s
+.PHONY : signal.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -254,6 +281,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... signal.o"
+	@echo "... signal.i"
+	@echo "... signal.s"
 .PHONY : help
 
 

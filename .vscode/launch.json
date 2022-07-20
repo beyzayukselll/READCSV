@@ -8,7 +8,7 @@
             "name": "(gdb) Sudo Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/test",
+            "program": "${workspaceFolder}/build/src/system_identification",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
