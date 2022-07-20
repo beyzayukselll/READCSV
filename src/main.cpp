@@ -67,33 +67,5 @@ int main()
 
     std::cout << signal.torqueInput.size() << std::endl;
   
-    // Eigen::VectorXd torque;
-    // torque = signal.getTorqueInput();
-    // std::cout << torque.size() << std::endl;
-
-    // std::vector<double> x;
-    // x.resize(torque.size());
-
-    // matplotlibcpp::figure();
-    // for (int i = 0; i < torque.size(); i++)
-    // {
-    //     x[i] = torque(i);
-    // }
-    // std::cout << x.size() << std::endl;
-
-    // std::vector<double> time;
-    // time.resize(torque.size());
-    // for (int i = 0; i < torque.size(); i++)
-    // {
-    //     time[i] = i;
-    // }
-
-    // std::cout << time.size() << std::endl;
-
-    // matplotlibcpp::plot(x);
-    // matplotlibcpp::xlabel("Time [s]");
-    // matplotlibcpp::grid(true);
-    // matplotlibcpp::title("Trajectory");
-    // matplotlibcpp::show();
     return 0;
 }
