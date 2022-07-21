@@ -1,73 +1,73 @@
 [
 {
-  "directory": "/home/bcd/programming/least_square_identification/build",
-  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/Data.cpp.o -c /home/bcd/programming/least_square_identification/src/Data.cpp",
-  "file": "/home/bcd/programming/least_square_identification/src/Data.cpp"
+  "directory": "/home/beyza/least_square/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/beyza/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/Data.cpp.o -c /home/beyza/least_square/least_square_identification/src/Data.cpp",
+  "file": "/home/beyza/least_square/least_square_identification/src/Data.cpp"
 },
 
 {
-  "directory": "/home/bcd/programming/least_square_identification/build",
-  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/LeastSquareID.cpp.o -c /home/bcd/programming/least_square_identification/src/LeastSquareID.cpp",
-  "file": "/home/bcd/programming/least_square_identification/src/LeastSquareID.cpp"
+  "directory": "/home/beyza/least_square/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/beyza/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/LeastSquareID.cpp.o -c /home/beyza/least_square/least_square_identification/src/LeastSquareID.cpp",
+  "file": "/home/beyza/least_square/least_square_identification/src/LeastSquareID.cpp"
 },
 
 {
-  "directory": "/home/bcd/programming/least_square_identification/build",
-  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/Write.cpp.o -c /home/bcd/programming/least_square_identification/src/Write.cpp",
-  "file": "/home/bcd/programming/least_square_identification/src/Write.cpp"
+  "directory": "/home/beyza/least_square/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/beyza/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/Write.cpp.o -c /home/beyza/least_square/least_square_identification/src/Write.cpp",
+  "file": "/home/beyza/least_square/least_square_identification/src/Write.cpp"
 },
 
 {
-  "directory": "/home/bcd/programming/least_square_identification/build",
-  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/main.cpp.o -c /home/bcd/programming/least_square_identification/src/main.cpp",
-  "file": "/home/bcd/programming/least_square_identification/src/main.cpp"
+  "directory": "/home/beyza/least_square/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/beyza/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/main.cpp.o -c /home/beyza/least_square/least_square_identification/src/main.cpp",
+  "file": "/home/beyza/least_square/least_square_identification/src/main.cpp"
 },
 
 {
-  "directory": "/home/bcd/programming/least_square_identification/build",
-  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/read.cpp.o -c /home/bcd/programming/least_square_identification/src/read.cpp",
-  "file": "/home/bcd/programming/least_square_identification/src/read.cpp"
+  "directory": "/home/beyza/least_square/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/beyza/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/read.cpp.o -c /home/beyza/least_square/least_square_identification/src/read.cpp",
+  "file": "/home/beyza/least_square/least_square_identification/src/read.cpp"
 },
 
 {
-  "directory": "/home/bcd/programming/least_square_identification/build",
-  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/signal.cpp.o -c /home/bcd/programming/least_square_identification/src/signal.cpp",
-  "file": "/home/bcd/programming/least_square_identification/src/signal.cpp"
+  "directory": "/home/beyza/least_square/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/beyza/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/signal.cpp.o -c /home/beyza/least_square/least_square_identification/src/signal.cpp",
+  "file": "/home/beyza/least_square/least_square_identification/src/signal.cpp"
 },
 
 {
-  "directory": "/home/bcd/programming/least_square_identification/build",
-  "command": "/usr/bin/g++   -I../src -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -I../ -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/Data.cpp.o -c /home/bcd/programming/least_square_identification/src/Data.cpp",
-  "file": "/home/bcd/programming/least_square_identification/src/Data.cpp"
+  "directory": "/home/beyza/least_square/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../src -I../include -I/usr/include/python3.8 -I/home/beyza/.local/lib/python3.8/site-packages/numpy/core/include -I../ -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/Data.cpp.o -c /home/beyza/least_square/least_square_identification/src/Data.cpp",
+  "file": "/home/beyza/least_square/least_square_identification/src/Data.cpp"
 },
 
 {
-  "directory": "/home/bcd/programming/least_square_identification/build",
-  "command": "/usr/bin/g++   -I../src -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -I../ -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/LeastSquareID.cpp.o -c /home/bcd/programming/least_square_identification/src/LeastSquareID.cpp",
-  "file": "/home/bcd/programming/least_square_identification/src/LeastSquareID.cpp"
+  "directory": "/home/beyza/least_square/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../src -I../include -I/usr/include/python3.8 -I/home/beyza/.local/lib/python3.8/site-packages/numpy/core/include -I../ -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/LeastSquareID.cpp.o -c /home/beyza/least_square/least_square_identification/src/LeastSquareID.cpp",
+  "file": "/home/beyza/least_square/least_square_identification/src/LeastSquareID.cpp"
 },
 
 {
-  "directory": "/home/bcd/programming/least_square_identification/build",
-  "command": "/usr/bin/g++   -I../src -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -I../ -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/Write.cpp.o -c /home/bcd/programming/least_square_identification/src/Write.cpp",
-  "file": "/home/bcd/programming/least_square_identification/src/Write.cpp"
+  "directory": "/home/beyza/least_square/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../src -I../include -I/usr/include/python3.8 -I/home/beyza/.local/lib/python3.8/site-packages/numpy/core/include -I../ -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/Write.cpp.o -c /home/beyza/least_square/least_square_identification/src/Write.cpp",
+  "file": "/home/beyza/least_square/least_square_identification/src/Write.cpp"
 },
 
 {
-  "directory": "/home/bcd/programming/least_square_identification/build",
-  "command": "/usr/bin/g++   -I../src -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -I../ -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/read.cpp.o -c /home/bcd/programming/least_square_identification/src/read.cpp",
-  "file": "/home/bcd/programming/least_square_identification/src/read.cpp"
+  "directory": "/home/beyza/least_square/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../src -I../include -I/usr/include/python3.8 -I/home/beyza/.local/lib/python3.8/site-packages/numpy/core/include -I../ -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/read.cpp.o -c /home/beyza/least_square/least_square_identification/src/read.cpp",
+  "file": "/home/beyza/least_square/least_square_identification/src/read.cpp"
 },
 
 {
-  "directory": "/home/bcd/programming/least_square_identification/build",
-  "command": "/usr/bin/g++   -I../src -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -I../ -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/signal.cpp.o -c /home/bcd/programming/least_square_identification/src/signal.cpp",
-  "file": "/home/bcd/programming/least_square_identification/src/signal.cpp"
+  "directory": "/home/beyza/least_square/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../src -I../include -I/usr/include/python3.8 -I/home/beyza/.local/lib/python3.8/site-packages/numpy/core/include -I../ -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/signal.cpp.o -c /home/beyza/least_square/least_square_identification/src/signal.cpp",
+  "file": "/home/beyza/least_square/least_square_identification/src/signal.cpp"
 },
 
 {
-  "directory": "/home/bcd/programming/least_square_identification/build",
-  "command": "/usr/bin/g++   -I../src -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -I../ -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/read_test.cpp.o -c /home/bcd/programming/least_square_identification/test/read_test.cpp",
-  "file": "/home/bcd/programming/least_square_identification/test/read_test.cpp"
+  "directory": "/home/beyza/least_square/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../src -I../include -I/usr/include/python3.8 -I/home/beyza/.local/lib/python3.8/site-packages/numpy/core/include -I../ -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/read_test.cpp.o -c /home/beyza/least_square/least_square_identification/test/read_test.cpp",
+  "file": "/home/beyza/least_square/least_square_identification/test/read_test.cpp"
 }
 ]

@@ -1,4 +1,4 @@
-# Install script for directory: /home/bcd/programming/least_square_identification/src
+# Install script for directory: /home/beyza/least_square/least_square_identification/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

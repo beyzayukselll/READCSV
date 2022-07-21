@@ -29,7 +29,7 @@ TEST_CASE_METHOD(LeastSquareTestFixture, "read test", "[read test]")
 {
 
     Data data;
-    data.setFile("/home/kose/programming/least_square_identification/data/leastSquare_y_v5_500interval_24062022.csv");
+    data.setFile("../../data/leastSquare_y_v5_500interval_24062022.csv");
     data.dataRead();
     Eigen::VectorXd torque = data.getTorque();
     Eigen::VectorXd velocity = data.getVelocity();

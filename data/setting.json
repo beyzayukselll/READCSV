@@ -1,0 +1,8 @@
+{
+  "signal": {
+    "maxTorque": 100,
+    "minTorque": 30,
+    "pulseNumber": 5,
+    "duration": 200
+  }
+}

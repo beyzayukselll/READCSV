@@ -63,11 +63,11 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/home/bcd/programming/least_square_identification/src"
+					"path" : "/home/beyza/least_square/least_square_identification/src"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/bcd/programming/least_square_identification/include"
+					"path" : "/home/beyza/least_square/least_square_identification/include"
 				},
 				{
 					"backtrace" : 2,
@@ -75,11 +75,11 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include"
+					"path" : "/home/beyza/.local/lib/python3.8/site-packages/numpy/core/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/home/bcd/programming/least_square_identification"
+					"path" : "/home/beyza/least_square/least_square_identification"
 				},
 				{
 					"backtrace" : 4,

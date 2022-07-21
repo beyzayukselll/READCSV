@@ -59,5 +59,62 @@ void Write::dataWriteNew(Eigen::VectorXd leastSquareResult, std::string fileName
     // Add the new node to the root
     root.add_child("leastSquareResults", least_square_node);
     
-    pt::write_json("/home/bcd/programming/least_square_identification/data/write.json", root);
+    pt::write_json("/home/beyza/least_square/least_square_identification/data/write.json", root);
+
 }
+
+void Write:: write_csv (std::string filename, std::string colname,  Eigen::VectorXd vals){
+    // Make a CSV file with one column of integer values
+    // filename - the name of the file
+    // colname - the name of the one and only column
+    // vals - an integer vector of values
+    
+    // Create an output filestream object
+    std::ofstream myFile(filename);
+    
+    // Send the column name to the stream
+    myFile << colname << "\n";
+    
+    // Send data to the stream
+    for(int i = 0; i < vals.size(); ++i)
+    {
+        myFile << vals(i) << "\t\n";
+    }
+    
+    // Close the file
+    myFile.close();
+}
+
+void Write::write_csv_col(std::string filename, std::vector<std::pair<std::string, std::vector<double>>> dataset){
+    // Make a CSV file with one or more columns of integer values
+    // Each column of data is represented by the pair <column name, column data>
+    //   as std::pair<std::string, std::vector<int>>
+    // The dataset is represented as a vector of these columns
+    // Note that all columns should be the same size
+    
+    // Create an output filestream object
+    std::ofstream myFile(filename);
+    
+    // Send column names to the stream
+    for(int j = 0; j < dataset.size(); ++j)
+    {
+        myFile << dataset.at(j).first;
+        if(j != dataset.size() - 1) myFile << "\t"; // No comma at end of line
+    }
+    myFile << "\n";
+    
+    // Send data to the stream
+    for(int i = 0; i < dataset.at(0).second.size(); ++i)
+    {
+        for(int j = 0; j < dataset.size(); ++j)
+        {
+            myFile << dataset.at(j).second.at(i);
+            if(j != dataset.size() - 1) myFile << "\t"; // No comma at end of line
+        }
+        myFile << "\n";
+    }
+    
+    // Close the file
+    myFile.close();
+};
+

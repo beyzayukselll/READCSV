@@ -12,6 +12,13 @@
 #include "Write.h"
 #include "signal.h"
 #include "read.h"
+#include<Eigen/StdVector>
+#include<cstdlib>
+#include <unistd.h>
+#include <stdio.h>
+#include <iostream>
+
+
 // int functionExampleShallowCopy (LeastSquareID &myparameter )
 //  {
 //      Data data;
@@ -27,16 +34,18 @@
 //  }
 int main()
 {
-    // Data data;
-    // data.setFile("/home/bcd/programming/least_square_identification/data/leastSquare_y_v5_500interval_24062022.csv");
-    // data.dataRead();
-    // Eigen::VectorXd torque = data.getTorque();
-    // Eigen::VectorXd velocity = data.getVelocity();
+    Data data;
+    data.setFile("../../data/leastSquare_y_v5_500interval_24062022.csv");
+    data.dataRead();
+    Eigen::VectorXd torque = data.getTorque();
+    Eigen::VectorXd velocity = data.getVelocity();
 
-    // LeastSquareID ls(torque, velocity);
-    // ls.getInfo();
+    LeastSquareID ls(torque, velocity);
+     std::cout<<torque<<std::endl;
 
-    // const Eigen::VectorXd &myr = ls.getCalculationResult();
+  //  ls.getInfo();
+
+    //const Eigen::VectorXd &myr = ls.getCalculationResult();
 
     // int nAxis = 3;
     // std::vector<LeastSquareID *> allAxis;// =new std::vector<LeastSquareID *>();
@@ -53,17 +62,14 @@ int main()
     std::vector<double> d;
 
     Read read;
-    std::string fileName = "/home/bcd/programming/least_square_identification/data/file.json";
+   
+    
+    std::string fileName =   "../../data/setting.json";
     read.readJson(fileName);
     d = read.d;
-    std::vector <std::string> inputName = read.inputName;
-    // Write write;
-    // std::string fileName = "/home/bcd/programming/least_square_identification/data/test.json";
-    // std::string fileName1 = "/home/bcd/programming/least_square_identification/data/write.json";
-
-    // write.dataWrite(myr,fileName);
-    // write.dataWriteNew(myr, fileName1);
-
+    
+    Write write;
+   
     Signal signal;
   
    
@@ -74,11 +80,32 @@ int main()
 
     signal.setTorqueInput();
 
-    std::cout << signal.torqueInput << std::endl;
-    signal.plotTorqueInput();
-  
-    
-  
 
+  
+    write.write_csv("../../data/torqueInput.csv", "torqueInput", signal.torqueInput);
+    
+//    std::vector<double> vec(torque.data(), torque.size());
+
+    std::vector<double> torquee;
+    torquee.resize(torque.size());
+    std::vector<double> velocityy;
+    velocityy.resize(torque.size());
+
+     for (int i=0;i<torque.size(); i++){
+       torquee[i]= torque(i);
+        velocityy[i]=velocity(i);
+        std::cout<<torquee[i]<<std::endl;
+     }
+     
+   
+   std::vector<std::pair<std::string, std::vector<double>>> vals = {{"Actual Torque", torquee}, {"Actual Velocity", velocityy}};
+    
+
+     
+    write.write_csv_col("../../data/ActualValues.csv",vals);
+
+
+
+    signal.plotTorqueInput();
     return 0;
 }

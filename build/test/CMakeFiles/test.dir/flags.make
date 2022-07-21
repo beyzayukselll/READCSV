@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/bcd/programming/least_square_identification/src -I/home/bcd/programming/least_square_identification/include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -I/home/bcd/programming/least_square_identification -isystem /usr/local/include/eigen3 
+CXX_INCLUDES = -I/home/beyza/least_square/least_square_identification/src -I/home/beyza/least_square/least_square_identification/include -I/usr/include/python3.8 -I/home/beyza/.local/lib/python3.8/site-packages/numpy/core/include -I/home/beyza/least_square/least_square_identification -isystem /usr/local/include/eigen3 
 
