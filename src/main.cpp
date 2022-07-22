@@ -41,34 +41,17 @@ int main()
     Eigen::VectorXd velocity = data.getVelocity();
 
     LeastSquareID ls(torque, velocity);
-     std::cout<<torque<<std::endl;
-
-  //  ls.getInfo();
-
-    //const Eigen::VectorXd &myr = ls.getCalculationResult();
-
-    // int nAxis = 3;
-    // std::vector<LeastSquareID *> allAxis;// =new std::vector<LeastSquareID *>();
-    // for (int i=0;i<nAxis;++i)
-    // {
-    //     LeastSquareID *curAxisId = new LeastSquareID(torque,velocity);
-    //     allAxis.push_back(curAxisId);
-    //     functionExampleShallowCopy(*curAxisId);
-    //     std::cout << curAxisId->getTorque().operator[](0);
-    //     functionExampleDeepCopy(*curAxisId);
-
-    // }
+   
 
     std::vector<double> d;
 
-    Read read;
-   
+    Read read;   
     
     std::string fileName =   "../../data/setting.json";
     read.readJson(fileName);
     d = read.d;
     
-    Write write;
+    
    
     Signal signal;
   
@@ -80,11 +63,10 @@ int main()
 
     signal.setTorqueInput();
 
-
-  
+    Write write;
+ 
     write.write_csv("../../data/torqueInput.csv", "torqueInput", signal.torqueInput);
     
-//    std::vector<double> vec(torque.data(), torque.size());
 
     std::vector<double> torquee;
     torquee.resize(torque.size());

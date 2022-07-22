@@ -7,20 +7,22 @@ find_package(PythonLibs     3.8     REQUIRED)
 find_package(PythonInterp   3.8     REQUIRED)
 find_package (Eigen3 3.4 REQUIRED NO_MODULE)
 
-include_directories(${CMAKE_SOURCE_DIR}/src
+include_directories(${CMAKE_SOURCE_DIR}
                     ${CMAKE_SOURCE_DIR}/include
-                    ${Python3_INCLUDE_DIRS} 
-                    ${Python3_NumPy_INCLUDE_DIRS} 
+                    ${Python3_INCLUDE_DIRS} include
+                    ${Python3_NumPy_INCLUDE_DIRS} include
                     /usr/include/python3.8
                     )
 
-file(GLOB  APP_TEST_SOURCES "${CMAKE_SOURCE_DIR}/src/*.cpp")
+file(GLOB  APP_SOURCES "${CMAKE_SOURCE_DIR}/src/*.cpp")
 file(GLOB  TEST_SOURCES "read_test.cpp")
-list(APPEND      APP_TEST_SOURCES  ${TEST_SOURCES})
-list(REMOVE_ITEM APP_TEST_SOURCES "${CMAKE_SOURCE_DIR}/src/main.cpp")
+list(APPEND      APP_SOURCES  ${TEST_SOURCES})
+list(REMOVE_ITEM APP_SOURCES "${CMAKE_SOURCE_DIR}/src/main.cpp")
 
-add_executable(${PROJECT_NAME} ${APP_HEADER} ${APP_TEST_SOURCES})
-target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR})                                                
+
+add_executable(test ${APP_SOURCES})
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR})
+                                                   
 
 target_link_libraries(test ${Python3_LIBRARIES})
 target_link_libraries (test Eigen3::Eigen)

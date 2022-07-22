@@ -8,8 +8,11 @@
 #include <complex>
 #include <cmath>
 #include <Eigen/SVD>
-#include "LeastSquareID.h"
-#include "Data.h"
+#include "../src/LeastSquareID.h"
+#include "../src/Data.h"
+#include "../src/read.h"
+#include "../src/signal.h"
+#include "../src/Write.h"
 
 class LeastSquareTestFixture
 {
@@ -24,6 +27,7 @@ public:
                                        0.001945861419,
                                        0.5987435423629,
                                        -0.575497714017};
+    
 };
 TEST_CASE_METHOD(LeastSquareTestFixture, "read test", "[read test]")
 {
@@ -55,11 +59,11 @@ TEST_CASE_METHOD(LeastSquareTestFixture, "read test", "[read test]")
 
     REQUIRE(torque.size() == velocity.size());
 }
-TEST_CASE_METHOD(LeastSquareTestFixture, "square result test", "[read test]")
+TEST_CASE_METHOD(LeastSquareTestFixture, "LeastSquare result test", "[LeastSquare test]")
 {
 
     Data data;
-    data.setFile("/home/bcd/programming/least_square_identification/data/leastSquare_y_v5_500interval_24062022.csv");
+    data.setFile("../../data/leastSquare_y_v5_500interval_24062022.csv");
     data.dataRead();
     Eigen::VectorXd torque = data.getTorque();
     Eigen::VectorXd velocity = data.getVelocity();
@@ -81,4 +85,17 @@ TEST_CASE_METHOD(LeastSquareTestFixture, "square result test", "[read test]")
             }
         }
     }
+}
+TEST_CASE_METHOD(LeastSquareTestFixture, "Signal test","[Signal Test]"){
+
+    
+
+    Read read;   
+    
+    std::string fileName =   "../../data/setting.json";
+    std::vector<double> d;
+    read.readJson(fileName);
+    d = read.d;
+
+    
 }
