@@ -2,6 +2,7 @@
 using json = nlohmann::json;
 namespace pt = boost::property_tree;
 
+
 void Read::readJson(std::string fileName)
 {
     pt::ptree root;
@@ -19,12 +20,12 @@ void Read::readJson(std::string fileName)
 
     // int d;
     
-    d.resize(s.size());
+    result.resize(s.size());
 
     for (int i=0; i<s.size(); ++i)
     {
-        d[i] = std::stod(s[i]);
-        std::cout << d[i] << std::endl;
+        result[i] = std::stod(s[i]);
+        std::cout << result[i] << std::endl;
     }
     
     

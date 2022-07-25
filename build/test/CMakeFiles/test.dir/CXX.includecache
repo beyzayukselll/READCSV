@@ -520,31 +520,15 @@ iterator
 vector
 -
 
-/home/beyza/least_square/least_square_identification/src/LeastSquareID.h
+/home/beyza/least_square/least_square_identification/src/leastsquareıd.h
 iostream
 -
 Eigen/Dense
 -
 
-/home/beyza/least_square/least_square_identification/src/Write.h
-iostream
--
-Eigen/Dense
--
-iterator
--
-fstream
--
-../include/json.hpp
-/home/beyza/least_square/least_square_identification/include/json.hpp
-boost/property_tree/json_parser.hpp
--
-boost/property_tree/ptree.hpp
--
-fstream
--
-string
--
+/home/beyza/least_square/least_square_identification/src/read.cpp
+read.h
+/home/beyza/least_square/least_square_identification/src/read.h
 
 /home/beyza/least_square/least_square_identification/src/read.h
 iostream
@@ -552,6 +536,10 @@ iostream
 string.h
 -
 string
+-
+complex
+-
+valarray
 -
 iterator
 -
@@ -565,6 +553,10 @@ boost/property_tree/json_parser.hpp
 -
 boost/property_tree/ptree.hpp
 -
+Eigen/Dense
+-
+boost/algorithm/string.hpp
+-
 
 /home/beyza/least_square/least_square_identification/src/signal.h
 iostream
@@ -576,6 +568,26 @@ matplotlibcpp.h
 vector
 -
 algorithm
+-
+
+/home/beyza/least_square/least_square_identification/src/write.h
+iostream
+-
+Eigen/Dense
+-
+iterator
+-
+fstream
+-
+../include/json.hpp
+/home/beyza/least_square/least_square_identification/include/json.hpp
+boost/property_tree/json_parser.hpp
+-
+boost/property_tree/ptree.hpp
+-
+fstream
+-
+string
 -
 
 /home/beyza/least_square/least_square_identification/test/catch.hpp
@@ -1191,16 +1203,16 @@ cmath
 -
 Eigen/SVD
 -
-../src/LeastSquareID.h
-/home/beyza/least_square/least_square_identification/src/LeastSquareID.h
+../src/leastsquareıd.h
+/home/beyza/least_square/least_square_identification/src/leastsquareıd.h
 ../src/Data.h
 /home/beyza/least_square/least_square_identification/src/Data.h
 ../src/read.h
 /home/beyza/least_square/least_square_identification/src/read.h
 ../src/signal.h
 /home/beyza/least_square/least_square_identification/src/signal.h
-../src/Write.h
-/home/beyza/least_square/least_square_identification/src/Write.h
+../src/write.h
+/home/beyza/least_square/least_square_identification/src/write.h
 
 /usr/include/python3.8/Python.h
 patchlevel.h

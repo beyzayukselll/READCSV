@@ -8,25 +8,26 @@
 #include <complex>
 #include <cmath>
 #include <Eigen/SVD>
-#include "../src/LeastSquareID.h"
+#include "../src/leastsquareıd.h"
 #include "../src/Data.h"
 #include "../src/read.h"
 #include "../src/signal.h"
-#include "../src/Write.h"
+#include "../src/write.h"
 
 class LeastSquareTestFixture
 {
 public:
     const double ROOT_TOLERANCE = 1.E-5;
-    std::string ResultName[4] = {"inertia",
-                                 "ViscousDamping",
-                                 "CoulombTorquePositive",
-                                 "CoulombTorqueNegativ"};
+    std::string ResultName[4] = {"Inertia",
+                                 "Viscous Damping",
+                                 "Coulomb Torque Positive",
+                                 "Coulomb Torque Negative"};
 
     const double realResultValue[4] = {0.000450505952,
                                        0.001945861419,
                                        0.5987435423629,
                                        -0.575497714017};
+    std::string SignalProporties[4]={"maxTorque","minTorque","pulseNumber","duration"};
     
 };
 TEST_CASE_METHOD(LeastSquareTestFixture, "read test", "[read test]")
@@ -57,6 +58,7 @@ TEST_CASE_METHOD(LeastSquareTestFixture, "read test", "[read test]")
         }
     }
 
+
     REQUIRE(torque.size() == velocity.size());
 }
 TEST_CASE_METHOD(LeastSquareTestFixture, "LeastSquare result test", "[LeastSquare test]")
@@ -86,16 +88,56 @@ TEST_CASE_METHOD(LeastSquareTestFixture, "LeastSquare result test", "[LeastSquar
         }
     }
 }
-TEST_CASE_METHOD(LeastSquareTestFixture, "Signal test","[Signal Test]"){
+TEST_CASE_METHOD(LeastSquareTestFixture, "Setting Signal test","[Signal Test]"){
 
     
 
     Read read;   
-    
     std::string fileName =   "../../data/setting.json";
-    std::vector<double> d;
     read.readJson(fileName);
-    d = read.d;
-
+        
+  
+   
+    Signal signal;
+    signal.maxTorque = read.result[0];
+    signal.minTorque = read.result[1];
+    signal.pulseNumber = read.result[2];
+    signal.duration = read.result[3];
     
+    signal.setTorqueInput();
+   
+    SECTION("Signal Setting Test")
+    {
+        REQUIRE(read.result.size() ==4);
+        for (int i = 0; i < read.result.size(); i++)
+        {
+
+            THEN(SignalProporties[i])
+            {
+               REQUIRE(read.result[i] != NAN);
+                                
+            }
+
+        }
+        CHECK (signal.torqueInput.size()>0 );
+
+        Eigen::VectorXd absTorqueInput;
+        absTorqueInput.resize(signal.torqueInput.size());
+       
+       THEN("Min Torque Test ") {
+        for (int i=0; i<signal.torqueInput.size();i++){
+         
+         if (signal.torqueInput(i)>0 ){    
+            continue;
+             signal.torqueInput(i)=absTorqueInput(i);
+              // std::cout<<absTorqueInput;   
+             CHECK_FALSE(absTorqueInput.minCoeff()==read.result[1]);        
+         }
+      
+        }
+      }
+        THEN("Max Torque Test"){
+        CHECK(signal.torqueInput.maxCoeff()==read.result[0] );
+        }
+    }
 }

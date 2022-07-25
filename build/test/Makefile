@@ -152,59 +152,32 @@ __/src/Data.cpp.s:
 	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/Data.cpp.s
 .PHONY : __/src/Data.cpp.s
 
-__/src/LeastSquareID.o: __/src/LeastSquareID.cpp.o
+__/src/leastsquareıd.o: __/src/leastsquareıd.cpp.o
 
-.PHONY : __/src/LeastSquareID.o
-
-# target to build an object file
-__/src/LeastSquareID.cpp.o:
-	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/LeastSquareID.cpp.o
-.PHONY : __/src/LeastSquareID.cpp.o
-
-__/src/LeastSquareID.i: __/src/LeastSquareID.cpp.i
-
-.PHONY : __/src/LeastSquareID.i
-
-# target to preprocess a source file
-__/src/LeastSquareID.cpp.i:
-	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/LeastSquareID.cpp.i
-.PHONY : __/src/LeastSquareID.cpp.i
-
-__/src/LeastSquareID.s: __/src/LeastSquareID.cpp.s
-
-.PHONY : __/src/LeastSquareID.s
-
-# target to generate assembly for a file
-__/src/LeastSquareID.cpp.s:
-	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/LeastSquareID.cpp.s
-.PHONY : __/src/LeastSquareID.cpp.s
-
-__/src/Write.o: __/src/Write.cpp.o
-
-.PHONY : __/src/Write.o
+.PHONY : __/src/leastsquareıd.o
 
 # target to build an object file
-__/src/Write.cpp.o:
-	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/Write.cpp.o
-.PHONY : __/src/Write.cpp.o
+__/src/leastsquareıd.cpp.o:
+	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/leastsquareıd.cpp.o
+.PHONY : __/src/leastsquareıd.cpp.o
 
-__/src/Write.i: __/src/Write.cpp.i
+__/src/leastsquareıd.i: __/src/leastsquareıd.cpp.i
 
-.PHONY : __/src/Write.i
+.PHONY : __/src/leastsquareıd.i
 
 # target to preprocess a source file
-__/src/Write.cpp.i:
-	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/Write.cpp.i
-.PHONY : __/src/Write.cpp.i
+__/src/leastsquareıd.cpp.i:
+	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/leastsquareıd.cpp.i
+.PHONY : __/src/leastsquareıd.cpp.i
 
-__/src/Write.s: __/src/Write.cpp.s
+__/src/leastsquareıd.s: __/src/leastsquareıd.cpp.s
 
-.PHONY : __/src/Write.s
+.PHONY : __/src/leastsquareıd.s
 
 # target to generate assembly for a file
-__/src/Write.cpp.s:
-	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/Write.cpp.s
-.PHONY : __/src/Write.cpp.s
+__/src/leastsquareıd.cpp.s:
+	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/leastsquareıd.cpp.s
+.PHONY : __/src/leastsquareıd.cpp.s
 
 __/src/read.o: __/src/read.cpp.o
 
@@ -260,6 +233,33 @@ __/src/signal.cpp.s:
 	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/signal.cpp.s
 .PHONY : __/src/signal.cpp.s
 
+__/src/write.o: __/src/write.cpp.o
+
+.PHONY : __/src/write.o
+
+# target to build an object file
+__/src/write.cpp.o:
+	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/write.cpp.o
+.PHONY : __/src/write.cpp.o
+
+__/src/write.i: __/src/write.cpp.i
+
+.PHONY : __/src/write.i
+
+# target to preprocess a source file
+__/src/write.cpp.i:
+	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/write.cpp.i
+.PHONY : __/src/write.cpp.i
+
+__/src/write.s: __/src/write.cpp.s
+
+.PHONY : __/src/write.s
+
+# target to generate assembly for a file
+__/src/write.cpp.s:
+	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/write.cpp.s
+.PHONY : __/src/write.cpp.s
+
 read_test.o: read_test.cpp.o
 
 .PHONY : read_test.o
@@ -299,18 +299,18 @@ help:
 	@echo "... __/src/Data.o"
 	@echo "... __/src/Data.i"
 	@echo "... __/src/Data.s"
-	@echo "... __/src/LeastSquareID.o"
-	@echo "... __/src/LeastSquareID.i"
-	@echo "... __/src/LeastSquareID.s"
-	@echo "... __/src/Write.o"
-	@echo "... __/src/Write.i"
-	@echo "... __/src/Write.s"
+	@echo "... __/src/leastsquareıd.o"
+	@echo "... __/src/leastsquareıd.i"
+	@echo "... __/src/leastsquareıd.s"
 	@echo "... __/src/read.o"
 	@echo "... __/src/read.i"
 	@echo "... __/src/read.s"
 	@echo "... __/src/signal.o"
 	@echo "... __/src/signal.i"
 	@echo "... __/src/signal.s"
+	@echo "... __/src/write.o"
+	@echo "... __/src/write.i"
+	@echo "... __/src/write.s"
 	@echo "... read_test.o"
 	@echo "... read_test.i"
 	@echo "... read_test.s"
