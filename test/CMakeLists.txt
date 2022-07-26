@@ -6,6 +6,7 @@ COMPONENTS Interpreter Development NumPy)
 find_package(PythonLibs     3.8     REQUIRED)
 find_package(PythonInterp   3.8     REQUIRED)
 find_package (Eigen3 3.4 REQUIRED NO_MODULE)
+# find_package(Catch2 CONFIG REQUIRED)
 
 include_directories(${CMAKE_SOURCE_DIR}
                     ${CMAKE_SOURCE_DIR}/include
@@ -16,9 +17,11 @@ include_directories(${CMAKE_SOURCE_DIR}
 
 file(GLOB  APP_SOURCES "${CMAKE_SOURCE_DIR}/src/*.cpp")
 file(GLOB  TEST_SOURCES "read_test.cpp")
+# file(GLOB TEST_SOURCES "*.cpp")
+
+
 list(APPEND      APP_SOURCES  ${TEST_SOURCES})
 list(REMOVE_ITEM APP_SOURCES "${CMAKE_SOURCE_DIR}/src/main.cpp")
-
 
 add_executable(test ${APP_SOURCES})
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR})

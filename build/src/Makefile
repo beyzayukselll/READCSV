@@ -152,59 +152,32 @@ Data.cpp.s:
 	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/Data.cpp.s
 .PHONY : Data.cpp.s
 
-LeastSquareID.o: LeastSquareID.cpp.o
+leastsquareid.o: leastsquareid.cpp.o
 
-.PHONY : LeastSquareID.o
-
-# target to build an object file
-LeastSquareID.cpp.o:
-	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/LeastSquareID.cpp.o
-.PHONY : LeastSquareID.cpp.o
-
-LeastSquareID.i: LeastSquareID.cpp.i
-
-.PHONY : LeastSquareID.i
-
-# target to preprocess a source file
-LeastSquareID.cpp.i:
-	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/LeastSquareID.cpp.i
-.PHONY : LeastSquareID.cpp.i
-
-LeastSquareID.s: LeastSquareID.cpp.s
-
-.PHONY : LeastSquareID.s
-
-# target to generate assembly for a file
-LeastSquareID.cpp.s:
-	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/LeastSquareID.cpp.s
-.PHONY : LeastSquareID.cpp.s
-
-Write.o: Write.cpp.o
-
-.PHONY : Write.o
+.PHONY : leastsquareid.o
 
 # target to build an object file
-Write.cpp.o:
-	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/Write.cpp.o
-.PHONY : Write.cpp.o
+leastsquareid.cpp.o:
+	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/leastsquareid.cpp.o
+.PHONY : leastsquareid.cpp.o
 
-Write.i: Write.cpp.i
+leastsquareid.i: leastsquareid.cpp.i
 
-.PHONY : Write.i
+.PHONY : leastsquareid.i
 
 # target to preprocess a source file
-Write.cpp.i:
-	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/Write.cpp.i
-.PHONY : Write.cpp.i
+leastsquareid.cpp.i:
+	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/leastsquareid.cpp.i
+.PHONY : leastsquareid.cpp.i
 
-Write.s: Write.cpp.s
+leastsquareid.s: leastsquareid.cpp.s
 
-.PHONY : Write.s
+.PHONY : leastsquareid.s
 
 # target to generate assembly for a file
-Write.cpp.s:
-	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/Write.cpp.s
-.PHONY : Write.cpp.s
+leastsquareid.cpp.s:
+	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/leastsquareid.cpp.s
+.PHONY : leastsquareid.cpp.s
 
 main.o: main.cpp.o
 
@@ -287,6 +260,33 @@ signal.cpp.s:
 	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/signal.cpp.s
 .PHONY : signal.cpp.s
 
+write.o: write.cpp.o
+
+.PHONY : write.o
+
+# target to build an object file
+write.cpp.o:
+	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/write.cpp.o
+.PHONY : write.cpp.o
+
+write.i: write.cpp.i
+
+.PHONY : write.i
+
+# target to preprocess a source file
+write.cpp.i:
+	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/write.cpp.i
+.PHONY : write.cpp.i
+
+write.s: write.cpp.s
+
+.PHONY : write.s
+
+# target to generate assembly for a file
+write.cpp.s:
+	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/write.cpp.s
+.PHONY : write.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -299,12 +299,9 @@ help:
 	@echo "... Data.o"
 	@echo "... Data.i"
 	@echo "... Data.s"
-	@echo "... LeastSquareID.o"
-	@echo "... LeastSquareID.i"
-	@echo "... LeastSquareID.s"
-	@echo "... Write.o"
-	@echo "... Write.i"
-	@echo "... Write.s"
+	@echo "... leastsquareid.o"
+	@echo "... leastsquareid.i"
+	@echo "... leastsquareid.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -314,6 +311,9 @@ help:
 	@echo "... signal.o"
 	@echo "... signal.i"
 	@echo "... signal.s"
+	@echo "... write.o"
+	@echo "... write.i"
+	@echo "... write.s"
 .PHONY : help
 
 
