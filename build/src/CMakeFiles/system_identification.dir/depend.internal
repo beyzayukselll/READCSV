@@ -253,9 +253,9 @@ src/CMakeFiles/system_identification.dir/Data.cpp.o
  /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
  /usr/local/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
  /usr/local/include/eigen3/Eigen/src/plugins/ReshapedMethods.h
-src/CMakeFiles/system_identification.dir/leastsquareıd.cpp.o
- /home/beyza/least_square/least_square_identification/src/leastsquareıd.cpp
- /home/beyza/least_square/least_square_identification/src/leastsquareıd.h
+src/CMakeFiles/system_identification.dir/leastsquareid.cpp.o
+ /home/beyza/least_square/least_square_identification/src/leastsquareid.cpp
+ /home/beyza/least_square/least_square_identification/src/leastsquareid.h
  /usr/local/include/eigen3/Eigen/Cholesky
  /usr/local/include/eigen3/Eigen/Core
  /usr/local/include/eigen3/Eigen/Dense
@@ -524,7 +524,7 @@ src/CMakeFiles/system_identification.dir/main.cpp.o
  /home/beyza/.local/lib/python3.8/site-packages/numpy/core/include/numpy/utils.h
  /home/beyza/least_square/least_square_identification/include/json.hpp
  /home/beyza/least_square/least_square_identification/src/Data.h
- /home/beyza/least_square/least_square_identification/src/leastsquareıd.h
+ /home/beyza/least_square/least_square_identification/src/leastsquareid.h
  /home/beyza/least_square/least_square_identification/src/main.cpp
  /home/beyza/least_square/least_square_identification/src/read.h
  /home/beyza/least_square/least_square_identification/src/signal.h

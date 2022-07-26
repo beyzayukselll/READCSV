@@ -8,7 +8,7 @@
 #include <complex>
 #include <cmath>
 #include <Eigen/SVD>
-#include "../src/leastsquareıd.h"
+#include "../src/leastsquareid.h"
 #include "../src/Data.h"
 #include "../src/read.h"
 #include "../src/signal.h"
@@ -115,7 +115,7 @@ TEST_CASE_METHOD(LeastSquareTestFixture, "Setting Signal test","[Signal Test]"){
             THEN(SignalProporties[i])
             {
                REQUIRE(read.result[i] != NAN);
-                                
+                
             }
 
         }
@@ -129,9 +129,8 @@ TEST_CASE_METHOD(LeastSquareTestFixture, "Setting Signal test","[Signal Test]"){
          
          if (signal.torqueInput(i)>0 ){    
             continue;
-             signal.torqueInput(i)=absTorqueInput(i);
-              // std::cout<<absTorqueInput;   
-             CHECK_FALSE(absTorqueInput.minCoeff()==read.result[1]);        
+             signal.torqueInput(i)=absTorqueInput(i);         
+             CHECK(absTorqueInput.minCoeff()==read.result[1]);        
          }
       
         }
@@ -139,5 +138,7 @@ TEST_CASE_METHOD(LeastSquareTestFixture, "Setting Signal test","[Signal Test]"){
         THEN("Max Torque Test"){
         CHECK(signal.torqueInput.maxCoeff()==read.result[0] );
         }
+         
+     
     }
 }

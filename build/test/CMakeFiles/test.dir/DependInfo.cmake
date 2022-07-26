@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/beyza/least_square/least_square_identification/src/Data.cpp" "/home/beyza/least_square/least_square_identification/build/test/CMakeFiles/test.dir/__/src/Data.cpp.o"
-  "/home/beyza/least_square/least_square_identification/src/leastsquareıd.cpp" "/home/beyza/least_square/least_square_identification/build/test/CMakeFiles/test.dir/__/src/leastsquareıd.cpp.o"
+  "/home/beyza/least_square/least_square_identification/src/leastsquareid.cpp" "/home/beyza/least_square/least_square_identification/build/test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.o"
   "/home/beyza/least_square/least_square_identification/src/read.cpp" "/home/beyza/least_square/least_square_identification/build/test/CMakeFiles/test.dir/__/src/read.cpp.o"
   "/home/beyza/least_square/least_square_identification/src/signal.cpp" "/home/beyza/least_square/least_square_identification/build/test/CMakeFiles/test.dir/__/src/signal.cpp.o"
   "/home/beyza/least_square/least_square_identification/src/write.cpp" "/home/beyza/least_square/least_square_identification/build/test/CMakeFiles/test.dir/__/src/write.cpp.o"

@@ -18,6 +18,7 @@ public:
     double minTorque;
     int pulseNumber;
     double duration;
+    
 
     void plotTorqueInput();
 

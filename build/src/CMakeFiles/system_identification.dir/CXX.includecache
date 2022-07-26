@@ -520,7 +520,7 @@ iterator
 vector
 -
 
-/home/beyza/least_square/least_square_identification/src/leastsquareıd.h
+/home/beyza/least_square/least_square_identification/src/leastsquareid.h
 iostream
 -
 Eigen/Dense
@@ -543,8 +543,8 @@ cmath
 -
 Eigen/SVD
 -
-leastsquareıd.h
-/home/beyza/least_square/least_square_identification/src/leastsquareıd.h
+leastsquareid.h
+/home/beyza/least_square/least_square_identification/src/leastsquareid.h
 Data.h
 /home/beyza/least_square/least_square_identification/src/Data.h
 vector
@@ -565,10 +565,6 @@ stdio.h
 -
 iostream
 -
-
-/home/beyza/least_square/least_square_identification/src/read.cpp
-read.h
-/home/beyza/least_square/least_square_identification/src/read.h
 
 /home/beyza/least_square/least_square_identification/src/read.h
 iostream

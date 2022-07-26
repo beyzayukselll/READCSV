@@ -152,32 +152,32 @@ Data.cpp.s:
 	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/Data.cpp.s
 .PHONY : Data.cpp.s
 
-leastsquareıd.o: leastsquareıd.cpp.o
+leastsquareid.o: leastsquareid.cpp.o
 
-.PHONY : leastsquareıd.o
+.PHONY : leastsquareid.o
 
 # target to build an object file
-leastsquareıd.cpp.o:
-	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/leastsquareıd.cpp.o
-.PHONY : leastsquareıd.cpp.o
+leastsquareid.cpp.o:
+	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/leastsquareid.cpp.o
+.PHONY : leastsquareid.cpp.o
 
-leastsquareıd.i: leastsquareıd.cpp.i
+leastsquareid.i: leastsquareid.cpp.i
 
-.PHONY : leastsquareıd.i
+.PHONY : leastsquareid.i
 
 # target to preprocess a source file
-leastsquareıd.cpp.i:
-	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/leastsquareıd.cpp.i
-.PHONY : leastsquareıd.cpp.i
+leastsquareid.cpp.i:
+	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/leastsquareid.cpp.i
+.PHONY : leastsquareid.cpp.i
 
-leastsquareıd.s: leastsquareıd.cpp.s
+leastsquareid.s: leastsquareid.cpp.s
 
-.PHONY : leastsquareıd.s
+.PHONY : leastsquareid.s
 
 # target to generate assembly for a file
-leastsquareıd.cpp.s:
-	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/leastsquareıd.cpp.s
-.PHONY : leastsquareıd.cpp.s
+leastsquareid.cpp.s:
+	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/leastsquareid.cpp.s
+.PHONY : leastsquareid.cpp.s
 
 main.o: main.cpp.o
 
@@ -299,9 +299,9 @@ help:
 	@echo "... Data.o"
 	@echo "... Data.i"
 	@echo "... Data.s"
-	@echo "... leastsquareıd.o"
-	@echo "... leastsquareıd.i"
-	@echo "... leastsquareıd.s"
+	@echo "... leastsquareid.o"
+	@echo "... leastsquareid.i"
+	@echo "... leastsquareid.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

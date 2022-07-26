@@ -152,32 +152,32 @@ __/src/Data.cpp.s:
 	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/Data.cpp.s
 .PHONY : __/src/Data.cpp.s
 
-__/src/leastsquareıd.o: __/src/leastsquareıd.cpp.o
+__/src/leastsquareid.o: __/src/leastsquareid.cpp.o
 
-.PHONY : __/src/leastsquareıd.o
+.PHONY : __/src/leastsquareid.o
 
 # target to build an object file
-__/src/leastsquareıd.cpp.o:
-	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/leastsquareıd.cpp.o
-.PHONY : __/src/leastsquareıd.cpp.o
+__/src/leastsquareid.cpp.o:
+	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.o
+.PHONY : __/src/leastsquareid.cpp.o
 
-__/src/leastsquareıd.i: __/src/leastsquareıd.cpp.i
+__/src/leastsquareid.i: __/src/leastsquareid.cpp.i
 
-.PHONY : __/src/leastsquareıd.i
+.PHONY : __/src/leastsquareid.i
 
 # target to preprocess a source file
-__/src/leastsquareıd.cpp.i:
-	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/leastsquareıd.cpp.i
-.PHONY : __/src/leastsquareıd.cpp.i
+__/src/leastsquareid.cpp.i:
+	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.i
+.PHONY : __/src/leastsquareid.cpp.i
 
-__/src/leastsquareıd.s: __/src/leastsquareıd.cpp.s
+__/src/leastsquareid.s: __/src/leastsquareid.cpp.s
 
-.PHONY : __/src/leastsquareıd.s
+.PHONY : __/src/leastsquareid.s
 
 # target to generate assembly for a file
-__/src/leastsquareıd.cpp.s:
-	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/leastsquareıd.cpp.s
-.PHONY : __/src/leastsquareıd.cpp.s
+__/src/leastsquareid.cpp.s:
+	cd /home/beyza/least_square/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.s
+.PHONY : __/src/leastsquareid.cpp.s
 
 __/src/read.o: __/src/read.cpp.o
 
@@ -299,9 +299,9 @@ help:
 	@echo "... __/src/Data.o"
 	@echo "... __/src/Data.i"
 	@echo "... __/src/Data.s"
-	@echo "... __/src/leastsquareıd.o"
-	@echo "... __/src/leastsquareıd.i"
-	@echo "... __/src/leastsquareıd.s"
+	@echo "... __/src/leastsquareid.o"
+	@echo "... __/src/leastsquareid.i"
+	@echo "... __/src/leastsquareid.s"
 	@echo "... __/src/read.o"
 	@echo "... __/src/read.i"
 	@echo "... __/src/read.s"

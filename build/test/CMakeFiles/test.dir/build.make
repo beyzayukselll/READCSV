@@ -70,18 +70,18 @@ test/CMakeFiles/test.dir/__/src/Data.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/__/src/Data.cpp.s"
 	cd /home/beyza/least_square/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beyza/least_square/least_square_identification/src/Data.cpp -o CMakeFiles/test.dir/__/src/Data.cpp.s
 
-test/CMakeFiles/test.dir/__/src/leastsquareıd.cpp.o: test/CMakeFiles/test.dir/flags.make
-test/CMakeFiles/test.dir/__/src/leastsquareıd.cpp.o: ../src/leastsquareıd.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beyza/least_square/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/test.dir/__/src/leastsquareıd.cpp.o"
-	cd /home/beyza/least_square/least_square_identification/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/__/src/leastsquareıd.cpp.o -c /home/beyza/least_square/least_square_identification/src/leastsquareıd.cpp
+test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.o: test/CMakeFiles/test.dir/flags.make
+test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.o: ../src/leastsquareid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beyza/least_square/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.o"
+	cd /home/beyza/least_square/least_square_identification/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/__/src/leastsquareid.cpp.o -c /home/beyza/least_square/least_square_identification/src/leastsquareid.cpp
 
-test/CMakeFiles/test.dir/__/src/leastsquareıd.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/__/src/leastsquareıd.cpp.i"
-	cd /home/beyza/least_square/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beyza/least_square/least_square_identification/src/leastsquareıd.cpp > CMakeFiles/test.dir/__/src/leastsquareıd.cpp.i
+test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/__/src/leastsquareid.cpp.i"
+	cd /home/beyza/least_square/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beyza/least_square/least_square_identification/src/leastsquareid.cpp > CMakeFiles/test.dir/__/src/leastsquareid.cpp.i
 
-test/CMakeFiles/test.dir/__/src/leastsquareıd.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/__/src/leastsquareıd.cpp.s"
-	cd /home/beyza/least_square/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beyza/least_square/least_square_identification/src/leastsquareıd.cpp -o CMakeFiles/test.dir/__/src/leastsquareıd.cpp.s
+test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/__/src/leastsquareid.cpp.s"
+	cd /home/beyza/least_square/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beyza/least_square/least_square_identification/src/leastsquareid.cpp -o CMakeFiles/test.dir/__/src/leastsquareid.cpp.s
 
 test/CMakeFiles/test.dir/__/src/read.cpp.o: test/CMakeFiles/test.dir/flags.make
 test/CMakeFiles/test.dir/__/src/read.cpp.o: ../src/read.cpp
@@ -138,7 +138,7 @@ test/CMakeFiles/test.dir/read_test.cpp.s: cmake_force
 # Object files for target test
 test_OBJECTS = \
 "CMakeFiles/test.dir/__/src/Data.cpp.o" \
-"CMakeFiles/test.dir/__/src/leastsquareıd.cpp.o" \
+"CMakeFiles/test.dir/__/src/leastsquareid.cpp.o" \
 "CMakeFiles/test.dir/__/src/read.cpp.o" \
 "CMakeFiles/test.dir/__/src/signal.cpp.o" \
 "CMakeFiles/test.dir/__/src/write.cpp.o" \
@@ -148,7 +148,7 @@ test_OBJECTS = \
 test_EXTERNAL_OBJECTS =
 
 test/test: test/CMakeFiles/test.dir/__/src/Data.cpp.o
-test/test: test/CMakeFiles/test.dir/__/src/leastsquareıd.cpp.o
+test/test: test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.o
 test/test: test/CMakeFiles/test.dir/__/src/read.cpp.o
 test/test: test/CMakeFiles/test.dir/__/src/signal.cpp.o
 test/test: test/CMakeFiles/test.dir/__/src/write.cpp.o
