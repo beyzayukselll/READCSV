@@ -11,16 +11,15 @@ void Read::readJson(const std::string & fileName, const std::string & objectName
 
     std::vector<std::string> s;
    
+     //bool roll = root.get<bool>("command");  //read and save the roll no in *roll*
     for (pt::ptree::value_type & v : root.get_child(objectName))
-    {
-        //std::cout << v.first << std::endl;
-        //std::cout << "  " << v.second.data() << std::endl;
+    {        
         s.push_back(v.second.data());
         inputName.push_back(v.second.data());
     }
 
   
-
+    
     result.resize(s.size());
 
     for (int i=0; i<s.size(); ++i)
@@ -28,8 +27,7 @@ void Read::readJson(const std::string & fileName, const std::string & objectName
         result[i] = std::stod(s[i]);
         
     }
+          
     
-   //bool roll = root.get<bool>("start");  //read and save the roll no in *roll*
-    double roll = root.get<double>("start"); 
     
 }

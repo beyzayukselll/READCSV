@@ -29,10 +29,12 @@ int main()
 
     LeastSquareID ls;
   
-    Read read;   
+    Read read;  
+    Read command; 
 
-
-    
+    command.readJson("../../data/setting.json","command");
+    if(command.result[0]==1){
+       
    // const std::string & fileName =   "../../data/setting.json";
     read.readJson("../../data/setting.json","signal");
    
@@ -87,6 +89,7 @@ int main()
 
 
 
-   // signal.plotTorqueInput();
+   signal.plotTorqueInput();
     return 0;
-}
+  }
+ }

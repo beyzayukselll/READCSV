@@ -17,6 +17,7 @@ private:
 public:
     double deadBand;
     void setTorque(Eigen::VectorXd torque);
+    
     void setVelocity(Eigen::VectorXd velocity);
 
     Eigen::VectorXd getTorque();
@@ -25,7 +26,6 @@ public:
     Eigen::VectorXd &getTorqueRef();
 
     void calculateLeastSquareIdentification(Eigen::VectorXd torque, Eigen::VectorXd velocity, const double & deadBand);
-    // yukarıdaki fonksiyon için inputlara hız ve tork degrlerini eklemek mantıklımıdır.
 
     const Eigen::VectorXd &getCalculationResult()const;
 

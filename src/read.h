@@ -22,6 +22,7 @@ private:
 public:
     std::vector<std::string> inputName;
     std::vector<double> result;
+    std::vector<bool> resultBool;
     void readJson(const std::string & fileName, const std::string & objectName);
    
 
