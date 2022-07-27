@@ -31,7 +31,7 @@ namespace pt = boost::property_tree;
 //     myfile.close();
 // }
 
-void Write::dataWriteNew(Eigen::VectorXd leastSquareResult, std::string fileName)
+void Write::dataWriteJson(Eigen::VectorXd leastSquareResult, std::string fileName)
 {
     std::string ResultName[4] = {"inertia",
                                  "ViscousDamping",
@@ -59,17 +59,12 @@ void Write::dataWriteNew(Eigen::VectorXd leastSquareResult, std::string fileName
     // Add the new node to the root
     root.add_child("leastSquareResults", least_square_node);
     
-    pt::write_json("../../data/write.json", root);
+    pt::write_json(fileName, root);
 
 }
 
 void Write:: write_csv (std::string filename, std::string colname,  Eigen::VectorXd vals){
-    // Make a CSV file with one column of integer values
-    // filename - the name of the file
-    // colname - the name of the one and only column
-    // vals - an integer vector of values
-    
-    // Create an output filestream object
+  
     std::ofstream myFile(filename);
     
     // Send the column name to the stream
@@ -86,13 +81,7 @@ void Write:: write_csv (std::string filename, std::string colname,  Eigen::Vecto
 }
 
 void Write::write_csv_col(std::string filename, std::vector<std::pair<std::string, std::vector<double>>> dataset){
-    // Make a CSV file with one or more columns of integer values
-    // Each column of data is represented by the pair <column name, column data>
-    //   as std::pair<std::string, std::vector<int>>
-    // The dataset is represented as a vector of these columns
-    // Note that all columns should be the same size
-    
-    // Create an output filestream object
+
     std::ofstream myFile(filename);
     
     // Send column names to the stream

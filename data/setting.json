@@ -5,9 +5,9 @@
   
   },
   "signal": {
-    "maxTorque":5,
-    "minTorque": 1,
-    "pulseNumber": 3,
+    "maxTorque":50,
+    "minTorque": 10,
+    "pulseNumber": 30,
     "duration": 200,
     "deadBand":0.7
   }

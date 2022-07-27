@@ -27,7 +27,7 @@ public:
                                        0.001945861419,
                                        0.5987435423629,
                                        -0.575497714017};
-    std::string SignalProporties[4]={"maxTorque","minTorque","pulseNumber","duration"};
+    std::string SignalProporties[5]={"maxTorque","minTorque","pulseNumber","duration","deadBand"};
     
 };
 TEST_CASE_METHOD(LeastSquareTestFixture, "read test", "[read test]")
@@ -64,13 +64,14 @@ TEST_CASE_METHOD(LeastSquareTestFixture, "read test", "[read test]")
 TEST_CASE_METHOD(LeastSquareTestFixture, "LeastSquare result test", "[LeastSquare test]")
 {
 
-    Data data;
+   Data data;
     data.setFile("../../data/leastSquare_y_v5_500interval_24062022.csv");
     data.dataRead();
     Eigen::VectorXd torque = data.getTorque();
     Eigen::VectorXd velocity = data.getVelocity();
 
-    LeastSquareID ls(torque, velocity);
+    LeastSquareID ls;
+    ls.calculateLeastSquareIdentification(torque, velocity,0.7);
     const Eigen::VectorXd &myresult = ls.getCalculationResult();
 
     Eigen::VectorXd realRefDeger(sizeof(realResultValue));
@@ -94,7 +95,10 @@ TEST_CASE_METHOD(LeastSquareTestFixture, "Setting Signal test","[Signal Test]"){
 
     Read read;   
     std::string fileName =   "../../data/setting.json";
-    read.readJson(fileName);
+    read.readJson(fileName,"command");
+    CHECK (read.result[0]==1);
+    
+    read.readJson(fileName,"signal");
         
   
    
@@ -108,7 +112,7 @@ TEST_CASE_METHOD(LeastSquareTestFixture, "Setting Signal test","[Signal Test]"){
    
     SECTION("Signal Setting Test")
     {
-        REQUIRE(read.result.size() ==4);
+        REQUIRE(read.result.size() ==5);
         for (int i = 0; i < read.result.size(); i++)
         {
 

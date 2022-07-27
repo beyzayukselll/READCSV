@@ -15,7 +15,7 @@ class Write
 public:
    // void dataWrite (Eigen::VectorXd leastSquareResult, std::string fileName);
    
-    void dataWriteNew (Eigen::VectorXd leastSquareResult, std::string fileName);
+    void dataWriteJson (Eigen::VectorXd leastSquareResult, std::string fileName);
     void write_csv(std::string filename, std::string colname, Eigen::VectorXd vals);
     void write_csv_col(std::string filename, std::vector<std::pair<std::string, std::vector<double>>> dataset);
 

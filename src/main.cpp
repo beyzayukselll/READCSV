@@ -34,11 +34,11 @@ int main()
 
     command.readJson("../../data/setting.json","command");
     if(command.result[0]==1){
-       
+   
    // const std::string & fileName =   "../../data/setting.json";
     read.readJson("../../data/setting.json","signal");
    
-
+    
     for (int i=0; i<read.result.size();i++){
       
      std::cout << read.result[i]<< "\n";
@@ -60,16 +60,21 @@ int main()
     // }
    
     ls.calculateLeastSquareIdentification(torque, velocity, ls.deadBand);
-  
-    ls.getInfo();
+
+    const Eigen::VectorXd &myresult = ls.getCalculationResult();
+    
+
+   // ls.getInfo();
    
     signal.setTorqueInput();
 
     Write write;
- 
+
+    write.dataWriteJson(myresult,"../../data/write.json");
+
     write.write_csv("../../data/torqueInput.csv", "Torque Input", signal.torqueInput);
     
-
+    
     std::vector<double> torquee;
     torquee.resize(torque.size());
     std::vector<double> velocityy;
@@ -79,17 +84,18 @@ int main()
        torquee[i]= torque(i);
         velocityy[i]=velocity(i);
      }
-     
-     
+    
+   //write.dataWriteJson(myresult,"../..data/write.json");
+
    std::vector<std::pair<std::string, std::vector<double>>> vals = {{"Actual Torque", torquee}, {"Actual Velocity", velocityy}};
     
 
-     
-    write.write_csv_col("../../data/ActualValues.csv",vals);
+ 
+   write.write_csv_col("../../data/ActualValues.csv",vals);
+    //signal.plotTorqueInput();
+  
 
-
-
-   signal.plotTorqueInput();
+   }
     return 0;
-  }
+   
  }
