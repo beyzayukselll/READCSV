@@ -11,7 +11,6 @@ void Signal::setTorqueInput()
             torqueInput(i)=0;
     }
 
-
     for (int t = 0; t < totalTime; ++t)
     {
         for (int i = 0; i < pulseNumber; ++i)
@@ -26,6 +25,7 @@ void Signal::setTorqueInput()
             }
         }
     }
+
     std::vector<double> temp;
     temp.resize(totalTime);
 

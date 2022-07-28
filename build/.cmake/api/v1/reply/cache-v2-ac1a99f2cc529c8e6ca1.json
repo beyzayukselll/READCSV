@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/beyza/least_square/least_square_identification/build"
+			"value" : "/home/bcd/programming/least_square_identification/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -579,7 +579,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/beyza/least_square/least_square_identification"
+			"value" : "/home/bcd/programming/least_square_identification"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1127,7 +1127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/bin/python3.8][/usr/lib/x86_64-linux-gnu/libpython3.8.so][/usr/include/python3.8][/home/beyza/.local/lib/python3.8/site-packages/numpy/core/include][cfound components: Interpreter Development NumPy ][v3.8.10()]"
+			"value" : "[/usr/bin/python3.8][/usr/lib/x86_64-linux-gnu/libpython3.8.so][/usr/include/python3.8][/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include][cfound components: Interpreter Development NumPy ][v3.8.10()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp",
@@ -1435,7 +1435,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/beyza/.local/lib/python3.8/site-packages/numpy/core/include"
+			"value" : "/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include"
 		},
 		{
 			"name" : "system_identification_BINARY_DIR",
@@ -1447,7 +1447,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/beyza/least_square/least_square_identification/build/src"
+			"value" : "/home/bcd/programming/least_square_identification/build/src"
 		},
 		{
 			"name" : "system_identification_SOURCE_DIR",
@@ -1459,7 +1459,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/beyza/least_square/least_square_identification/src"
+			"value" : "/home/bcd/programming/least_square_identification/src"
 		},
 		{
 			"name" : "test_BINARY_DIR",
@@ -1471,7 +1471,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/beyza/least_square/least_square_identification/build/test"
+			"value" : "/home/bcd/programming/least_square_identification/build/test"
 		},
 		{
 			"name" : "test_SOURCE_DIR",
@@ -1483,7 +1483,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/beyza/least_square/least_square_identification/test"
+			"value" : "/home/bcd/programming/least_square_identification/test"
 		}
 	],
 	"kind" : "cache",
