@@ -1,8 +1,12 @@
 #include "signal.h"
 
 
-void Signal::setTorqueInput()
+Eigen::VectorXd Signal::getTorqueInput()
 {
+    return torqueInput;
+}
+
+void Signal::setTorquePulse(){
     totalTime = 4 * pulseNumber * duration;
     torqueInput.resize(totalTime);
 
@@ -50,11 +54,6 @@ void Signal::setTorqueInput()
 
     torqueInput.tail((totalTime/2)+1) = temp1.tail((totalTime/2)+1);
 
-}
-
-Eigen::VectorXd Signal::getTorqueInput()
-{
-    return torqueInput;
 }
 
 void Signal::plotTorqueInput()

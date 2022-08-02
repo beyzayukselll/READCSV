@@ -25,6 +25,13 @@ int main()
     data.dataRead();
     Eigen::VectorXd torque = data.getTorque();
     Eigen::VectorXd velocity = data.getVelocity();
+    // yukarıdaki kodları tek satırda yapmak mantıklımıdır. Constructer kullanımı ile ilgili yorumlarınızı merak ediyoruz.
+
+    // Data frequencyData;
+    // frequencyData.setFile("../../data/y_Axis_ImpulseTest_23torq_27062022.csv");
+    // frequencyData.dataRead();
+    // Eigen::VectorXd torque = frequencyData.getTorque();
+    // Eigen::VectorXd velocity = frequencyData.getVelocity();
 
     LeastSquareID ls;
 
@@ -50,17 +57,15 @@ int main()
                 signal.minTorque = signalBuilderSettings.result[1];
                 signal.pulseNumber = signalBuilderSettings.result[2];
                 signal.duration = signalBuilderSettings.result[3];
-                signal.setTorqueInput();
+                signal.setTorquePulse();
 
                 // write the parameters to file
                 write.write_csv("../../data/torqueInput.csv", "Torque Input", signal.torqueInput);
 
-  
                     if (commandSettings.result[2] == 1)
                     {
                         signal.plotTorqueInput();
                     }
-
             }
 
             // wait for embaded command and logfiles to be ready
@@ -75,10 +80,7 @@ int main()
 
             const Eigen::VectorXd &myresult = ls.getCalculationResult();
 
-
             write.dataWriteJson(myresult, "../../data/write.json");
-
-
 
             std::vector<double> torquee;
             torquee.resize(torque.size());
@@ -95,10 +97,6 @@ int main()
 
             write.write_csv_col("../../data/ActualValues.csv", vals);
         }
-
-
-
-
 
         else if (commandSettings.result[0] == 0)
         {

@@ -39,10 +39,10 @@ void Write::dataWriteJson(Eigen::VectorXd leastSquareResult, std::string fileNam
                                  "CoulombTorqueNegative"};
 
     json j;
-    j["leastSquareResult"] = {};
+    j["leastSquareResults"] = {};
     for (int i = 0; i < leastSquareResult.size(); ++i)
     {
-        j["leastSquareResult"][ResultName[i]] = leastSquareResult(i);
+        j["leastSquareResults"][ResultName[i]] = leastSquareResult(i);
     }
     
     std::ofstream o(fileName);
@@ -70,7 +70,6 @@ void Write::write_csv(std::string filename, std::string colname, Eigen::VectorXd
 
 void Write::write_csv_col(std::string filename, std::vector<std::pair<std::string, std::vector<double>>> dataset)
 {
-
     std::ofstream myFile(filename);
 
     // Send column names to the stream

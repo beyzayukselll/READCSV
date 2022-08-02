@@ -96,6 +96,13 @@ build src/CMakeFiles/system_identification.dir/Data.cpp.o: CXX_COMPILER__system_
   OBJECT_DIR = src/CMakeFiles/system_identification.dir
   OBJECT_FILE_DIR = src/CMakeFiles/system_identification.dir
 
+build src/CMakeFiles/system_identification.dir/frequency.cpp.o: CXX_COMPILER__system_identification ../src/frequency.cpp || cmake_object_order_depends_target_system_identification
+  DEP_FILE = src/CMakeFiles/system_identification.dir/frequency.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3
+  OBJECT_DIR = src/CMakeFiles/system_identification.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/system_identification.dir
+
 build src/CMakeFiles/system_identification.dir/leastsquareid.cpp.o: CXX_COMPILER__system_identification ../src/leastsquareid.cpp || cmake_object_order_depends_target_system_identification
   DEP_FILE = src/CMakeFiles/system_identification.dir/leastsquareid.cpp.o.d
   FLAGS = -g
@@ -139,7 +146,7 @@ build src/CMakeFiles/system_identification.dir/write.cpp.o: CXX_COMPILER__system
 #############################################
 # Link the executable src/system_identification
 
-build src/system_identification: CXX_EXECUTABLE_LINKER__system_identification src/CMakeFiles/system_identification.dir/Data.cpp.o src/CMakeFiles/system_identification.dir/leastsquareid.cpp.o src/CMakeFiles/system_identification.dir/main.cpp.o src/CMakeFiles/system_identification.dir/read.cpp.o src/CMakeFiles/system_identification.dir/signal.cpp.o src/CMakeFiles/system_identification.dir/write.cpp.o | /usr/lib/x86_64-linux-gnu/libpython3.8.so
+build src/system_identification: CXX_EXECUTABLE_LINKER__system_identification src/CMakeFiles/system_identification.dir/Data.cpp.o src/CMakeFiles/system_identification.dir/frequency.cpp.o src/CMakeFiles/system_identification.dir/leastsquareid.cpp.o src/CMakeFiles/system_identification.dir/main.cpp.o src/CMakeFiles/system_identification.dir/read.cpp.o src/CMakeFiles/system_identification.dir/signal.cpp.o src/CMakeFiles/system_identification.dir/write.cpp.o | /usr/lib/x86_64-linux-gnu/libpython3.8.so
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libpython3.8.so
   OBJECT_DIR = src/CMakeFiles/system_identification.dir
@@ -192,6 +199,13 @@ build test/CMakeFiles/test.dir/__/src/Data.cpp.o: CXX_COMPILER__test ../src/Data
   OBJECT_DIR = test/CMakeFiles/test.dir
   OBJECT_FILE_DIR = test/CMakeFiles/test.dir/__/src
 
+build test/CMakeFiles/test.dir/__/src/frequency.cpp.o: CXX_COMPILER__test ../src/frequency.cpp || cmake_object_order_depends_target_test
+  DEP_FILE = test/CMakeFiles/test.dir/__/src/frequency.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I../ -I../include -I/usr/include/python3.8 -I../test/include -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3
+  OBJECT_DIR = test/CMakeFiles/test.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/test.dir/__/src
+
 build test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.o: CXX_COMPILER__test ../src/leastsquareid.cpp || cmake_object_order_depends_target_test
   DEP_FILE = test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.o.d
   FLAGS = -g
@@ -235,7 +249,7 @@ build test/CMakeFiles/test.dir/read_test.cpp.o: CXX_COMPILER__test ../test/read_
 #############################################
 # Link the executable test/test
 
-build test/test: CXX_EXECUTABLE_LINKER__test test/CMakeFiles/test.dir/__/src/Data.cpp.o test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.o test/CMakeFiles/test.dir/__/src/read.cpp.o test/CMakeFiles/test.dir/__/src/signal.cpp.o test/CMakeFiles/test.dir/__/src/write.cpp.o test/CMakeFiles/test.dir/read_test.cpp.o | /usr/lib/x86_64-linux-gnu/libpython3.8.so
+build test/test: CXX_EXECUTABLE_LINKER__test test/CMakeFiles/test.dir/__/src/Data.cpp.o test/CMakeFiles/test.dir/__/src/frequency.cpp.o test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.o test/CMakeFiles/test.dir/__/src/read.cpp.o test/CMakeFiles/test.dir/__/src/signal.cpp.o test/CMakeFiles/test.dir/__/src/write.cpp.o test/CMakeFiles/test.dir/read_test.cpp.o | /usr/lib/x86_64-linux-gnu/libpython3.8.so
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libpython3.8.so
   OBJECT_DIR = test/CMakeFiles/test.dir

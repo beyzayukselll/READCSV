@@ -11,15 +11,21 @@ class Signal
 private:
     int totalTime;
 public:
-    void setTorqueInput();
+
     Eigen::VectorXd torqueInput;
+
+    void setTorqueInput();
+    void setTorquePulse();
+    void setSineSweep();
     Eigen::VectorXd getTorqueInput();
+    Eigen::VectorXd getTorquePulse();
+    Eigen::VectorXd getSineSweep();
+
     double maxTorque;
     double minTorque;
     int pulseNumber;
     double duration;
     
-
     void plotTorqueInput();
 
 };

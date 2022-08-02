@@ -31,5 +31,5 @@ public:
 
     void getInfo();
     Eigen::VectorXd &getVelocityRef();
-    
+
 };

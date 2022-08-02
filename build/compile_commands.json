@@ -7,6 +7,12 @@
 
 {
   "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/frequency.cpp.o -c /home/bcd/programming/least_square_identification/src/frequency.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/frequency.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
   "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/leastsquareid.cpp.o -c /home/bcd/programming/least_square_identification/src/leastsquareid.cpp",
   "file": "/home/bcd/programming/least_square_identification/src/leastsquareid.cpp"
 },
@@ -39,6 +45,12 @@
   "directory": "/home/bcd/programming/least_square_identification/build",
   "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I../test/include -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/Data.cpp.o -c /home/bcd/programming/least_square_identification/src/Data.cpp",
   "file": "/home/bcd/programming/least_square_identification/src/Data.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I../test/include -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/frequency.cpp.o -c /home/bcd/programming/least_square_identification/src/frequency.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/frequency.cpp"
 },
 
 {
