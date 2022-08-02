@@ -508,6 +508,10 @@ any
 string_view
 -
 
+/home/bcd/programming/least_square_identification/src/Data.cpp
+Data.h
+/home/bcd/programming/least_square_identification/src/Data.h
+
 /home/bcd/programming/least_square_identification/src/Data.h
 iostream
 -
@@ -520,11 +524,33 @@ iterator
 vector
 -
 
+/home/bcd/programming/least_square_identification/src/frequency.cpp
+frequency.h
+/home/bcd/programming/least_square_identification/src/frequency.h
+
+/home/bcd/programming/least_square_identification/src/frequency.h
+iostream
+-
+unsupported/Eigen/FFT
+-
+Eigen/Dense
+-
+complex
+-
+
+/home/bcd/programming/least_square_identification/src/leastsquareid.cpp
+leastsquareid.h
+/home/bcd/programming/least_square_identification/src/leastsquareid.h
+
 /home/bcd/programming/least_square_identification/src/leastsquareid.h
 iostream
 -
 Eigen/Dense
 -
+
+/home/bcd/programming/least_square_identification/src/read.cpp
+read.h
+/home/bcd/programming/least_square_identification/src/read.h
 
 /home/bcd/programming/least_square_identification/src/read.h
 iostream
@@ -554,6 +580,10 @@ Eigen/Dense
 boost/algorithm/string.hpp
 -
 
+/home/bcd/programming/least_square_identification/src/signal.cpp
+signal.h
+/home/bcd/programming/least_square_identification/src/signal.h
+
 /home/bcd/programming/least_square_identification/src/signal.h
 iostream
 -
@@ -565,6 +595,32 @@ vector
 -
 algorithm
 -
+
+/home/bcd/programming/least_square_identification/src/sinesweep.cpp
+sinesweep.h
+/home/bcd/programming/least_square_identification/src/sinesweep.h
+
+/home/bcd/programming/least_square_identification/src/sinesweep.h
+iostream
+-
+Eigen/Dense
+-
+torquesignal.h
+/home/bcd/programming/least_square_identification/src/torquesignal.h
+
+/home/bcd/programming/least_square_identification/src/torquesignal.cpp
+torquesignal.h
+/home/bcd/programming/least_square_identification/src/torquesignal.h
+
+/home/bcd/programming/least_square_identification/src/torquesignal.h
+iostream
+-
+Eigen/Dense
+-
+
+/home/bcd/programming/least_square_identification/src/write.cpp
+write.h
+/home/bcd/programming/least_square_identification/src/write.h
 
 /home/bcd/programming/least_square_identification/src/write.h
 iostream

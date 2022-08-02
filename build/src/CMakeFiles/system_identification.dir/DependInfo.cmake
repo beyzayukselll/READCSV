@@ -10,6 +10,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/bcd/programming/least_square_identification/src/main.cpp" "/home/bcd/programming/least_square_identification/build/src/CMakeFiles/system_identification.dir/main.cpp.o"
   "/home/bcd/programming/least_square_identification/src/read.cpp" "/home/bcd/programming/least_square_identification/build/src/CMakeFiles/system_identification.dir/read.cpp.o"
   "/home/bcd/programming/least_square_identification/src/signal.cpp" "/home/bcd/programming/least_square_identification/build/src/CMakeFiles/system_identification.dir/signal.cpp.o"
+  "/home/bcd/programming/least_square_identification/src/sinesweep.cpp" "/home/bcd/programming/least_square_identification/build/src/CMakeFiles/system_identification.dir/sinesweep.cpp.o"
+  "/home/bcd/programming/least_square_identification/src/torquesignal.cpp" "/home/bcd/programming/least_square_identification/build/src/CMakeFiles/system_identification.dir/torquesignal.cpp.o"
   "/home/bcd/programming/least_square_identification/src/write.cpp" "/home/bcd/programming/least_square_identification/build/src/CMakeFiles/system_identification.dir/write.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

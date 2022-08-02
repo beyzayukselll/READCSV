@@ -47,7 +47,7 @@ int main()
         signalBuilderSettings.readJson("../../data/setting.json", "signalBuilderSettings");
         leastSquareSettings.readJson("../../data/setting.json", "leastSquareSettings");
         
-        if (commandSettings.result[0] == 1)
+        if (commandSettings.result[2] == 1)
         {
             if (commandSettings.result[1] == 1)
             {
@@ -62,7 +62,7 @@ int main()
                 // write the parameters to file
                 write.write_csv("../../data/torqueInput.csv", "Torque Input", signal.torqueInput);
 
-                if (commandSettings.result[2] == 1)
+                if (commandSettings.result[0] == 1)
                 {
                     signal.plotTorqueInput();
                 }
@@ -98,7 +98,7 @@ int main()
             write.write_csv_col("../../data/ActualValues.csv", vals);
         }
 
-        else if (commandSettings.result[0] == 0)
+        else if (commandSettings.result[1] == 0)
         {
             std::cout << "waiting for starting conditions" << std::endl;
         }

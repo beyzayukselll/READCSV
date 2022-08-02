@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/bcd/programming/least_square_identification")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/bcd/programming/least_square_identification/build/src")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/bcd/programming/least_square_identification/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

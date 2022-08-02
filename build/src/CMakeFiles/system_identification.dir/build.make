@@ -135,9 +135,35 @@ src/CMakeFiles/system_identification.dir/signal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/system_identification.dir/signal.cpp.s"
 	cd /home/bcd/programming/least_square_identification/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bcd/programming/least_square_identification/src/signal.cpp -o CMakeFiles/system_identification.dir/signal.cpp.s
 
+src/CMakeFiles/system_identification.dir/sinesweep.cpp.o: src/CMakeFiles/system_identification.dir/flags.make
+src/CMakeFiles/system_identification.dir/sinesweep.cpp.o: ../src/sinesweep.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/system_identification.dir/sinesweep.cpp.o"
+	cd /home/bcd/programming/least_square_identification/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/system_identification.dir/sinesweep.cpp.o -c /home/bcd/programming/least_square_identification/src/sinesweep.cpp
+
+src/CMakeFiles/system_identification.dir/sinesweep.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/system_identification.dir/sinesweep.cpp.i"
+	cd /home/bcd/programming/least_square_identification/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bcd/programming/least_square_identification/src/sinesweep.cpp > CMakeFiles/system_identification.dir/sinesweep.cpp.i
+
+src/CMakeFiles/system_identification.dir/sinesweep.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/system_identification.dir/sinesweep.cpp.s"
+	cd /home/bcd/programming/least_square_identification/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bcd/programming/least_square_identification/src/sinesweep.cpp -o CMakeFiles/system_identification.dir/sinesweep.cpp.s
+
+src/CMakeFiles/system_identification.dir/torquesignal.cpp.o: src/CMakeFiles/system_identification.dir/flags.make
+src/CMakeFiles/system_identification.dir/torquesignal.cpp.o: ../src/torquesignal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/system_identification.dir/torquesignal.cpp.o"
+	cd /home/bcd/programming/least_square_identification/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/system_identification.dir/torquesignal.cpp.o -c /home/bcd/programming/least_square_identification/src/torquesignal.cpp
+
+src/CMakeFiles/system_identification.dir/torquesignal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/system_identification.dir/torquesignal.cpp.i"
+	cd /home/bcd/programming/least_square_identification/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bcd/programming/least_square_identification/src/torquesignal.cpp > CMakeFiles/system_identification.dir/torquesignal.cpp.i
+
+src/CMakeFiles/system_identification.dir/torquesignal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/system_identification.dir/torquesignal.cpp.s"
+	cd /home/bcd/programming/least_square_identification/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bcd/programming/least_square_identification/src/torquesignal.cpp -o CMakeFiles/system_identification.dir/torquesignal.cpp.s
+
 src/CMakeFiles/system_identification.dir/write.cpp.o: src/CMakeFiles/system_identification.dir/flags.make
 src/CMakeFiles/system_identification.dir/write.cpp.o: ../src/write.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/system_identification.dir/write.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/system_identification.dir/write.cpp.o"
 	cd /home/bcd/programming/least_square_identification/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/system_identification.dir/write.cpp.o -c /home/bcd/programming/least_square_identification/src/write.cpp
 
 src/CMakeFiles/system_identification.dir/write.cpp.i: cmake_force
@@ -156,6 +182,8 @@ system_identification_OBJECTS = \
 "CMakeFiles/system_identification.dir/main.cpp.o" \
 "CMakeFiles/system_identification.dir/read.cpp.o" \
 "CMakeFiles/system_identification.dir/signal.cpp.o" \
+"CMakeFiles/system_identification.dir/sinesweep.cpp.o" \
+"CMakeFiles/system_identification.dir/torquesignal.cpp.o" \
 "CMakeFiles/system_identification.dir/write.cpp.o"
 
 # External object files for target system_identification
@@ -167,11 +195,13 @@ src/system_identification: src/CMakeFiles/system_identification.dir/leastsquarei
 src/system_identification: src/CMakeFiles/system_identification.dir/main.cpp.o
 src/system_identification: src/CMakeFiles/system_identification.dir/read.cpp.o
 src/system_identification: src/CMakeFiles/system_identification.dir/signal.cpp.o
+src/system_identification: src/CMakeFiles/system_identification.dir/sinesweep.cpp.o
+src/system_identification: src/CMakeFiles/system_identification.dir/torquesignal.cpp.o
 src/system_identification: src/CMakeFiles/system_identification.dir/write.cpp.o
 src/system_identification: src/CMakeFiles/system_identification.dir/build.make
 src/system_identification: /usr/lib/x86_64-linux-gnu/libpython3.8.so
 src/system_identification: src/CMakeFiles/system_identification.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable system_identification"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable system_identification"
 	cd /home/bcd/programming/least_square_identification/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/system_identification.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

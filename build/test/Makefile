@@ -260,6 +260,60 @@ __/src/signal.cpp.s:
 	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/signal.cpp.s
 .PHONY : __/src/signal.cpp.s
 
+__/src/sinesweep.o: __/src/sinesweep.cpp.o
+
+.PHONY : __/src/sinesweep.o
+
+# target to build an object file
+__/src/sinesweep.cpp.o:
+	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/sinesweep.cpp.o
+.PHONY : __/src/sinesweep.cpp.o
+
+__/src/sinesweep.i: __/src/sinesweep.cpp.i
+
+.PHONY : __/src/sinesweep.i
+
+# target to preprocess a source file
+__/src/sinesweep.cpp.i:
+	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/sinesweep.cpp.i
+.PHONY : __/src/sinesweep.cpp.i
+
+__/src/sinesweep.s: __/src/sinesweep.cpp.s
+
+.PHONY : __/src/sinesweep.s
+
+# target to generate assembly for a file
+__/src/sinesweep.cpp.s:
+	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/sinesweep.cpp.s
+.PHONY : __/src/sinesweep.cpp.s
+
+__/src/torquesignal.o: __/src/torquesignal.cpp.o
+
+.PHONY : __/src/torquesignal.o
+
+# target to build an object file
+__/src/torquesignal.cpp.o:
+	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/torquesignal.cpp.o
+.PHONY : __/src/torquesignal.cpp.o
+
+__/src/torquesignal.i: __/src/torquesignal.cpp.i
+
+.PHONY : __/src/torquesignal.i
+
+# target to preprocess a source file
+__/src/torquesignal.cpp.i:
+	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/torquesignal.cpp.i
+.PHONY : __/src/torquesignal.cpp.i
+
+__/src/torquesignal.s: __/src/torquesignal.cpp.s
+
+.PHONY : __/src/torquesignal.s
+
+# target to generate assembly for a file
+__/src/torquesignal.cpp.s:
+	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/torquesignal.cpp.s
+.PHONY : __/src/torquesignal.cpp.s
+
 __/src/write.o: __/src/write.cpp.o
 
 .PHONY : __/src/write.o
@@ -338,6 +392,12 @@ help:
 	@echo "... __/src/signal.o"
 	@echo "... __/src/signal.i"
 	@echo "... __/src/signal.s"
+	@echo "... __/src/sinesweep.o"
+	@echo "... __/src/sinesweep.i"
+	@echo "... __/src/sinesweep.s"
+	@echo "... __/src/torquesignal.o"
+	@echo "... __/src/torquesignal.i"
+	@echo "... __/src/torquesignal.s"
 	@echo "... __/src/write.o"
 	@echo "... __/src/write.i"
 	@echo "... __/src/write.s"

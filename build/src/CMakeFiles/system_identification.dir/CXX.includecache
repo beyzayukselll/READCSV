@@ -508,10 +508,6 @@ any
 string_view
 -
 
-/home/bcd/programming/least_square_identification/src/Data.cpp
-Data.h
-/home/bcd/programming/least_square_identification/src/Data.h
-
 /home/bcd/programming/least_square_identification/src/Data.h
 iostream
 -
@@ -523,24 +519,6 @@ iterator
 -
 vector
 -
-
-/home/bcd/programming/least_square_identification/src/frequency.cpp
-frequency.h
-/home/bcd/programming/least_square_identification/src/frequency.h
-
-/home/bcd/programming/least_square_identification/src/frequency.h
-iostream
--
-unsupported/Eigen/FFT
--
-Eigen/Dense
--
-complex
--
-
-/home/bcd/programming/least_square_identification/src/leastsquareid.cpp
-leastsquareid.h
-/home/bcd/programming/least_square_identification/src/leastsquareid.h
 
 /home/bcd/programming/least_square_identification/src/leastsquareid.h
 iostream
@@ -582,10 +560,6 @@ stdio.h
 iostream
 -
 
-/home/bcd/programming/least_square_identification/src/read.cpp
-read.h
-/home/bcd/programming/least_square_identification/src/read.h
-
 /home/bcd/programming/least_square_identification/src/read.h
 iostream
 -
@@ -614,10 +588,6 @@ Eigen/Dense
 boost/algorithm/string.hpp
 -
 
-/home/bcd/programming/least_square_identification/src/signal.cpp
-signal.h
-/home/bcd/programming/least_square_identification/src/signal.h
-
 /home/bcd/programming/least_square_identification/src/signal.h
 iostream
 -
@@ -629,10 +599,6 @@ vector
 -
 algorithm
 -
-
-/home/bcd/programming/least_square_identification/src/write.cpp
-write.h
-/home/bcd/programming/least_square_identification/src/write.h
 
 /home/bcd/programming/least_square_identification/src/write.h
 iostream
@@ -3325,42 +3291,4 @@ IndexedViewMethods.h
 /usr/local/include/eigen3/Eigen/src/plugins/ReshapedMethods.h
 ReshapedMethods.h
 /usr/local/include/eigen3/Eigen/src/plugins/ReshapedMethods.h
-
-/usr/local/include/eigen3/unsupported/Eigen/FFT
-complex
--
-vector
--
-map
--
-../../Eigen/Core
-/usr/local/include/eigen3/Eigen/Core
-../../Eigen/src/Core/util/DisableStupidWarnings.h
-/usr/local/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
-fftw3.h
--
-src/FFT/ei_fftw_impl.h
-/usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_fftw_impl.h
-src/FFT/ei_imklfft_impl.h
-/usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_imklfft_impl.h
-pocketfft_hdronly.h
--
-src/FFT/ei_pocketfft_impl.h
-/usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_pocketfft_impl.h
-src/FFT/ei_kissfft_impl.h
-/usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_kissfft_impl.h
-../../Eigen/src/Core/util/ReenableStupidWarnings.h
-/usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
-
-/usr/local/include/eigen3/unsupported/Eigen/src/FFT/InternalHeaderCheck.h
-
-/usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_fftw_impl.h
-./InternalHeaderCheck.h
-/usr/local/include/eigen3/unsupported/Eigen/src/FFT/InternalHeaderCheck.h
-
-/usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_kissfft_impl.h
-./InternalHeaderCheck.h
-/usr/local/include/eigen3/unsupported/Eigen/src/FFT/InternalHeaderCheck.h
-
-/usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_pocketfft_impl.h
 
