@@ -2,16 +2,16 @@
     "commandSettings": {
         "start": 1,
         "signalBuild":1,
-        "plot":0,
+        "plot":1,
         "startLeastSquares":1
     },
     "signalBuilderSettings": {
         "maxTorque": 5,
         "minTorque": 1,
-        "pulseNumber": 5,
-        "duration": 200
+        "pulseNumber": 10,
+        "duration": 300
     },
     "leastSquareSettings": {
-        "deadBand": 10
+        "deadBand": 1
     }
 }

@@ -51,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/bcd/programming/least_square_identification
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bcd/programming/least_square_identification/build
+CMAKE_BINARY_DIR = /home/bcd/programming/least_square_identification/build/src
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/bcd/programming/least_square_identification/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/bcd/programming/least_square_identification/build/CMakeFiles /home/bcd/programming/least_square_identification/build/src/CMakeFiles/progress.marks
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bcd/programming/least_square_identification/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bcd/programming/least_square_identification/build/src/CMakeFiles /home/bcd/programming/least_square_identification/build/src/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bcd/programming/least_square_identification/build/src/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	$(MAKE) -f CMakeFiles/Makefile2 clean
 .PHONY : clean
 
 # The main clean target
@@ -97,222 +97,44 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/bcd/programming/least_square_identification/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-src/CMakeFiles/system_identification.dir/rule:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/system_identification.dir/rule
-.PHONY : src/CMakeFiles/system_identification.dir/rule
+#=============================================================================
+# Target rules for targets named system_identification
 
-# Convenience name for target.
-system_identification: src/CMakeFiles/system_identification.dir/rule
-
+# Build rule for target.
+system_identification: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 system_identification
 .PHONY : system_identification
 
 # fast build rule for target.
 system_identification/fast:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/build
+	$(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/build
 .PHONY : system_identification/fast
 
-Data.o: Data.cpp.o
+#=============================================================================
+# Target rules for targets named test
 
-.PHONY : Data.o
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test
+.PHONY : test
 
-# target to build an object file
-Data.cpp.o:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/Data.cpp.o
-.PHONY : Data.cpp.o
-
-Data.i: Data.cpp.i
-
-.PHONY : Data.i
-
-# target to preprocess a source file
-Data.cpp.i:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/Data.cpp.i
-.PHONY : Data.cpp.i
-
-Data.s: Data.cpp.s
-
-.PHONY : Data.s
-
-# target to generate assembly for a file
-Data.cpp.s:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/Data.cpp.s
-.PHONY : Data.cpp.s
-
-frequency.o: frequency.cpp.o
-
-.PHONY : frequency.o
-
-# target to build an object file
-frequency.cpp.o:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/frequency.cpp.o
-.PHONY : frequency.cpp.o
-
-frequency.i: frequency.cpp.i
-
-.PHONY : frequency.i
-
-# target to preprocess a source file
-frequency.cpp.i:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/frequency.cpp.i
-.PHONY : frequency.cpp.i
-
-frequency.s: frequency.cpp.s
-
-.PHONY : frequency.s
-
-# target to generate assembly for a file
-frequency.cpp.s:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/frequency.cpp.s
-.PHONY : frequency.cpp.s
-
-leastsquareid.o: leastsquareid.cpp.o
-
-.PHONY : leastsquareid.o
-
-# target to build an object file
-leastsquareid.cpp.o:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/leastsquareid.cpp.o
-.PHONY : leastsquareid.cpp.o
-
-leastsquareid.i: leastsquareid.cpp.i
-
-.PHONY : leastsquareid.i
-
-# target to preprocess a source file
-leastsquareid.cpp.i:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/leastsquareid.cpp.i
-.PHONY : leastsquareid.cpp.i
-
-leastsquareid.s: leastsquareid.cpp.s
-
-.PHONY : leastsquareid.s
-
-# target to generate assembly for a file
-leastsquareid.cpp.s:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/leastsquareid.cpp.s
-.PHONY : leastsquareid.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-read.o: read.cpp.o
-
-.PHONY : read.o
-
-# target to build an object file
-read.cpp.o:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/read.cpp.o
-.PHONY : read.cpp.o
-
-read.i: read.cpp.i
-
-.PHONY : read.i
-
-# target to preprocess a source file
-read.cpp.i:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/read.cpp.i
-.PHONY : read.cpp.i
-
-read.s: read.cpp.s
-
-.PHONY : read.s
-
-# target to generate assembly for a file
-read.cpp.s:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/read.cpp.s
-.PHONY : read.cpp.s
-
-signal.o: signal.cpp.o
-
-.PHONY : signal.o
-
-# target to build an object file
-signal.cpp.o:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/signal.cpp.o
-.PHONY : signal.cpp.o
-
-signal.i: signal.cpp.i
-
-.PHONY : signal.i
-
-# target to preprocess a source file
-signal.cpp.i:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/signal.cpp.i
-.PHONY : signal.cpp.i
-
-signal.s: signal.cpp.s
-
-.PHONY : signal.s
-
-# target to generate assembly for a file
-signal.cpp.s:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/signal.cpp.s
-.PHONY : signal.cpp.s
-
-write.o: write.cpp.o
-
-.PHONY : write.o
-
-# target to build an object file
-write.cpp.o:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/write.cpp.o
-.PHONY : write.cpp.o
-
-write.i: write.cpp.i
-
-.PHONY : write.i
-
-# target to preprocess a source file
-write.cpp.i:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/write.cpp.i
-.PHONY : write.cpp.i
-
-write.s: write.cpp.s
-
-.PHONY : write.s
-
-# target to generate assembly for a file
-write.cpp.s:
-	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/write.cpp.s
-.PHONY : write.cpp.s
+# fast build rule for target.
+test/fast:
+	$(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/build
+.PHONY : test/fast
 
 # Help Target
 help:
@@ -323,27 +145,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... system_identification"
-	@echo "... Data.o"
-	@echo "... Data.i"
-	@echo "... Data.s"
-	@echo "... frequency.o"
-	@echo "... frequency.i"
-	@echo "... frequency.s"
-	@echo "... leastsquareid.o"
-	@echo "... leastsquareid.i"
-	@echo "... leastsquareid.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... read.o"
-	@echo "... read.i"
-	@echo "... read.s"
-	@echo "... signal.o"
-	@echo "... signal.i"
-	@echo "... signal.s"
-	@echo "... write.o"
-	@echo "... write.i"
-	@echo "... write.s"
+	@echo "... test"
 .PHONY : help
 
 
@@ -355,6 +157,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/bcd/programming/least_square_identification/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
