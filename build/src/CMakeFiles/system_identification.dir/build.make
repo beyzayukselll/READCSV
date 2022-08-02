@@ -70,9 +70,22 @@ src/CMakeFiles/system_identification.dir/Data.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/system_identification.dir/Data.cpp.s"
 	cd /home/bcd/programming/least_square_identification/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bcd/programming/least_square_identification/src/Data.cpp -o CMakeFiles/system_identification.dir/Data.cpp.s
 
+src/CMakeFiles/system_identification.dir/frequency.cpp.o: src/CMakeFiles/system_identification.dir/flags.make
+src/CMakeFiles/system_identification.dir/frequency.cpp.o: ../src/frequency.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/system_identification.dir/frequency.cpp.o"
+	cd /home/bcd/programming/least_square_identification/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/system_identification.dir/frequency.cpp.o -c /home/bcd/programming/least_square_identification/src/frequency.cpp
+
+src/CMakeFiles/system_identification.dir/frequency.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/system_identification.dir/frequency.cpp.i"
+	cd /home/bcd/programming/least_square_identification/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bcd/programming/least_square_identification/src/frequency.cpp > CMakeFiles/system_identification.dir/frequency.cpp.i
+
+src/CMakeFiles/system_identification.dir/frequency.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/system_identification.dir/frequency.cpp.s"
+	cd /home/bcd/programming/least_square_identification/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bcd/programming/least_square_identification/src/frequency.cpp -o CMakeFiles/system_identification.dir/frequency.cpp.s
+
 src/CMakeFiles/system_identification.dir/leastsquareid.cpp.o: src/CMakeFiles/system_identification.dir/flags.make
 src/CMakeFiles/system_identification.dir/leastsquareid.cpp.o: ../src/leastsquareid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/system_identification.dir/leastsquareid.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/system_identification.dir/leastsquareid.cpp.o"
 	cd /home/bcd/programming/least_square_identification/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/system_identification.dir/leastsquareid.cpp.o -c /home/bcd/programming/least_square_identification/src/leastsquareid.cpp
 
 src/CMakeFiles/system_identification.dir/leastsquareid.cpp.i: cmake_force
@@ -85,7 +98,7 @@ src/CMakeFiles/system_identification.dir/leastsquareid.cpp.s: cmake_force
 
 src/CMakeFiles/system_identification.dir/main.cpp.o: src/CMakeFiles/system_identification.dir/flags.make
 src/CMakeFiles/system_identification.dir/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/system_identification.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/system_identification.dir/main.cpp.o"
 	cd /home/bcd/programming/least_square_identification/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/system_identification.dir/main.cpp.o -c /home/bcd/programming/least_square_identification/src/main.cpp
 
 src/CMakeFiles/system_identification.dir/main.cpp.i: cmake_force
@@ -98,7 +111,7 @@ src/CMakeFiles/system_identification.dir/main.cpp.s: cmake_force
 
 src/CMakeFiles/system_identification.dir/read.cpp.o: src/CMakeFiles/system_identification.dir/flags.make
 src/CMakeFiles/system_identification.dir/read.cpp.o: ../src/read.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/system_identification.dir/read.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/system_identification.dir/read.cpp.o"
 	cd /home/bcd/programming/least_square_identification/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/system_identification.dir/read.cpp.o -c /home/bcd/programming/least_square_identification/src/read.cpp
 
 src/CMakeFiles/system_identification.dir/read.cpp.i: cmake_force
@@ -111,7 +124,7 @@ src/CMakeFiles/system_identification.dir/read.cpp.s: cmake_force
 
 src/CMakeFiles/system_identification.dir/signal.cpp.o: src/CMakeFiles/system_identification.dir/flags.make
 src/CMakeFiles/system_identification.dir/signal.cpp.o: ../src/signal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/system_identification.dir/signal.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/system_identification.dir/signal.cpp.o"
 	cd /home/bcd/programming/least_square_identification/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/system_identification.dir/signal.cpp.o -c /home/bcd/programming/least_square_identification/src/signal.cpp
 
 src/CMakeFiles/system_identification.dir/signal.cpp.i: cmake_force
@@ -124,7 +137,7 @@ src/CMakeFiles/system_identification.dir/signal.cpp.s: cmake_force
 
 src/CMakeFiles/system_identification.dir/write.cpp.o: src/CMakeFiles/system_identification.dir/flags.make
 src/CMakeFiles/system_identification.dir/write.cpp.o: ../src/write.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/system_identification.dir/write.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/system_identification.dir/write.cpp.o"
 	cd /home/bcd/programming/least_square_identification/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/system_identification.dir/write.cpp.o -c /home/bcd/programming/least_square_identification/src/write.cpp
 
 src/CMakeFiles/system_identification.dir/write.cpp.i: cmake_force
@@ -138,6 +151,7 @@ src/CMakeFiles/system_identification.dir/write.cpp.s: cmake_force
 # Object files for target system_identification
 system_identification_OBJECTS = \
 "CMakeFiles/system_identification.dir/Data.cpp.o" \
+"CMakeFiles/system_identification.dir/frequency.cpp.o" \
 "CMakeFiles/system_identification.dir/leastsquareid.cpp.o" \
 "CMakeFiles/system_identification.dir/main.cpp.o" \
 "CMakeFiles/system_identification.dir/read.cpp.o" \
@@ -148,6 +162,7 @@ system_identification_OBJECTS = \
 system_identification_EXTERNAL_OBJECTS =
 
 src/system_identification: src/CMakeFiles/system_identification.dir/Data.cpp.o
+src/system_identification: src/CMakeFiles/system_identification.dir/frequency.cpp.o
 src/system_identification: src/CMakeFiles/system_identification.dir/leastsquareid.cpp.o
 src/system_identification: src/CMakeFiles/system_identification.dir/main.cpp.o
 src/system_identification: src/CMakeFiles/system_identification.dir/read.cpp.o
@@ -156,7 +171,7 @@ src/system_identification: src/CMakeFiles/system_identification.dir/write.cpp.o
 src/system_identification: src/CMakeFiles/system_identification.dir/build.make
 src/system_identification: /usr/lib/x86_64-linux-gnu/libpython3.8.so
 src/system_identification: src/CMakeFiles/system_identification.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable system_identification"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable system_identification"
 	cd /home/bcd/programming/least_square_identification/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/system_identification.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

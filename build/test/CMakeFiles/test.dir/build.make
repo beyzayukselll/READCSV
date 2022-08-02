@@ -70,9 +70,22 @@ test/CMakeFiles/test.dir/__/src/Data.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/__/src/Data.cpp.s"
 	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bcd/programming/least_square_identification/src/Data.cpp -o CMakeFiles/test.dir/__/src/Data.cpp.s
 
+test/CMakeFiles/test.dir/__/src/frequency.cpp.o: test/CMakeFiles/test.dir/flags.make
+test/CMakeFiles/test.dir/__/src/frequency.cpp.o: ../src/frequency.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/test.dir/__/src/frequency.cpp.o"
+	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/__/src/frequency.cpp.o -c /home/bcd/programming/least_square_identification/src/frequency.cpp
+
+test/CMakeFiles/test.dir/__/src/frequency.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/__/src/frequency.cpp.i"
+	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bcd/programming/least_square_identification/src/frequency.cpp > CMakeFiles/test.dir/__/src/frequency.cpp.i
+
+test/CMakeFiles/test.dir/__/src/frequency.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/__/src/frequency.cpp.s"
+	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bcd/programming/least_square_identification/src/frequency.cpp -o CMakeFiles/test.dir/__/src/frequency.cpp.s
+
 test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.o: test/CMakeFiles/test.dir/flags.make
 test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.o: ../src/leastsquareid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.o"
 	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/__/src/leastsquareid.cpp.o -c /home/bcd/programming/least_square_identification/src/leastsquareid.cpp
 
 test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.i: cmake_force
@@ -85,7 +98,7 @@ test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.s: cmake_force
 
 test/CMakeFiles/test.dir/__/src/read.cpp.o: test/CMakeFiles/test.dir/flags.make
 test/CMakeFiles/test.dir/__/src/read.cpp.o: ../src/read.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/test.dir/__/src/read.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/CMakeFiles/test.dir/__/src/read.cpp.o"
 	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/__/src/read.cpp.o -c /home/bcd/programming/least_square_identification/src/read.cpp
 
 test/CMakeFiles/test.dir/__/src/read.cpp.i: cmake_force
@@ -98,7 +111,7 @@ test/CMakeFiles/test.dir/__/src/read.cpp.s: cmake_force
 
 test/CMakeFiles/test.dir/__/src/signal.cpp.o: test/CMakeFiles/test.dir/flags.make
 test/CMakeFiles/test.dir/__/src/signal.cpp.o: ../src/signal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/CMakeFiles/test.dir/__/src/signal.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object test/CMakeFiles/test.dir/__/src/signal.cpp.o"
 	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/__/src/signal.cpp.o -c /home/bcd/programming/least_square_identification/src/signal.cpp
 
 test/CMakeFiles/test.dir/__/src/signal.cpp.i: cmake_force
@@ -111,7 +124,7 @@ test/CMakeFiles/test.dir/__/src/signal.cpp.s: cmake_force
 
 test/CMakeFiles/test.dir/__/src/write.cpp.o: test/CMakeFiles/test.dir/flags.make
 test/CMakeFiles/test.dir/__/src/write.cpp.o: ../src/write.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object test/CMakeFiles/test.dir/__/src/write.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object test/CMakeFiles/test.dir/__/src/write.cpp.o"
 	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/__/src/write.cpp.o -c /home/bcd/programming/least_square_identification/src/write.cpp
 
 test/CMakeFiles/test.dir/__/src/write.cpp.i: cmake_force
@@ -124,7 +137,7 @@ test/CMakeFiles/test.dir/__/src/write.cpp.s: cmake_force
 
 test/CMakeFiles/test.dir/read_test.cpp.o: test/CMakeFiles/test.dir/flags.make
 test/CMakeFiles/test.dir/read_test.cpp.o: ../test/read_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object test/CMakeFiles/test.dir/read_test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object test/CMakeFiles/test.dir/read_test.cpp.o"
 	cd /home/bcd/programming/least_square_identification/build/test && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/read_test.cpp.o -c /home/bcd/programming/least_square_identification/test/read_test.cpp
 
 test/CMakeFiles/test.dir/read_test.cpp.i: cmake_force
@@ -138,6 +151,7 @@ test/CMakeFiles/test.dir/read_test.cpp.s: cmake_force
 # Object files for target test
 test_OBJECTS = \
 "CMakeFiles/test.dir/__/src/Data.cpp.o" \
+"CMakeFiles/test.dir/__/src/frequency.cpp.o" \
 "CMakeFiles/test.dir/__/src/leastsquareid.cpp.o" \
 "CMakeFiles/test.dir/__/src/read.cpp.o" \
 "CMakeFiles/test.dir/__/src/signal.cpp.o" \
@@ -148,6 +162,7 @@ test_OBJECTS = \
 test_EXTERNAL_OBJECTS =
 
 test/test: test/CMakeFiles/test.dir/__/src/Data.cpp.o
+test/test: test/CMakeFiles/test.dir/__/src/frequency.cpp.o
 test/test: test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.o
 test/test: test/CMakeFiles/test.dir/__/src/read.cpp.o
 test/test: test/CMakeFiles/test.dir/__/src/signal.cpp.o
@@ -156,7 +171,7 @@ test/test: test/CMakeFiles/test.dir/read_test.cpp.o
 test/test: test/CMakeFiles/test.dir/build.make
 test/test: /usr/lib/x86_64-linux-gnu/libpython3.8.so
 test/test: test/CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bcd/programming/least_square_identification/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable test"
 	cd /home/bcd/programming/least_square_identification/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

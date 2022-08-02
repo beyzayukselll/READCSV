@@ -14,10 +14,9 @@ public:
 
     Eigen::VectorXd torqueInput;
 
-    void setTorqueInput();
     void setTorquePulse();
     void setSineSweep();
-    Eigen::VectorXd getTorqueInput();
+    
     Eigen::VectorXd getTorquePulse();
     Eigen::VectorXd getSineSweep();
 

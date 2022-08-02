@@ -1,10 +1,6 @@
 #include "signal.h"
 
 
-Eigen::VectorXd Signal::getTorqueInput()
-{
-    return torqueInput;
-}
 
 void Signal::setTorquePulse(){
     totalTime = 4 * pulseNumber * duration;
@@ -77,4 +73,5 @@ void Signal::plotTorqueInput()
     matplotlibcpp::grid(true);
     matplotlibcpp::title("Trajectory");
     matplotlibcpp::show();
+
 }

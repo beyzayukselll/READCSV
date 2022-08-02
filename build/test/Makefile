@@ -152,6 +152,33 @@ __/src/Data.cpp.s:
 	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/Data.cpp.s
 .PHONY : __/src/Data.cpp.s
 
+__/src/frequency.o: __/src/frequency.cpp.o
+
+.PHONY : __/src/frequency.o
+
+# target to build an object file
+__/src/frequency.cpp.o:
+	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/frequency.cpp.o
+.PHONY : __/src/frequency.cpp.o
+
+__/src/frequency.i: __/src/frequency.cpp.i
+
+.PHONY : __/src/frequency.i
+
+# target to preprocess a source file
+__/src/frequency.cpp.i:
+	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/frequency.cpp.i
+.PHONY : __/src/frequency.cpp.i
+
+__/src/frequency.s: __/src/frequency.cpp.s
+
+.PHONY : __/src/frequency.s
+
+# target to generate assembly for a file
+__/src/frequency.cpp.s:
+	cd /home/bcd/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/frequency.cpp.s
+.PHONY : __/src/frequency.cpp.s
+
 __/src/leastsquareid.o: __/src/leastsquareid.cpp.o
 
 .PHONY : __/src/leastsquareid.o
@@ -299,6 +326,9 @@ help:
 	@echo "... __/src/Data.o"
 	@echo "... __/src/Data.i"
 	@echo "... __/src/Data.s"
+	@echo "... __/src/frequency.o"
+	@echo "... __/src/frequency.i"
+	@echo "... __/src/frequency.s"
 	@echo "... __/src/leastsquareid.o"
 	@echo "... __/src/leastsquareid.i"
 	@echo "... __/src/leastsquareid.s"

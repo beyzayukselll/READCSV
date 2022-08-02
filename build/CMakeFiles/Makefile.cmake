@@ -7,12 +7,12 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "../../CMakeLists.txt"
+  "../CMakeLists.txt"
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
-  "../../src/CMakeLists.txt"
-  "../../test/CMakeLists.txt"
+  "../src/CMakeLists.txt"
+  "../test/CMakeLists.txt"
   "/usr/local/share/eigen3/cmake/Eigen3Config.cmake"
   "/usr/local/share/eigen3/cmake/Eigen3ConfigVersion.cmake"
   "/usr/local/share/eigen3/cmake/Eigen3Targets.cmake"

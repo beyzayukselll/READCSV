@@ -108,7 +108,7 @@ TEST_CASE_METHOD(LeastSquareTestFixture, "Setting Signal test","[Signal Test]"){
     signal.pulseNumber = read.result[2];
     signal.duration = read.result[3];
     
-    signal.setTorqueInput();
+    signal.setTorquePulse();
    
     SECTION("Signal Setting Test")
     {
