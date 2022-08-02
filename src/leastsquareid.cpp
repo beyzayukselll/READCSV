@@ -31,7 +31,7 @@ Eigen::VectorXd & LeastSquareID::getVelocityRef()
     return mVelocity;
 }
 
-void LeastSquareID::calculateLeastSquareIdentification(Eigen::VectorXd torque, Eigen::VectorXd velocity, const double & deadBand)
+void LeastSquareID::calculateLeastSquareIdentification(Eigen::VectorXd torque, Eigen::VectorXd velocity, double deadBand)
 {
     mTorque = torque;
     mVelocity = velocity;

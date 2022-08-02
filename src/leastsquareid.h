@@ -25,7 +25,7 @@ public:
 
     Eigen::VectorXd &getTorqueRef();
 
-    void calculateLeastSquareIdentification(Eigen::VectorXd torque, Eigen::VectorXd velocity, const double & deadBand);
+    void calculateLeastSquareIdentification(Eigen::VectorXd torque, Eigen::VectorXd velocity, double deadBand);
 
     const Eigen::VectorXd &getCalculationResult()const;
 

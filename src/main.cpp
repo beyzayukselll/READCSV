@@ -46,7 +46,7 @@ int main()
         commandSettings.readJson("../../data/setting.json", "commandSettings");
         signalBuilderSettings.readJson("../../data/setting.json", "signalBuilderSettings");
         leastSquareSettings.readJson("../../data/setting.json", "leastSquareSettings");
-
+        
         if (commandSettings.result[0] == 1)
         {
             if (commandSettings.result[1] == 1)
@@ -62,25 +62,25 @@ int main()
                 // write the parameters to file
                 write.write_csv("../../data/torqueInput.csv", "Torque Input", signal.torqueInput);
 
-                    if (commandSettings.result[2] == 1)
-                    {
-                        signal.plotTorqueInput();
-                    }
+                if (commandSettings.result[2] == 1)
+                {
+                    signal.plotTorqueInput();
+                }
             }
 
             // wait for embaded command and logfiles to be ready
-            
-            //when done
-            if (commandSettings.result[3] == 1){
-                
-                // set least square settings
+
+            // when done
+            if (commandSettings.result[3] == 1)
+            {
+                leastSquareSettings.readJson("../../data/setting.json", "leastSquareSettings");
                 ls.deadBand = leastSquareSettings.result[0];
+
+                // set least square settings
                 ls.calculateLeastSquareIdentification(torque, velocity, ls.deadBand);
+                const Eigen::VectorXd &myresult = ls.getCalculationResult();
+                write.dataWriteJson(myresult, "../../data/write.json");
             }
-
-            const Eigen::VectorXd &myresult = ls.getCalculationResult();
-
-            write.dataWriteJson(myresult, "../../data/write.json");
 
             std::vector<double> torquee;
             torquee.resize(torque.size());
