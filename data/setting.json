@@ -5,6 +5,13 @@
         "start": 1,
         "startLeastSquares": 1
     },
+    "frequencySettings": {
+        "sampleTime": 0.001,
+        "totalTime": 10,
+        "minimumFrequency": 10,
+        "maximumFrequency": 100,
+        "torqueAmplitude":5
+    },
     "leastSquareSettings": {
         "deadBand": 150
     },

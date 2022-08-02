@@ -14,6 +14,8 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <iostream>
+#include "sinesweep.h"
+#include "torquesignal.h"
 
 int main()
 {
@@ -38,14 +40,29 @@ int main()
     Read signalBuilderSettings;
     Read commandSettings;
     Read leastSquareSettings;
+    Read frequencySettings;
 
     Write write;
+
+    SineSweep sinesweep;
+    TorqueSignal torquesignal;
+    sinesweep.setSampleTime(0.001);
+    sinesweep.setTotalTime(10);
+    sinesweep.setMinimumFrequency(0.0);
+    sinesweep.setMaximumFrequency(100.0);
+    sinesweep.setTorqueAmplitude(5.0);
+
+    sinesweep.calculateSineSweepInput();
+    sinesweep.plotTorqueInput();
+
 
     while (1)
     {
         commandSettings.readJson("../../data/setting.json", "commandSettings");
         signalBuilderSettings.readJson("../../data/setting.json", "signalBuilderSettings");
         leastSquareSettings.readJson("../../data/setting.json", "leastSquareSettings");
+        frequencySettings.readJson("../../data/setting.json", "frequencySettings");
+        
         
         if (commandSettings.result[2] == 1)
         {

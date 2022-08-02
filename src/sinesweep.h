@@ -2,6 +2,8 @@
 #include <iostream>
 #include <Eigen/Dense>
 #include "torquesignal.h"
+#include <matplotlibcpp.h>
+
 
 class SineSweep : public TorqueSignal
 {
@@ -9,7 +11,6 @@ private:
     double mMinimumFrequency;
     double mMaximumFrequency;
     double mTorqueAmplitude;
-    Eigen::VectorXd mSineSweepInput;
 
 public:
     void setMinimumFrequency(double minimumFrequency);
@@ -19,7 +20,9 @@ public:
     double getMinimumFrequency();
     double getMaximumFrequency();
     double getTorqueAmplitude();
-    Eigen::VectorXd calculateSineSweepInput(Eigen::VectorXd sineSweepInput);
+    Eigen::VectorXd calculateSineSweepInput();
+
+    void plotTorqueInput();
 
 };
 
