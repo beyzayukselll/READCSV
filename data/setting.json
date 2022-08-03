@@ -1,7 +1,7 @@
 {
     "commandSettings": {
         "plot": 0,
-        "signalBuild": 1,
+        "signalBuild": 0,
         "start": 1,
         "startLeastSquares": 1
     },
@@ -13,7 +13,7 @@
         "torqueAmplitude":5
     },
     "leastSquareSettings": {
-        "deadBand": 150
+        "deadBand": 1
     },
     "signalBuilderSettings": {
         "duration": 2001,

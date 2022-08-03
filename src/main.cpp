@@ -54,7 +54,7 @@ int main()
 
     sinesweep.calculateSineSweepInput();
     sinesweep.plotTorqueInput();
-
+    
 
     while (1)
     {
@@ -84,6 +84,8 @@ int main()
                     signal.plotTorqueInput();
                 }
             }
+            write.write_csv("../../data/torqueInput.csv", "Torque Input", sinesweep.getTorqueInput());
+
 
             // wait for embaded command and logfiles to be ready
 
