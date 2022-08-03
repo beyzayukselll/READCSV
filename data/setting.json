@@ -3,7 +3,10 @@
         "plot": 0,
         "signalBuild": 0,
         "start": 1,
-        "startLeastSquares": 1
+        "startLeastSquares": 1,
+        "SineSweepSignal":0,
+        "FFT":1
+
     },
     "frequencySettings": {
         "sampleTime": 0.001,
@@ -11,9 +14,11 @@
         "minimumFrequency": 10,
         "maximumFrequency": 100,
         "torqueAmplitude":5
+
     },
     "leastSquareSettings": {
         "deadBand": 1
+
     },
     "signalBuilderSettings": {
         "duration": 2001,

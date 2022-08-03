@@ -35,38 +35,39 @@ int main()
     // Eigen::VectorXd torque = frequencyData.getTorque();
     // Eigen::VectorXd velocity = frequencyData.getVelocity();
 
+
     LeastSquareID ls;
 
-    Read signalBuilderSettings;
     Read commandSettings;
-    Read leastSquareSettings;
     Read frequencySettings;
+    Read leastSquareSettings;
+    Read signalBuilderSettings;
 
     Write write;
 
     SineSweep sinesweep;
-    TorqueSignal torquesignal;
-    sinesweep.setSampleTime(0.001);
-    sinesweep.setTotalTime(10);
-    sinesweep.setMinimumFrequency(0.0);
-    sinesweep.setMaximumFrequency(100.0);
-    sinesweep.setTorqueAmplitude(5.0);
+    TorqueSignal torquesignal;  
 
-    sinesweep.calculateSineSweepInput();
-    sinesweep.plotTorqueInput();
-    
-
+     frequencySettings.readJson("../../data/setting.json", "frequencySettings");
+     sinesweep.setSampleTime(frequencySettings.result[0]);
+     sinesweep.setTotalTime(frequencySettings.result[1]);
+     sinesweep.setMinimumFrequency(frequencySettings.result[2]);
+     sinesweep.setMaximumFrequency(frequencySettings.result[3]);
+     sinesweep.setTorqueAmplitude(frequencySettings.result[4]);
+     sinesweep.calculateSineSweepInput();
+     
     while (1)
     {
         commandSettings.readJson("../../data/setting.json", "commandSettings");
-        signalBuilderSettings.readJson("../../data/setting.json", "signalBuilderSettings");
         leastSquareSettings.readJson("../../data/setting.json", "leastSquareSettings");
-        frequencySettings.readJson("../../data/setting.json", "frequencySettings");
-        
+        signalBuilderSettings.readJson("../../data/setting.json", "signalBuilderSettings");
+
         
         if (commandSettings.result[2] == 1)
-        {
-            if (commandSettings.result[1] == 1)
+         {
+
+           
+             if (commandSettings.result[1] == 1)
             {
                 Signal signal;
                 // set signal builder settings
@@ -82,8 +83,11 @@ int main()
                 if (commandSettings.result[0] == 1)
                 {
                     signal.plotTorqueInput();
+                    sinesweep.plotTorqueInput();
                 }
             }
+
+            else 
             write.write_csv("../../data/torqueInput.csv", "Torque Input", sinesweep.getTorqueInput());
 
 
@@ -119,6 +123,7 @@ int main()
 
         else if (commandSettings.result[1] == 0)
         {
+            
             std::cout << "waiting for starting conditions" << std::endl;
         }
         else
