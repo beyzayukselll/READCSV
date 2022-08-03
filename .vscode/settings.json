@@ -78,7 +78,8 @@
         "cuchar": "cpp",
         "unordered_set": "cpp",
         "scoped_allocator": "cpp",
-        "typeindex": "cpp"
+        "typeindex": "cpp",
+        "sparse": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }

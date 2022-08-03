@@ -34,57 +34,57 @@ numpy/arrayobject.h
 opencv2/opencv.hpp
 -
 
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/__multiarray_api.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/__multiarray_api.h
 
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
 
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/_numpyconfig.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/_numpyconfig.h
 
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/arrayobject.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/arrayobject.h
 ndarrayobject.h
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/ndarrayobject.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/ndarrayobject.h
 npy_interrupt.h
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_interrupt.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_interrupt.h
 noprefix.h
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/noprefix.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/noprefix.h
 
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/ndarrayobject.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/ndarrayobject.h
 Python.h
 -
 ndarraytypes.h
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/ndarraytypes.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/ndarraytypes.h
 __multiarray_api.h
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/__multiarray_api.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/__multiarray_api.h
 
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/ndarraytypes.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/ndarraytypes.h
 npy_common.h
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_common.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_common.h
 npy_endian.h
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_endian.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_endian.h
 npy_cpu.h
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_cpu.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_cpu.h
 utils.h
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/utils.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/utils.h
 _neighborhood_iterator_imp.h
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h
 npy_1_7_deprecated_api.h
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h
 
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/noprefix.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/noprefix.h
 ndarrayobject.h
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/ndarrayobject.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/ndarrayobject.h
 npy_interrupt.h
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_interrupt.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_interrupt.h
 
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h
 old_defines.h
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/old_defines.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/old_defines.h
 
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_common.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_common.h
 Python.h
 -
 numpyconfig.h
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/numpyconfig.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/numpyconfig.h
 npy_config.h
 -
 io.h
@@ -96,33 +96,33 @@ inttypes.h
 limits.h
 -
 
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_cpu.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_cpu.h
 numpyconfig.h
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/numpyconfig.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/numpyconfig.h
 
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_endian.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_endian.h
 endian.h
 -
 sys/endian.h
 -
 npy_cpu.h
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_cpu.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_cpu.h
 
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_interrupt.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/npy_interrupt.h
 setjmp.h
 -
 signal.h
 -
 
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/numpyconfig.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/numpyconfig.h
 _numpyconfig.h
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/_numpyconfig.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/_numpyconfig.h
 
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/old_defines.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/old_defines.h
 
-/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include/numpy/utils.h
+/home/kose/.local/lib/python3.8/site-packages/numpy/core/include/numpy/utils.h
 
-/home/bcd/programming/least_square_identification/include/json.hpp
+/home/kose/work/programming/least_square_identification/include/json.hpp
 algorithm
 -
 cstddef
@@ -508,7 +508,7 @@ any
 string_view
 -
 
-/home/bcd/programming/least_square_identification/src/Data.h
+/home/kose/work/programming/least_square_identification/src/Data.h
 iostream
 -
 Eigen/Dense
@@ -520,13 +520,23 @@ iterator
 vector
 -
 
-/home/bcd/programming/least_square_identification/src/leastsquareid.h
+/home/kose/work/programming/least_square_identification/src/frequency.h
+iostream
+-
+unsupported/Eigen/FFT
+-
+Eigen/Dense
+-
+complex
+-
+
+/home/kose/work/programming/least_square_identification/src/leastsquareid.h
 iostream
 -
 Eigen/Dense
 -
 
-/home/bcd/programming/least_square_identification/src/main.cpp
+/home/kose/work/programming/least_square_identification/src/main.cpp
 iostream
 -
 Eigen/Dense
@@ -540,17 +550,15 @@ complex
 cmath
 -
 leastsquareid.h
-/home/bcd/programming/least_square_identification/src/leastsquareid.h
+/home/kose/work/programming/least_square_identification/src/leastsquareid.h
 Data.h
-/home/bcd/programming/least_square_identification/src/Data.h
+/home/kose/work/programming/least_square_identification/src/Data.h
 vector
 -
 write.h
-/home/bcd/programming/least_square_identification/src/write.h
-signal.h
-/home/bcd/programming/least_square_identification/src/signal.h
+/home/kose/work/programming/least_square_identification/src/write.h
 read.h
-/home/bcd/programming/least_square_identification/src/read.h
+/home/kose/work/programming/least_square_identification/src/read.h
 cstdlib
 -
 unistd.h
@@ -560,11 +568,25 @@ stdio.h
 iostream
 -
 sinesweep.h
-/home/bcd/programming/least_square_identification/src/sinesweep.h
+/home/kose/work/programming/least_square_identification/src/sinesweep.h
 torquesignal.h
-/home/bcd/programming/least_square_identification/src/torquesignal.h
+/home/kose/work/programming/least_square_identification/src/torquesignal.h
+frequency.h
+/home/kose/work/programming/least_square_identification/src/frequency.h
+pulse.h
+/home/kose/work/programming/least_square_identification/src/pulse.h
 
-/home/bcd/programming/least_square_identification/src/read.h
+/home/kose/work/programming/least_square_identification/src/pulse.h
+iostream
+-
+Eigen/Dense
+-
+torquesignal.h
+/home/kose/work/programming/least_square_identification/src/torquesignal.h
+vector
+-
+
+/home/kose/work/programming/least_square_identification/src/read.h
 iostream
 -
 string.h
@@ -580,7 +602,7 @@ iterator
 fstream
 -
 ../include/json.hpp
-/home/bcd/programming/least_square_identification/include/json.hpp
+/home/kose/work/programming/least_square_identification/include/json.hpp
 exception
 -
 boost/property_tree/json_parser.hpp
@@ -592,43 +614,23 @@ Eigen/Dense
 boost/algorithm/string.hpp
 -
 
-/home/bcd/programming/least_square_identification/src/signal.h
-iostream
--
-Eigen/Dense
--
-matplotlibcpp.h
--
-vector
--
-algorithm
--
-
-/home/bcd/programming/least_square_identification/src/sinesweep.cpp
-sinesweep.h
-/home/bcd/programming/least_square_identification/src/sinesweep.h
-
-/home/bcd/programming/least_square_identification/src/sinesweep.h
+/home/kose/work/programming/least_square_identification/src/sinesweep.h
 iostream
 -
 Eigen/Dense
 -
 torquesignal.h
-/home/bcd/programming/least_square_identification/src/torquesignal.h
+/home/kose/work/programming/least_square_identification/src/torquesignal.h
 matplotlibcpp.h
 -
 
-/home/bcd/programming/least_square_identification/src/torquesignal.cpp
-torquesignal.h
-/home/bcd/programming/least_square_identification/src/torquesignal.h
-
-/home/bcd/programming/least_square_identification/src/torquesignal.h
+/home/kose/work/programming/least_square_identification/src/torquesignal.h
 iostream
 -
 Eigen/Dense
 -
 
-/home/bcd/programming/least_square_identification/src/write.h
+/home/kose/work/programming/least_square_identification/src/write.h
 iostream
 -
 Eigen/Dense
@@ -638,7 +640,7 @@ iterator
 fstream
 -
 ../include/json.hpp
-/home/bcd/programming/least_square_identification/include/json.hpp
+/home/kose/work/programming/least_square_identification/include/json.hpp
 boost/property_tree/json_parser.hpp
 -
 boost/property_tree/ptree.hpp
@@ -1535,6 +1537,8 @@ src/Core/arch/AltiVec/MatrixProduct.h
 /usr/local/include/eigen3/Eigen/src/Core/arch/AltiVec/MatrixProduct.h
 src/Core/arch/NEON/GeneralBlockPanelKernel.h
 /usr/local/include/eigen3/Eigen/src/Core/arch/NEON/GeneralBlockPanelKernel.h
+src/Core/arch/AVX512/GemmKernel.h
+/usr/local/include/eigen3/Eigen/src/Core/arch/AVX512/GemmKernel.h
 src/Core/BooleanRedux.h
 /usr/local/include/eigen3/Eigen/src/Core/BooleanRedux.h
 src/Core/Select.h
@@ -2340,6 +2344,18 @@ src/Core/util/ReenableStupidWarnings.h
 ../../InternalHeaderCheck.h
 /usr/local/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h
 
+/usr/local/include/eigen3/Eigen/src/Core/arch/AVX512/GemmKernel.h
+intrin.h
+-
+x86intrin.h
+-
+immintrin.h
+-
+type_traits
+-
+../../InternalHeaderCheck.h
+/usr/local/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h
+
 /usr/local/include/eigen3/Eigen/src/Core/arch/AVX512/MathFunctions.h
 ../../InternalHeaderCheck.h
 /usr/local/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h
@@ -2413,8 +2429,6 @@ MatrixVectorProduct.h
 /usr/local/include/eigen3/Eigen/src/Core/arch/Default/Half.h
 ../../InternalHeaderCheck.h
 /usr/local/include/eigen3/Eigen/src/Core/InternalHeaderCheck.h
-sstream
--
 
 /usr/local/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
 
@@ -3319,4 +3333,48 @@ IndexedViewMethods.h
 /usr/local/include/eigen3/Eigen/src/plugins/ReshapedMethods.h
 ReshapedMethods.h
 /usr/local/include/eigen3/Eigen/src/plugins/ReshapedMethods.h
+
+/usr/local/include/eigen3/unsupported/Eigen/FFT
+complex
+-
+vector
+-
+map
+-
+../../Eigen/Core
+/usr/local/include/eigen3/Eigen/Core
+../../Eigen/src/Core/util/DisableStupidWarnings.h
+/usr/local/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
+fftw3.h
+-
+src/FFT/ei_fftw_impl.h
+/usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_fftw_impl.h
+src/FFT/ei_imklfft_impl.h
+/usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_imklfft_impl.h
+pocketfft_hdronly.h
+-
+src/FFT/ei_pocketfft_impl.h
+/usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_pocketfft_impl.h
+src/FFT/ei_kissfft_impl.h
+/usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_kissfft_impl.h
+../../Eigen/src/Core/util/ReenableStupidWarnings.h
+/usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
+
+/usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_fftw_impl.h
+./InternalHeaderCheck.h
+/usr/local/include/eigen3/unsupported/Eigen/src/FFT/InternalHeaderCheck.h
+
+/usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_imklfft_impl.h
+mkl_dfti.h
+-
+./InternalHeaderCheck.h
+/usr/local/include/eigen3/unsupported/Eigen/src/FFT/InternalHeaderCheck.h
+complex
+-
+
+/usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_kissfft_impl.h
+./InternalHeaderCheck.h
+/usr/local/include/eigen3/unsupported/Eigen/src/FFT/InternalHeaderCheck.h
+
+/usr/local/include/eigen3/unsupported/Eigen/src/FFT/ei_pocketfft_impl.h
 

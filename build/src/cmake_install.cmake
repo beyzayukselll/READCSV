@@ -1,4 +1,4 @@
-# Install script for directory: /home/bcd/programming/least_square_identification
+# Install script for directory: /home/kose/work/programming/least_square_identification/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,23 +37,3 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/bcd/programming/least_square_identification/build/src/src/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/bcd/programming/least_square_identification/build/src/test/cmake_install.cmake")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT)
-  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
-else()
-  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
-endif()
-
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/bcd/programming/least_square_identification/build/src/${CMAKE_INSTALL_MANIFEST}"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")

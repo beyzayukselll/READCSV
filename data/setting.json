@@ -25,6 +25,7 @@
         "duration": 200,
         "maxTorque": 41,
         "minTorque": 11,
-        "pulseNumber": 51
+        "pulseNumber": 51,
+        "sampleTime" : 0.001
     }
 }

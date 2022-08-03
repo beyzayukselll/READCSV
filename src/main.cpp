@@ -34,13 +34,13 @@ int main()
 
     // Read data from file
     Data data;
-    if (commandSettings.result[4] = 0 && commandSettings.result[5] == 1)
+    if (commandSettings.result[4] == 0 && commandSettings.result[5] == 1)
     {
-        data.setFile("../../data/y_Axis_ImpulseTest_23torq_27062022");
+        data.setFile("../../data/y_Axis_ImpulseTest_23torq_27062022.csv");
     }
     else if (commandSettings.result[4] == 1 && commandSettings.result[5] == 0)
     {
-        data.setFile("../../data/leastSquare_y_v5_500interval_24062022");
+        data.setFile("../../data/leastSquare_y_v5_500interval_24062022.csv");
     }
     else
     {
@@ -60,7 +60,6 @@ int main()
 
     SineSweep sinesweep;
     TorqueSignal torquesignal;
-
     while (1)
     {
         if (commandSettings.result[3] == 1) // start
@@ -71,10 +70,12 @@ int main()
                 // set signal builder settings
                 pulse.setDuration(signalBuilderSettings.result[0]);
                 pulse.setMaxTorque(signalBuilderSettings.result[1]);
-                pulse.setPulseNumber(signalBuilderSettings.result[2]);
-                pulse.setDuration(signalBuilderSettings.result[3]);
+                pulse.setMinTorque(signalBuilderSettings.result[2]);
+                pulse.setPulseNumber(signalBuilderSettings.result[3]);
+                pulse.setSampleTime(signalBuilderSettings.result[4]);
                 pulse.calculatePulseInput();
 
+                  std::cout << "gecti" << std::endl;
                 // write the parameters to file
                 write.write_csv("../../data/torqueInput.csv", "Torque Input", pulse.getTorqueInput());
             }
