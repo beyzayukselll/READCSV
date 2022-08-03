@@ -1,23 +1,8 @@
 #include "frequency.h"
 
-void Frequency::setFrequencyResponseFunction(Eigen::VectorXd frequencyResponseFunction)
+void Frequency::setSampleTime(const double & sampleTime)
 {
-    mFrequencyResponseFunction = frequencyResponseFunction;
-}
-
-void Frequency::setFrequency(Eigen::VectorXd frequency)
-{
-    mFrequency = frequency;
-}
-
-void Frequency::setMagnitude(Eigen::VectorXd magnitude)
-{
-    mMagnitude = magnitude;
-}
-
-void Frequency::setPhase(Eigen::VectorXd phase)
-{
-    mPhase = phase;
+    mSampleTime = sampleTime;
 }
 
 void Frequency::setVelocity(Eigen::VectorXd velocity)
@@ -30,46 +15,11 @@ void Frequency::setTorque(Eigen::VectorXd torque)
     mTorque = torque;
 }
 
-void Frequency::setPSDVelocity(Eigen::VectorXd CPSVelocity)
+
+
+double Frequency::getSampleTime()
 {
-    mPSDVelocity = CPSVelocity;
-}
-
-void Frequency::setPSDTorque(Eigen::VectorXd CPSTorque)
-{
-    mPSDTorque = CPSTorque;
-}
-
-void Frequency::setCPSVelocity(Eigen::VectorXd CPSVelocity)
-{
-    mCPSVelocity = CPSVelocity;
-}
-
-void Frequency::setCPSTorque(Eigen::VectorXd CPSTorque)
-{
-    mCPSTorque = CPSTorque;
-}
-
-
-
-Eigen::VectorXd Frequency::getFrequencyResponseFunction()
-{
-    return mFrequencyResponseFunction;
-}
-
-Eigen::VectorXd Frequency::getFrequency()
-{
-    return mFrequency;
-}
-
-Eigen::VectorXd Frequency::getMagnitude()
-{
-    return mMagnitude;
-}
-
-Eigen::VectorXd Frequency::getPhase()
-{
-    return mPhase;
+    return mSampleTime;
 }
 
 Eigen::VectorXd Frequency::getVelocity()
@@ -82,31 +32,14 @@ Eigen::VectorXd Frequency::getTorque()
     return mTorque;
 }
 
-Eigen::VectorXd Frequency::getPSDVelocity()
+Eigen::VectorXd Frequency::getFrequencySeries()
 {
-    return mPSDVelocity;
+    return mFrequencySeries;
 }
 
-Eigen::VectorXd Frequency::getPSDTorque()
-{
-    return mPSDTorque;
-}
 
-Eigen::VectorXd Frequency::getCPSVelocity()
+void Frequency::calculateFrequencyResponseFunction()
 {
-    return mCPSVelocity;
-}
-
-Eigen::VectorXd Frequency::getCPSTorque()
-{
-    return mCPSTorque;
-}
-
-void Frequency::calculateFrequencyResponseFunction(Eigen::VectorXd torque, Eigen::VectorXd velocity)
-{
-    mVelocity = velocity;
-    mTorque = torque;
-
     Eigen::FFT<double> fft;
     
     Eigen::VectorXcd FFT_torque = fft.fwd(mTorque);
@@ -128,19 +61,14 @@ void Frequency::calculateFrequencyResponseFunction(Eigen::VectorXd torque, Eigen
         mCPSTorque(i) = FFT_torque(i).real() * FFT_torque(i).real() + FFT_torque(i).imag() * FFT_torque(i).imag();
         mFrequencyResponseFunction(i) = mCPSTorque(i) / mPSDTorque(i);
     }
-    setFrequencyResponseFunction(mFrequencyResponseFunction);
-    setPSDVelocity(mPSDVelocity);
-    setPSDTorque(mPSDTorque);
-    setCPSVelocity(mCPSVelocity);
-    setCPSTorque(mCPSTorque);
+
 }
 
-void Frequency::calculateFrequency(Eigen::VectorXd torque, double sampleTime){
+void Frequency::calculateFrequencySeries(){
 
-   for (int i = 0; i < torque.size(); i++)
+   for (int i = 0; i < mTorque.size(); i++)
     {
-        mFrequency(i) = 1.0 / torque.size() / sampleTime * i;
+        mFrequencySeries(i) = 1.0 / mTorque.size() / mSampleTime * i;
     }
-    setFrequency(mFrequency);
 }
 

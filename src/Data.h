@@ -9,16 +9,18 @@
 class Data
 {
 private:
-    std::string File;
-    Eigen::VectorXd Velocity;
-    Eigen::VectorXd Torque;
+    std::string mFile;
+    Eigen::VectorXd mVelocity;
+    Eigen::VectorXd mTorque;
 
 public:
-    void setFile(std::string file);
+    void setFile(const std::string & file);
     void setVelocity(Eigen::VectorXd velocity);
     void setTorque(Eigen::VectorXd torque);
-    void dataRead();
+    
+    std::string getFile();
     Eigen::VectorXd getTorque();
     Eigen::VectorXd getVelocity();
-    
+    void dataRead();
+
 };

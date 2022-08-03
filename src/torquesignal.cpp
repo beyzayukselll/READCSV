@@ -1,13 +1,8 @@
 #include "torquesignal.h"
 
-void TorqueSignal::setSampleTime(double sampleTime)
+void TorqueSignal::setSampleTime(const double & sampleTime)
 {
     mSampleTime = sampleTime;
-}
-
-void TorqueSignal::setTotalTime(double totalTime)
-{
-    mTotalTime = totalTime;
 }
 
 void TorqueSignal::setTorqueInput(Eigen::VectorXd torqueInput)
@@ -18,11 +13,6 @@ void TorqueSignal::setTorqueInput(Eigen::VectorXd torqueInput)
 double TorqueSignal::getSampleTime()
 {
     return mSampleTime;
-}
-
-double TorqueSignal::getTotalTime()
-{
-    return mTotalTime;
 }
 
 Eigen::VectorXd TorqueSignal::getTorqueInput()

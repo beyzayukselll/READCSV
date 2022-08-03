@@ -1,23 +1,38 @@
 #include "Data.h"
 
-void Data::setFile(std::string file)
+void Data::setFile(const std::string & file)
 {
-    File = file;
+    mFile = file;
 }
 
 void Data::setVelocity(Eigen::VectorXd velocity)
 {
-    Velocity = velocity;
+    mVelocity = velocity;
 }
 
 void Data::setTorque(Eigen::VectorXd torque)
 {
-    Torque = torque;
+    mTorque = torque;
+}
+
+std::string Data::getFile()
+{
+    return mFile;
+}
+
+Eigen::VectorXd Data::getVelocity()
+{
+    return mVelocity;
+}
+
+Eigen::VectorXd Data::getTorque()
+{
+    return mTorque;
 }
 
 void Data::dataRead()
 {
-    std::ifstream is(File);
+    std::ifstream is(mFile);
     std::istream_iterator<double> start(is), end;
     std::vector<double> numbers(start, end);
     int num_of_data = numbers.size();
@@ -36,17 +51,7 @@ void Data::dataRead()
     Eigen::VectorXd time;
     time = res.col(0);
 
-    Velocity = res.col(29) / 10000.0 * 2.0 * atan(1)*4.0 / 60.0;
+    mVelocity = res.col(29) / 10000.0 * 2.0 * atan(1)*4.0 / 60.0;
 
-    Torque = res.col(11) / 1000.0 * 2.37;
-}
-
-Eigen::VectorXd Data::getTorque()
-{
-    return Torque;
-}
-
-Eigen::VectorXd Data::getVelocity()
-{
-    return Velocity;
+    mTorque = res.col(11) / 1000.0 * 2.37;
 }

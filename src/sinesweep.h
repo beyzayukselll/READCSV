@@ -11,18 +11,21 @@ private:
     double mMinimumFrequency;
     double mMaximumFrequency;
     double mTorqueAmplitude;
+    double mTotalTime;
+
 
 public:
-    void setMinimumFrequency(double minimumFrequency);
-    void setMaximumFrequency(double maximumFrequency);
-    void setTorqueAmplitude(double torqueAmplitude);
+    void setMinimumFrequency(const double & minimumFrequency);
+    void setMaximumFrequency(const double & maximumFrequency);
+    void setTorqueAmplitude(const double & torqueAmplitude);
+    void setTotalTime(const double & totalTime);
+
 
     double getMinimumFrequency();
     double getMaximumFrequency();
     double getTorqueAmplitude();
-    Eigen::VectorXd calculateSineSweepInput();
+    double getTotalTime();
 
-    void plotTorqueInput();
-
+    void calculateSineSweepInput();
 };
 

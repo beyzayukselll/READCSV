@@ -1,14 +1,29 @@
 #include "leastsquareid.h"
 
+void LeastSquareID::setDeadBand(const double & deadBand)
+{
+    mDeadBand = deadBand;
+}
 
-void LeastSquareID::setTorque(Eigen::VectorXd torque)
+void LeastSquareID::setTorque(const Eigen::VectorXd & torque)
 {
     mTorque = torque;
 }
 
-void LeastSquareID::setVelocity(Eigen::VectorXd velocity)
+void LeastSquareID::setVelocity(const Eigen::VectorXd & velocity)
 {
     mVelocity = velocity;
+}
+
+void LeastSquareID::setSampleTime(const double & sampleTime)
+{
+    mSampleTime = sampleTime;
+}
+
+
+double LeastSquareID::getDeadBand()
+{
+    return mDeadBand;
 }
 
 Eigen::VectorXd LeastSquareID::getTorque()
@@ -21,20 +36,14 @@ Eigen::VectorXd LeastSquareID::getVelocity()
     return mVelocity;
 }
 
-Eigen::VectorXd & LeastSquareID::getTorqueRef()
+double LeastSquareID::getSampleTime()
 {
-    return mTorque;
+    return mSampleTime;
 }
 
-Eigen::VectorXd & LeastSquareID::getVelocityRef()
-{
-    return mVelocity;
-}
 
-void LeastSquareID::calculateLeastSquareIdentification(Eigen::VectorXd torque, Eigen::VectorXd velocity, double deadBand)
+void LeastSquareID::calculateLeastSquareIdentification()
 {
-    mTorque = torque;
-    mVelocity = velocity;
     int num_of_rows = mTorque.size();
     Eigen::VectorXd signum;
     signum.setZero(mTorque.size());
@@ -46,15 +55,15 @@ void LeastSquareID::calculateLeastSquareIdentification(Eigen::VectorXd torque, E
 
     for (int i = 0; i < mTorque.size(); i++)
     {
-        if (mVelocity(i) <= deadBand && mVelocity(i) >= -1.0 * deadBand)
+        if (mVelocity(i) <= mDeadBand && mVelocity(i) >= -1.0 * mDeadBand)
         {
             signum(i) = 0;
         }
-        else if (mVelocity(i) > deadBand)
+        else if (mVelocity(i) > mDeadBand)
         {
             signum(i) = 1;
         }
-        else if (mVelocity(i) < deadBand)
+        else if (mVelocity(i) < mDeadBand)
         {
             signum(i) = -1;
         }
@@ -78,11 +87,10 @@ void LeastSquareID::calculateLeastSquareIdentification(Eigen::VectorXd torque, E
 
     estimatedState = (regresserMatrix.adjoint() * regresserMatrix).inverse() * regresserMatrix.adjoint() * (outputVector);
 
-    double sampleTime = 0.001;
     double p_wd = estimatedState(0);
-    double p_w = log(p_wd) / sampleTime;
+    double p_w = log(p_wd) / mSampleTime;
     double K_wd = estimatedState(1);
-    double K_w = K_wd * (-1.0 * p_w) / (1.0 - exp(p_w * sampleTime));
+    double K_w = K_wd * (-1.0 * p_w) / (1.0 - exp(p_w * mSampleTime));
 
     mCalculationResult.resize(4);
 

@@ -7,12 +7,10 @@ class TorqueSignal
 {
 private:
     double mSampleTime;
-    double mTotalTime;
     Eigen::VectorXd mTorqueInput;
 
 public:
-    void setSampleTime(double sampleTime);
-    void setTotalTime(double totalTime);
+    void setSampleTime(const double & sampleTime);
     void setTorqueInput(Eigen::VectorXd torqueInput);
 
     double getSampleTime();

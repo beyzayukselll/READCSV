@@ -22,10 +22,6 @@ class Read
 {
 private:
 public:
-    std::vector<std::string> inputName;
     std::vector<double> result;
-    //vector<result<int, string, float>> MultipleTypeArray; 
     void readJson(const std::string & fileName, const std::string & objectName);
-   
-
 };

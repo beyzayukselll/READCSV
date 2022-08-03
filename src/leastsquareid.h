@@ -10,26 +10,27 @@ private:
     double mViscousDamping;
     double mCoulombTorquePositive;
     double mCoulombTorqueNegative;
+
+    double mDeadBand;
+    double mSampleTime;
     Eigen::VectorXd mTorque;
     Eigen::VectorXd mVelocity;
     Eigen::VectorXd mCalculationResult;
 
 public:
-    double deadBand;
-    void setTorque(Eigen::VectorXd torque);
-    
-    void setVelocity(Eigen::VectorXd velocity);
+    void setDeadBand(const double & deadBand);
+    void setSampleTime(const double & sampleTime);
+    void setTorque(const Eigen::VectorXd & torque);
+    void setVelocity(const Eigen::VectorXd & velocity);
 
+    double getDeadBand();
     Eigen::VectorXd getTorque();
     Eigen::VectorXd getVelocity();
+    double getSampleTime();
 
-    Eigen::VectorXd &getTorqueRef();
-
-    void calculateLeastSquareIdentification(Eigen::VectorXd torque, Eigen::VectorXd velocity, double deadBand);
+    void calculateLeastSquareIdentification();
 
     const Eigen::VectorXd &getCalculationResult()const;
 
     void getInfo();
-    Eigen::VectorXd &getVelocityRef();
-
 };

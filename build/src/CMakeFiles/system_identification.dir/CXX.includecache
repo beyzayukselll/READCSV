@@ -604,6 +604,10 @@ vector
 algorithm
 -
 
+/home/bcd/programming/least_square_identification/src/sinesweep.cpp
+sinesweep.h
+/home/bcd/programming/least_square_identification/src/sinesweep.h
+
 /home/bcd/programming/least_square_identification/src/sinesweep.h
 iostream
 -
@@ -613,6 +617,10 @@ torquesignal.h
 /home/bcd/programming/least_square_identification/src/torquesignal.h
 matplotlibcpp.h
 -
+
+/home/bcd/programming/least_square_identification/src/torquesignal.cpp
+torquesignal.h
+/home/bcd/programming/least_square_identification/src/torquesignal.h
 
 /home/bcd/programming/least_square_identification/src/torquesignal.h
 iostream
