@@ -13,7 +13,6 @@ private:
     double mTorqueAmplitude;
     double mTotalTime;
 
-
 public:
     void setMinimumFrequency(const double & minimumFrequency);
     void setMaximumFrequency(const double & maximumFrequency);

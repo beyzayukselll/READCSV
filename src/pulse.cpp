@@ -1,5 +1,16 @@
 #include "pulse.h"
 
+Pulse::Pulse()
+ {
+
+ }
+
+Pulse::Pulse(const double & maxTorque, const double & minTorque,const double & duration, const int pulseNumber)
+: mDuration(duration), mMaxTorque(maxTorque), mMinTorque(minTorque), mPulseNumber(pulseNumber)
+{
+    calculatePulseInput();
+}
+
 void Pulse::setDuration(const double & duration)
 {
     mDuration = duration;
@@ -19,12 +30,6 @@ void Pulse::setPulseNumber(const int & pulseNumber)
 {
     mPulseNumber = pulseNumber;
 }
-
-void Pulse::setTotalTime(double totalTime)
-{
-    mTotalTime = totalTime;
-}
-
 
 
 double Pulse::getDuration()
@@ -54,9 +59,8 @@ double Pulse::getTotalTime()
 
 void Pulse::calculatePulseInput(){   
 
+    mTotalTime = 4 * mPulseNumber * mDuration;
     double sampleTime = getSampleTime(); // miliseconds
-
-    mTotalTime = 4 * mPulseNumber * mDuration / sampleTime;
 
     Eigen::VectorXd pulseInput;
     pulseInput.resize(mTotalTime);

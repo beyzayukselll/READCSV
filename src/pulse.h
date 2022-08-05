@@ -14,11 +14,12 @@ private:
     double mTotalTime;
 
 public:
+    Pulse();
+    Pulse(const double & maxTorque, const double & minTorque,const double & duration, const int pulseNumber);
     void setDuration(const double &duration);
     void setMaxTorque(const double &maxTorque);
     void setMinTorque(const double &minTorque);
     void setPulseNumber(const int &pulseNumber);
-    void setTotalTime(double totalTime);
 
     double getDuration();
     double getMaxTorque();

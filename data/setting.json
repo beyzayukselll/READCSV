@@ -1,31 +1,30 @@
 {
     "commandSettings": {
-        "plot": 0,
-        "signalBuildTorque": 1,
-        "signalBuildSineSweep": 0,
-        "start": 1,
-        "startLeastSquares": 1,
-        "startFRF": 0,
-        "SineSweepSignal":0,
-        "FFT":1
+        "0start": 1,
+        "1signalBuildTorque": 1,
+        "2signalBuildSineSweep": 0,
+        "3startLeastSquares": 1,
+        "4startFRF": 0,
+        "5plot": 0
     },
-    "frequencySettings": {
-        "sampleTime": 0.001,
-        "totalTime": 10,
-        "minimumFrequency": 10,
-        "maximumFrequency": 100,
-        "torqueAmplitude":5
+    "sineSweepSettings": {
+        "0sampleTime": 0.001,
+        "1totalTime": 10,
+        "2minimumFrequency": 10,
+        "3maximumFrequency": 100,
+        "4torqueAmplitude": 5
 
     },
     "leastSquareSettings": {
-        "deadBand": 1
+        "deadBand": 1,
+        "sampleTime": 0.001
     },
 
     "signalBuilderSettings": {
         "duration": 200,
-        "maxTorque": 41,
-        "minTorque": 11,
-        "pulseNumber": 51,
+        "maxTorque": 11,
+        "minTorque": 4,
+        "pulseNumber": 5,
         "sampleTime" : 0.001
     }
 }

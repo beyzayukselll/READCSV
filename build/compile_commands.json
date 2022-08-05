@@ -1,0 +1,133 @@
+[
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/Data.cpp.o -c /home/bcd/programming/least_square_identification/src/Data.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/Data.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/atapulse.cpp.o -c /home/bcd/programming/least_square_identification/src/atapulse.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/atapulse.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/frequency.cpp.o -c /home/bcd/programming/least_square_identification/src/frequency.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/frequency.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/leastsquareid.cpp.o -c /home/bcd/programming/least_square_identification/src/leastsquareid.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/leastsquareid.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/main.cpp.o -c /home/bcd/programming/least_square_identification/src/main.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/main.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/plot.cpp.o -c /home/bcd/programming/least_square_identification/src/plot.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/plot.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/pulse.cpp.o -c /home/bcd/programming/least_square_identification/src/pulse.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/pulse.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/read.cpp.o -c /home/bcd/programming/least_square_identification/src/read.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/read.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/sinesweep.cpp.o -c /home/bcd/programming/least_square_identification/src/sinesweep.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/sinesweep.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/torquesignal.cpp.o -c /home/bcd/programming/least_square_identification/src/torquesignal.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/torquesignal.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o src/CMakeFiles/system_identification.dir/write.cpp.o -c /home/bcd/programming/least_square_identification/src/write.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/write.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I../test/include -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/Data.cpp.o -c /home/bcd/programming/least_square_identification/src/Data.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/Data.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I../test/include -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/atapulse.cpp.o -c /home/bcd/programming/least_square_identification/src/atapulse.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/atapulse.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I../test/include -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/frequency.cpp.o -c /home/bcd/programming/least_square_identification/src/frequency.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/frequency.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I../test/include -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.o -c /home/bcd/programming/least_square_identification/src/leastsquareid.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/leastsquareid.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I../test/include -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/plot.cpp.o -c /home/bcd/programming/least_square_identification/src/plot.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/plot.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I../test/include -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/pulse.cpp.o -c /home/bcd/programming/least_square_identification/src/pulse.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/pulse.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I../test/include -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/read.cpp.o -c /home/bcd/programming/least_square_identification/src/read.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/read.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I../test/include -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/sinesweep.cpp.o -c /home/bcd/programming/least_square_identification/src/sinesweep.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/sinesweep.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I../test/include -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/torquesignal.cpp.o -c /home/bcd/programming/least_square_identification/src/torquesignal.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/torquesignal.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I../test/include -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/__/src/write.cpp.o -c /home/bcd/programming/least_square_identification/src/write.cpp",
+  "file": "/home/bcd/programming/least_square_identification/src/write.cpp"
+},
+
+{
+  "directory": "/home/bcd/programming/least_square_identification/build",
+  "command": "/usr/bin/g++   -I../ -I../include -I/usr/include/python3.8 -I../test/include -I/home/bcd/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o test/CMakeFiles/test.dir/read_test.cpp.o -c /home/bcd/programming/least_square_identification/test/read_test.cpp",
+  "file": "/home/bcd/programming/least_square_identification/test/read_test.cpp"
+}
+]

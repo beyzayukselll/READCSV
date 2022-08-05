@@ -6,6 +6,7 @@ COMPONENTS Interpreter Development NumPy)
 find_package(PythonLibs     3.8     REQUIRED)
 find_package(PythonInterp   3.8     REQUIRED)
 find_package (Eigen3 3.4 REQUIRED NO_MODULE)
+
 # find_package(Catch2 CONFIG REQUIRED)
 
 include_directories(${CMAKE_SOURCE_DIR}

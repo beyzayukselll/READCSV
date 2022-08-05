@@ -8,18 +8,18 @@ void Read::readJson(const std::string & fileName, const std::string & objectName
    
     pt::read_json(fileName, root);
 
-    std::vector<std::string> s;
+    std::vector<double> s;
    
     for (pt::ptree::value_type & v : root.get_child(objectName))
     {        
-        s.push_back(v.second.data());
+        s.push_back(v.second.get_value<double>());
+        // s.push_back(v.second.data());
     }
-
-    result.resize(s.size());
+    
+    mResult.resize(s.size());
 
     for (int i=0; i<s.size(); ++i)
     {
-        result[i] = std::stod(s[i]);
-        
-    }  
+        mResult[i] = s[i];
+    }
 }

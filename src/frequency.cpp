@@ -16,6 +16,10 @@ void Frequency::setTorque(Eigen::VectorXd torque)
 }
 
 
+Eigen::VectorXd Frequency::getFrequencyResponseFunction()
+{
+    return mFrequencyResponseFunction;
+}
 
 double Frequency::getSampleTime()
 {
@@ -46,12 +50,18 @@ void Frequency::calculateFrequencyResponseFunction()
     Eigen::VectorXcd FFT_velocity = fft.fwd(mVelocity);
 
     Eigen::VectorXd mPSDVelocity;
+    mPSDVelocity.resize(FFT_velocity.size());
+
     Eigen::VectorXd mPSDTorque;
+    mPSDTorque.resize(FFT_torque.size());
 
     Eigen::VectorXd mCPSVelocity;
-    Eigen::VectorXd mCPSTorque;
+    mCPSVelocity.resize(FFT_velocity.size());
 
-    Eigen::VectorXd mFrequencyResponseFunction;
+    Eigen::VectorXd mCPSTorque;
+    mCPSTorque.resize(FFT_torque.size());
+
+    mFrequencyResponseFunction.resize(FFT_torque.size());
 
     for (int i = 0; i < FFT_torque.size(); i++)
     {
@@ -61,14 +71,14 @@ void Frequency::calculateFrequencyResponseFunction()
         mCPSTorque(i) = FFT_torque(i).real() * FFT_torque(i).real() + FFT_torque(i).imag() * FFT_torque(i).imag();
         mFrequencyResponseFunction(i) = mCPSTorque(i) / mPSDTorque(i);
     }
-
 }
 
 void Frequency::calculateFrequencySeries(){
 
-   for (int i = 0; i < mTorque.size(); i++)
+   for (int i = 0; i < mFrequencyResponseFunction.size(); i++)
     {
-        mFrequencySeries(i) = 1.0 / mTorque.size() / mSampleTime * i;
+        mFrequencySeries.resize(mFrequencyResponseFunction.size());
+        mFrequencySeries(i) = 1.0 / mFrequencyResponseFunction.size() / mSampleTime * i;
     }
 }
 

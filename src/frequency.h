@@ -20,6 +20,7 @@ public:
     void setVelocity(Eigen::VectorXd velocity);
     void setTorque(Eigen::VectorXd torque);
 
+    Eigen::VectorXd getFrequencyResponseFunction();
     double getSampleTime();
     Eigen::VectorXd getVelocity();
     Eigen::VectorXd getTorque();

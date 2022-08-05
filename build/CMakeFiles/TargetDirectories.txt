@@ -1,8 +1,8 @@
-/home/kose/work/programming/least_square_identification/build/CMakeFiles/rebuild_cache.dir
-/home/kose/work/programming/least_square_identification/build/CMakeFiles/edit_cache.dir
-/home/kose/work/programming/least_square_identification/build/src/CMakeFiles/rebuild_cache.dir
-/home/kose/work/programming/least_square_identification/build/src/CMakeFiles/edit_cache.dir
-/home/kose/work/programming/least_square_identification/build/src/CMakeFiles/system_identification.dir
-/home/kose/work/programming/least_square_identification/build/test/CMakeFiles/rebuild_cache.dir
-/home/kose/work/programming/least_square_identification/build/test/CMakeFiles/edit_cache.dir
-/home/kose/work/programming/least_square_identification/build/test/CMakeFiles/test.dir
+/home/bcd/programming/least_square_identification/build/CMakeFiles/rebuild_cache.dir
+/home/bcd/programming/least_square_identification/build/CMakeFiles/edit_cache.dir
+/home/bcd/programming/least_square_identification/build/src/CMakeFiles/rebuild_cache.dir
+/home/bcd/programming/least_square_identification/build/src/CMakeFiles/edit_cache.dir
+/home/bcd/programming/least_square_identification/build/src/CMakeFiles/system_identification.dir
+/home/bcd/programming/least_square_identification/build/test/CMakeFiles/rebuild_cache.dir
+/home/bcd/programming/least_square_identification/build/test/CMakeFiles/edit_cache.dir
+/home/bcd/programming/least_square_identification/build/test/CMakeFiles/test.dir
