@@ -16,9 +16,11 @@ private:
     Eigen::VectorXd mFrequencySeries;
 
 public:
-    void setSampleTime(const double & sampleTime);
-    void setVelocity(Eigen::VectorXd velocity);
-    void setTorque(Eigen::VectorXd torque);
+    Frequency();
+    Frequency(const double &sampleTime, const Eigen::VectorXd &velocity, const Eigen::VectorXd &torque);
+    void setSampleTime(const double &sampleTime);
+    void setVelocity(const Eigen::VectorXd &velocity);
+    void setTorque(const Eigen::VectorXd &torque);
 
     Eigen::VectorXd getFrequencyResponseFunction();
     double getSampleTime();
@@ -26,7 +28,7 @@ public:
     Eigen::VectorXd getTorque();
     Eigen::VectorXd getFrequencySeries();
 
-    void calculateFrequencyResponseFunction();   
+    void calculateFrequencyResponseFunction();
     void calculateFrequencySeries();
     // yukarıdaki fonksiyon daha sonradan verilerden hesaplanacaktır.
 };

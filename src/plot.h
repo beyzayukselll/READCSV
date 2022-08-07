@@ -8,5 +8,5 @@ class Plot
 public:
     void torquePlot(const Eigen::VectorXd & torque);
 
-    void frfPlot(const Eigen::VectorXd & frf, const Eigen::VectorXd & frequencySeries);
+    void frfPlot(const Eigen::VectorXd & frequencySeries, const Eigen::VectorXd & frf);
 };

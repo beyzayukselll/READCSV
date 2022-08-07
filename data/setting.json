@@ -1,10 +1,10 @@
 {
     "commandSettings": {
         "0start": 1,
-        "1signalBuildTorque": 1,
-        "2signalBuildSineSweep": 0,
-        "3startLeastSquares": 1,
-        "4startFRF": 0,
+        "1signalBuildTorque": 0,
+        "2signalBuildSineSweep": 1,
+        "3startLeastSquares": 0,
+        "4startFRF": 1,
         "5plot": 0
     },
     "leastSquareSettings": {

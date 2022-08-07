@@ -28,7 +28,6 @@ int main(int argc, char *argv[])
     Data data;
 
     LeastSquareID ls;
-    Frequency fr;
 
     Write write;
     
@@ -36,6 +35,7 @@ int main(int argc, char *argv[])
 
     SineSweep sinesweep;
     Pulse pulse;
+    Plot plot;
 
     while (1)
     {
@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
         std::cout << "Reading data from file ..." << std::endl;
         if (commandSettings.mResult.at(3) == 0 && commandSettings.mResult.at(4) == 1) // frf data
         {
-            data.setFile(tempFile + "y_Axis_ImpulseTest_23torq_27062022.csv");
+            data.setFile(tempFile + "sineSweept_y_Axis_torqueMode_0To70Hz_2tor_05sample_27062022.csv");
         }
         else if (commandSettings.mResult.at(3) == 1 && commandSettings.mResult.at(4) == 0) // ls data
         {
@@ -83,7 +83,7 @@ int main(int argc, char *argv[])
                 std::cout << "Pulse torque generated" << std::endl;
                 // write the parameters to file
                 std::cout << "plotting" << std::endl;
-                Plot plot;
+
 
                 plot.torquePlot(pulse.getTorqueInput());
 
@@ -145,18 +145,23 @@ int main(int argc, char *argv[])
             else if (commandSettings.mResult.at(3) == 0 && commandSettings.mResult.at(4) == 1) // calculate parameters with using frf method
             {
                 std::cout << "Calculating parameters with using frf method" << std::endl;
-                fr.setSampleTime(0.001);
-                fr.setVelocity(velocity);
-                fr.setTorque(torque);
-                fr.calculateFrequencyResponseFunction();
-                fr.calculateFrequencySeries();
+                double sampleTime = 0.0005;
+                Frequency frequency(sampleTime, velocity, torque);
 
+                Eigen::VectorXd frequencyResponseFunction = frequency.getFrequencyResponseFunction();
+                Eigen::VectorXd frequencySeries = frequency.getFrequencySeries();
                 std::cout << "Parameters calculated" << std::endl;
 
-                Plot plot1;
-
                 std::cout << "Frequency response function plotting" << std::endl;
-                plot1.frfPlot(fr.getFrequencyResponseFunction(), fr.getFrequencySeries());
+
+                std::vector<double> frequencyResponseFunctionVector;
+                std::vector<double> frequencySeriesVector;
+                for (int i = 0; i < frequencyResponseFunction.size(); i++)
+                {
+                    frequencyResponseFunctionVector.push_back(frequencyResponseFunction(i));
+                    frequencySeriesVector.push_back(frequencySeries(i));
+                }
+                plot.frfPlot(frequencySeries,frequencyResponseFunction);
             }
             else
             {

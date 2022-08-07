@@ -22,13 +22,21 @@ void Plot::frfPlot(const Eigen::VectorXd & frequencySeries, const Eigen::VectorX
     for (int i = 0; i < frf.size(); i++)
     {
         frf_vec.push_back(frf(i));
-    }
-    for (int i = 0; i < frequencySeries.size(); i++)
-    {
         frequencySeries_vec.push_back(frequencySeries(i));
     }
+
+    std::vector<double> frf_vec_logaritmic;
+    std::vector<double> frequencySeries_vec_logaritmic;
+
+    for (int i = 0; i < frf.size(); i++)
+    {
+        frf_vec_logaritmic.push_back(20.0*log10(frf(i)));
+        frequencySeries_vec_logaritmic.push_back(log10(frequencySeries(i)));
+    }
+
+
     matplotlibcpp::figure();
-    matplotlibcpp::plot(frf_vec, frequencySeries_vec);
+    matplotlibcpp::plot(frequencySeries_vec, frf_vec);
     matplotlibcpp::grid(true);
     matplotlibcpp::show();
 }
