@@ -1,5 +1,16 @@
 #include "leastsquareid.h"
 
+LeastSquareID::LeastSquareID()
+{
+}
+
+LeastSquareID::LeastSquareID(const double &deadBand, const double &sampleTime, const Eigen::VectorXd &torque, const Eigen::VectorXd &velocity)
+: mDeadBand(deadBand), mSampleTime(sampleTime), mTorque(torque), mVelocity(velocity)
+{
+    calculateLeastSquareIdentification();
+}
+
+
 void LeastSquareID::setDeadBand(const double & deadBand)
 {
     mDeadBand = deadBand;
@@ -40,7 +51,6 @@ double LeastSquareID::getSampleTime()
 {
     return mSampleTime;
 }
-
 
 void LeastSquareID::calculateLeastSquareIdentification()
 {

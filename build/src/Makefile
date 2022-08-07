@@ -152,6 +152,33 @@ Data.cpp.s:
 	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/Data.cpp.s
 .PHONY : Data.cpp.s
 
+atapulse.o: atapulse.cpp.o
+
+.PHONY : atapulse.o
+
+# target to build an object file
+atapulse.cpp.o:
+	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/atapulse.cpp.o
+.PHONY : atapulse.cpp.o
+
+atapulse.i: atapulse.cpp.i
+
+.PHONY : atapulse.i
+
+# target to preprocess a source file
+atapulse.cpp.i:
+	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/atapulse.cpp.i
+.PHONY : atapulse.cpp.i
+
+atapulse.s: atapulse.cpp.s
+
+.PHONY : atapulse.s
+
+# target to generate assembly for a file
+atapulse.cpp.s:
+	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/atapulse.cpp.s
+.PHONY : atapulse.cpp.s
+
 frequency.o: frequency.cpp.o
 
 .PHONY : frequency.o
@@ -232,6 +259,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+plot.o: plot.cpp.o
+
+.PHONY : plot.o
+
+# target to build an object file
+plot.cpp.o:
+	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/plot.cpp.o
+.PHONY : plot.cpp.o
+
+plot.i: plot.cpp.i
+
+.PHONY : plot.i
+
+# target to preprocess a source file
+plot.cpp.i:
+	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/plot.cpp.i
+.PHONY : plot.cpp.i
+
+plot.s: plot.cpp.s
+
+.PHONY : plot.s
+
+# target to generate assembly for a file
+plot.cpp.s:
+	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/plot.cpp.s
+.PHONY : plot.cpp.s
 
 pulse.o: pulse.cpp.o
 
@@ -380,6 +434,9 @@ help:
 	@echo "... Data.o"
 	@echo "... Data.i"
 	@echo "... Data.s"
+	@echo "... atapulse.o"
+	@echo "... atapulse.i"
+	@echo "... atapulse.s"
 	@echo "... frequency.o"
 	@echo "... frequency.i"
 	@echo "... frequency.s"
@@ -389,6 +446,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... plot.o"
+	@echo "... plot.i"
+	@echo "... plot.s"
 	@echo "... pulse.o"
 	@echo "... pulse.i"
 	@echo "... pulse.s"

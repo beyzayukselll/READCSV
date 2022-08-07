@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Aug  4 23:33:19 2022
+# Make data base, printed on Sun Aug  7 16:35:12 2022
 
 # Variables
 
@@ -41,13 +41,13 @@ CURDIR := /home/kose/work/programming/least_square_identification
 # makefile
 SHELL = /bin/sh
 # environment
-SNAP_DATA = /var/snap/code/102
+SNAP_DATA = /var/snap/code/103
 # environment
 VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:36706
+JOURNAL_STREAM = 8:35484
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -67,9 +67,9 @@ MAKELEVEL := 0
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=cd382c015889a6e63a132f0862ef63bd
 # environment
-MANAGERPID = 858
+MANAGERPID = 820
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -77,7 +77,7 @@ LC_NAME = tr_TR.UTF-8
 # environment
 VSCODE_CWD = /home/kose/work/programming/least_square_identification
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/102/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/103/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -85,15 +85,15 @@ PATH = /home/kose/.local/bin:/home/kose/.local/bin:/usr/local/sbin:/usr/local/bi
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/kose:@/tmp/.ICE-unix/1216,unix/kose:/tmp/.ICE-unix/1216
+SESSION_MANAGER = local/kose:@/tmp/.ICE-unix/1163,unix/kose:/tmp/.ICE-unix/1163
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/kose/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-SNAP = /snap/code/102
+SNAP = /snap/code/103
 # environment
-SNAP_VERSION = 3b889b09
+SNAP_VERSION = da76f933
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
@@ -101,9 +101,9 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = a24df971ebbb4dc48d0accbff062d034
+INVOCATION_ID = 19e7e53e598b444a922ed06096309cf2
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/102/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/103/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -123,7 +123,7 @@ PWD = /home/kose/work/programming/least_square_identification
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1165
+SSH_AGENT_PID = 1124
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -137,7 +137,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /home/kose/.config/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
+VSCODE_CODE_CACHE_PATH = /home/kose/.config/Code/CachedData/da76f93349a72022ca4670c1b84860304616aaa2
 # environment
 LOGNAME = kose
 # environment
@@ -171,7 +171,7 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SNAP_USER_DATA = /home/kose/snap/code/102
+SNAP_USER_DATA = /home/kose/snap/code/103
 # environment
 SHLVL = 1
 # environment
@@ -181,7 +181,7 @@ MAKE_VERSION := 4.2.1
 # environment
 USER = kose
 # environment
-SNAP_REVISION = 102
+SNAP_REVISION = 103
 # environment
 LC_MONETARY = tr_TR.UTF-8
 # makefile
@@ -194,14 +194,12 @@ XDG_CURRENT_DESKTOP = Unity
 LC_TELEPHONE = tr_TR.UTF-8
 # default
 MAKE_COMMAND := make
-# environment
-OLDPWD = /home/kose/work/programming
 # default
 .VARIABLES := 
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-64809cb3-1.69.2-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-64809cb3-1.70.0-main.sock
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -214,8 +212,6 @@ MFLAGS = -pqrR
 GDK_BACKEND = x11
 # environment
 LC_PAPER = tr_TR.UTF-8
-# environment
-LC_IDENTIFICATION = tr_TR.UTF-8
 # environment
 QT_ACCESSIBILITY = 1
 # default
@@ -233,13 +229,13 @@ SNAP_NAME = code
 # environment
 LC_ALL = C
 # environment
-GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+DBUS_STARTER_BUS_TYPE = session
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/8439b6e8_a3b7_4cec_9a5a_82119a597684
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/18859336_ea5a_4671_a3c1_c10739411c1c
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.87
+GNOME_TERMINAL_SERVICE = :1.275
 # default
 SUFFIXES := 
 # environment
@@ -251,7 +247,7 @@ WINDOWPATH = 2
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
-GJS_DEBUG_OUTPUT = stderr
+LC_IDENTIFICATION = tr_TR.UTF-8
 # default
 .RECIPEPREFIX := 
 # environment
@@ -261,9 +257,11 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 3120
+VSCODE_PID = 25084
+# environment
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=cd382c015889a6e63a132f0862ef63bd
 # variable set hash-table stats:
-# Load=126/1024=12%, Rehash=0, Collisions=19/148=13%
+# Load=125/1024=12%, Rehash=0, Collisions=18/147=12%
 
 # Pattern-specific Variable Values
 
@@ -276,9 +274,6 @@ VSCODE_PID = 3120
 # 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
-
- 
-make: *** No rule to make target 'all'.  Stop.
 
 # No implicit rules.
 
@@ -332,6 +327,8 @@ GNUmakefile:
 # strcache performance: lookups = 21 / hit rate = 14%
 # hash-table stats:
 # Load=18/8192=0%, Rehash=0, Collisions=1/21=5%
-# Finished Make data base on Thu Aug  4 23:33:19 2022
+# Finished Make data base on Sun Aug  7 16:35:12 2022
 
  
+make: *** No rule to make target 'all'.  Stop.
+

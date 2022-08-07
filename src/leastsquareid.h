@@ -18,6 +18,8 @@ private:
     Eigen::VectorXd mCalculationResult;
 
 public:
+    LeastSquareID();
+    LeastSquareID(const double &deadBand,const double &sampleTime,const Eigen::VectorXd &torque,const Eigen::VectorXd &velocity);
     void setDeadBand(const double & deadBand);
     void setSampleTime(const double & sampleTime);
     void setTorque(const Eigen::VectorXd & torque);

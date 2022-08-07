@@ -4,12 +4,13 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+    
         
         {
             "name": "(gdb) Sudo Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/src/system_identification",
+            "program": "${workspaceFolder}/build/test/test",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

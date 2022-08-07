@@ -7,24 +7,22 @@
         "4startFRF": 0,
         "5plot": 0
     },
+    "leastSquareSettings": {
+        "deadBand": 6,
+        "sampleTime": 0.001
+    },
+    "signalBuilderSettings": {
+        "duration": 200,
+        "maxTorque": 2,
+        "minTorque": 1,
+        "pulseNumber": 2,
+        "sampleTime": 0.001
+    },
     "sineSweepSettings": {
         "0sampleTime": 0.001,
         "1totalTime": 10,
         "2minimumFrequency": 10,
         "3maximumFrequency": 100,
         "4torqueAmplitude": 5
-
-    },
-    "leastSquareSettings": {
-        "deadBand": 1,
-        "sampleTime": 0.001
-    },
-
-    "signalBuilderSettings": {
-        "duration": 200,
-        "maxTorque": 11,
-        "minTorque": 4,
-        "pulseNumber": 5,
-        "sampleTime" : 0.001
     }
 }

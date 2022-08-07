@@ -1,8 +1,8 @@
 {
     "leastSquareResults": {
-        "CoulombTorqueNegative": -0.5926458745066453,
-        "CoulombTorquePositive": 0.6398007674851521,
-        "ViscousDamping": 0.0018474571164301817,
-        "inertia": 0.00044583156791082524
+        "CoulombTorqueNegative": -0.6557179460923119,
+        "CoulombTorquePositive": 0.7135584499879983,
+        "ViscousDamping": 0.0016213422372102595,
+        "inertia": 0.000466256935956614
     }
 }

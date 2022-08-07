@@ -152,6 +152,33 @@ __/src/Data.cpp.s:
 	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/Data.cpp.s
 .PHONY : __/src/Data.cpp.s
 
+__/src/atapulse.o: __/src/atapulse.cpp.o
+
+.PHONY : __/src/atapulse.o
+
+# target to build an object file
+__/src/atapulse.cpp.o:
+	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/atapulse.cpp.o
+.PHONY : __/src/atapulse.cpp.o
+
+__/src/atapulse.i: __/src/atapulse.cpp.i
+
+.PHONY : __/src/atapulse.i
+
+# target to preprocess a source file
+__/src/atapulse.cpp.i:
+	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/atapulse.cpp.i
+.PHONY : __/src/atapulse.cpp.i
+
+__/src/atapulse.s: __/src/atapulse.cpp.s
+
+.PHONY : __/src/atapulse.s
+
+# target to generate assembly for a file
+__/src/atapulse.cpp.s:
+	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/atapulse.cpp.s
+.PHONY : __/src/atapulse.cpp.s
+
 __/src/frequency.o: __/src/frequency.cpp.o
 
 .PHONY : __/src/frequency.o
@@ -205,6 +232,33 @@ __/src/leastsquareid.s: __/src/leastsquareid.cpp.s
 __/src/leastsquareid.cpp.s:
 	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/leastsquareid.cpp.s
 .PHONY : __/src/leastsquareid.cpp.s
+
+__/src/plot.o: __/src/plot.cpp.o
+
+.PHONY : __/src/plot.o
+
+# target to build an object file
+__/src/plot.cpp.o:
+	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/plot.cpp.o
+.PHONY : __/src/plot.cpp.o
+
+__/src/plot.i: __/src/plot.cpp.i
+
+.PHONY : __/src/plot.i
+
+# target to preprocess a source file
+__/src/plot.cpp.i:
+	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/plot.cpp.i
+.PHONY : __/src/plot.cpp.i
+
+__/src/plot.s: __/src/plot.cpp.s
+
+.PHONY : __/src/plot.s
+
+# target to generate assembly for a file
+__/src/plot.cpp.s:
+	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/plot.cpp.s
+.PHONY : __/src/plot.cpp.s
 
 __/src/pulse.o: __/src/pulse.cpp.o
 
@@ -341,32 +395,59 @@ __/src/write.cpp.s:
 	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/__/src/write.cpp.s
 .PHONY : __/src/write.cpp.s
 
-read_test.o: read_test.cpp.o
+test_main.o: test_main.cpp.o
 
-.PHONY : read_test.o
+.PHONY : test_main.o
 
 # target to build an object file
-read_test.cpp.o:
-	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/read_test.cpp.o
-.PHONY : read_test.cpp.o
+test_main.cpp.o:
+	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/test_main.cpp.o
+.PHONY : test_main.cpp.o
 
-read_test.i: read_test.cpp.i
+test_main.i: test_main.cpp.i
 
-.PHONY : read_test.i
+.PHONY : test_main.i
 
 # target to preprocess a source file
-read_test.cpp.i:
-	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/read_test.cpp.i
-.PHONY : read_test.cpp.i
+test_main.cpp.i:
+	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/test_main.cpp.i
+.PHONY : test_main.cpp.i
 
-read_test.s: read_test.cpp.s
+test_main.s: test_main.cpp.s
 
-.PHONY : read_test.s
+.PHONY : test_main.s
 
 # target to generate assembly for a file
-read_test.cpp.s:
-	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/read_test.cpp.s
-.PHONY : read_test.cpp.s
+test_main.cpp.s:
+	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/test_main.cpp.s
+.PHONY : test_main.cpp.s
+
+test_root.o: test_root.cpp.o
+
+.PHONY : test_root.o
+
+# target to build an object file
+test_root.cpp.o:
+	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/test_root.cpp.o
+.PHONY : test_root.cpp.o
+
+test_root.i: test_root.cpp.i
+
+.PHONY : test_root.i
+
+# target to preprocess a source file
+test_root.cpp.i:
+	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/test_root.cpp.i
+.PHONY : test_root.cpp.i
+
+test_root.s: test_root.cpp.s
+
+.PHONY : test_root.s
+
+# target to generate assembly for a file
+test_root.cpp.s:
+	cd /home/kose/work/programming/least_square_identification/build && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/test_root.cpp.s
+.PHONY : test_root.cpp.s
 
 # Help Target
 help:
@@ -380,12 +461,18 @@ help:
 	@echo "... __/src/Data.o"
 	@echo "... __/src/Data.i"
 	@echo "... __/src/Data.s"
+	@echo "... __/src/atapulse.o"
+	@echo "... __/src/atapulse.i"
+	@echo "... __/src/atapulse.s"
 	@echo "... __/src/frequency.o"
 	@echo "... __/src/frequency.i"
 	@echo "... __/src/frequency.s"
 	@echo "... __/src/leastsquareid.o"
 	@echo "... __/src/leastsquareid.i"
 	@echo "... __/src/leastsquareid.s"
+	@echo "... __/src/plot.o"
+	@echo "... __/src/plot.i"
+	@echo "... __/src/plot.s"
 	@echo "... __/src/pulse.o"
 	@echo "... __/src/pulse.i"
 	@echo "... __/src/pulse.s"
@@ -401,9 +488,12 @@ help:
 	@echo "... __/src/write.o"
 	@echo "... __/src/write.i"
 	@echo "... __/src/write.s"
-	@echo "... read_test.o"
-	@echo "... read_test.i"
-	@echo "... read_test.s"
+	@echo "... test_main.o"
+	@echo "... test_main.i"
+	@echo "... test_main.s"
+	@echo "... test_root.o"
+	@echo "... test_root.i"
+	@echo "... test_root.s"
 .PHONY : help
 
 

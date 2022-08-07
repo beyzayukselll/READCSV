@@ -14,13 +14,10 @@ private:
     Eigen::VectorXd mTorque;
 
 public:
-    void setFile(const std::string & file);
-    void setVelocity(Eigen::VectorXd velocity);
-    void setTorque(Eigen::VectorXd torque);
-    
+    void setFile(const std::string &file);
+
     std::string getFile();
     Eigen::VectorXd getTorque();
     Eigen::VectorXd getVelocity();
     void dataRead();
-
-};
+};  

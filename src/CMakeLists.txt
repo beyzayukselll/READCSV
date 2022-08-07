@@ -19,6 +19,7 @@ include_directories(${CMAKE_SOURCE_DIR}
                     /usr/include/python3.8
                     )
 
+
 add_executable(${PROJECT_NAME} ${APP_HEADER} ${APP_SOURCE})
 
 target_link_libraries(${PROJECT_NAME}  ${Python3_LIBRARIES})

@@ -1,19 +1,12 @@
 #include "Data.h"
 
+
+
 void Data::setFile(const std::string & file)
 {
     mFile = file;
 }
 
-void Data::setVelocity(Eigen::VectorXd velocity)
-{
-    mVelocity = velocity;
-}
-
-void Data::setTorque(Eigen::VectorXd torque)
-{
-    mTorque = torque;
-}
 
 std::string Data::getFile()
 {
@@ -51,7 +44,7 @@ void Data::dataRead()
     Eigen::VectorXd time;
     time = res.col(0);
 
-    mVelocity = res.col(29) / 10000.0 * 2.0 * atan(1)*4.0 / 60.0;
+    mVelocity = res.col(29) / 10000.0 * 2.0 * atan(1)*4.0 / 60.0; // mColOfVel = 29
 
-    mTorque = res.col(11) / 1000.0 * 2.37;
+    mTorque = res.col(11) / 1000.0 * 2.37; // mColOfTor = 11
 }

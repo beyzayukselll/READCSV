@@ -8,6 +8,5 @@ project(system_identification)
 # set(3RD_PARTY_DIR "${PROJECT_SOURCE_DIR}/vendor")
 # set(DATA_DIR "${PROJECT_SOURCE_DIR}/data")
 
-
 add_subdirectory(src)
 add_subdirectory(test)

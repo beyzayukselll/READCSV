@@ -17,7 +17,7 @@ include_directories(${CMAKE_SOURCE_DIR}
                     )
 
 file(GLOB  APP_SOURCES "${CMAKE_SOURCE_DIR}/src/*.cpp")
-file(GLOB  TEST_SOURCES "read_test.cpp")
+file(GLOB  TEST_SOURCES "${CMAKE_SOURCE_DIR}/test/*.cpp")
 # file(GLOB TEST_SOURCES "*.cpp")
 
 
