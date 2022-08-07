@@ -9,9 +9,9 @@
 #include <fstream>
 #include "../include/json.hpp"
 #include <exception>
+#include <Eigen/Dense>
 #include <boost/property_tree/json_parser.hpp>
 #include <boost/property_tree/ptree.hpp>
-#include <Eigen/Dense>
 #include <boost/algorithm/string.hpp>
 
 using namespace std;

@@ -1,17 +1,12 @@
 #include <iostream>
 #include <Eigen/Dense>
-#include <matplotlibcpp.h>
 #include <complex>
-#include <cmath>
+#include <vector>
+
 #include "leastsquareid.h"
 #include "Data.h"
-#include <vector>
 #include "write.h"
 #include "read.h"
-#include <cstdlib>
-#include <unistd.h>
-#include <stdio.h>
-#include <iostream>
 #include "sinesweep.h"
 #include "torquesignal.h"
 #include "frequency.h"

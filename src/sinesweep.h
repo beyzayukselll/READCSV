@@ -2,8 +2,6 @@
 #include <iostream>
 #include <Eigen/Dense>
 #include "torquesignal.h"
-#include <matplotlibcpp.h>
-
 
 class SineSweep : public TorqueSignal
 {
