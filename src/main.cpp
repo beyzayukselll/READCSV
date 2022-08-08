@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
     {
         std::cout << "reading settings ..." << std::endl;
 
-        const std::string tempFile = "/home/kose/work/programming/least_square_identification/data/";
+        const std::string tempFile = "/home/beyza/SytemID/least_square_identification/data/";
 
         commandSettings.readJson(tempFile + "setting.json", "commandSettings");
         sineSweepSettings.readJson(tempFile + "setting.json", "sineSweepSettings");
@@ -66,7 +66,8 @@ int main(int argc, char *argv[])
         data.dataRead();
         Eigen::VectorXd torque = data.getTorque();
         Eigen::VectorXd velocity = data.getVelocity();
-
+        Eigen::VectorXd time = data.getTime();
+        double sampleTime = data.getSampleTime();
         if (commandSettings.mResult.at(0) == 1) // start
         {
             if (commandSettings.mResult.at(1) == 1 && commandSettings.mResult.at(2) == 0) // generate pulse torque
@@ -134,7 +135,7 @@ int main(int argc, char *argv[])
                 // set least square settings,
                 ls.setTorque(torque);
                 ls.setVelocity(velocity);
-                ls.setSampleTime(leastSquareSettings.mResult[1]);
+                ls.setSampleTime(sampleTime);
                 ls.calculateLeastSquareIdentification();
                 const Eigen::VectorXd &myresult = ls.getCalculationResult();
 
@@ -143,12 +144,14 @@ int main(int argc, char *argv[])
                 write.dataWriteJson(myresult, tempFile + "write.json");
             }
             else if (commandSettings.mResult.at(3) == 0 && commandSettings.mResult.at(4) == 1) // calculate parameters with using frf method
-            {
+            { 
                 std::cout << "Calculating parameters with using frf method" << std::endl;
-                double sampleTime = 0.0005;
+                //double sampleTime = data.getSampleTime();
+                
                 Frequency frequency(sampleTime, velocity, torque);
 
                 Eigen::VectorXd frequencyResponseFunction = frequency.getFrequencyResponseFunction();
+              
                 Eigen::VectorXd frequencySeries = frequency.getFrequencySeries();
                 std::cout << "Parameters calculated" << std::endl;
 
@@ -161,7 +164,7 @@ int main(int argc, char *argv[])
                     frequencyResponseFunctionVector.push_back(frequencyResponseFunction(i));
                     frequencySeriesVector.push_back(frequencySeries(i));
                 }
-                plot.frfPlot(frequencySeries,frequencyResponseFunction);
+               // plot.frfPlot(frequencySeries,frequencyResponseFunction);
             }
             else
             {
@@ -174,14 +177,17 @@ int main(int argc, char *argv[])
             torquee.resize(torque.size());
             std::vector<double> velocityy;
             velocityy.resize(torque.size());
+            std::vector<double> times;
+            times.resize(torque.size());
 
             for (int i = 0; i < torque.size(); i++)
             {
                 torquee[i] = torque(i);
                 velocityy[i] = velocity(i);
+                times[i]=time(i);
             }
 
-            std::vector<std::pair<std::string, std::vector<double>>> vals = {{"Actual Torque", torquee}, {"Actual Velocity", velocityy}};
+            std::vector<std::pair<std::string, std::vector<double>>> vals = {{"Time", times},{"Actual Torque", torquee}, {"Actual Velocity", velocityy}};
 
             write.write_csv_col(tempFile + "ActualValues.csv", vals);
         }

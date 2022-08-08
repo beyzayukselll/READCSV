@@ -52,7 +52,7 @@ Eigen::VectorXd Frequency::getFrequencySeries()
 
 void Frequency::calculateFrequencyResponseFunction()
 {
-
+   
     std::vector<double> time_vec;
     std::vector<double> velocity_vec;
     std::vector<double> torque_vec;
@@ -62,16 +62,29 @@ void Frequency::calculateFrequencyResponseFunction()
         time_vec = {i * mSampleTime};
         velocity_vec.push_back(mVelocity(i));
         torque_vec.push_back(mTorque(i));
+        
     }  
+  
 
     Eigen::FFT<double> fft;
-    std::vector<std::complex<double> > FFT_velocity;
-    std::vector<std::complex<double> > FFT_torque;
-
+    std::vector<std::complex<double> > FFT_velocity(mTorque.size());
+    
+    std::vector<std::complex<double> > FFT_torque(mTorque.size());
+   
   
-    fft.fwd( FFT_velocity, velocity_vec);
-    fft.fwd( FFT_torque, torque_vec);
 
+    // for (int i = 0; i < mTorque.size(); ++i){
+    //     velocity_vec[i] = std::abs (FFT_velocity[i]);
+        
+    //     torque_vec[i] = std::abs (FFT_torque[i]);
+    //    std::cout<<velocity_vec[i];
+  
+    // }
+    fft.fwd( FFT_velocity, time_vec);  
+
+   
+     fft.fwd( FFT_torque, torque_vec);
+  
     std::vector<double> mPSDVelocity_vec;
     mPSDVelocity_vec.resize(mTorque.size());
     std::vector<double> mPSDTorque_vec;
@@ -91,10 +104,11 @@ void Frequency::calculateFrequencyResponseFunction()
         mCPSVelocity_vec[i] = (FFT_torque[i].real() + FFT_torque[i].imag() ) * ( FFT_velocity[i].real() - FFT_velocity[i].imag());
         mCPSTorque_vec[i] = ( FFT_velocity[i].real() + FFT_velocity[i].imag()) * (FFT_torque[i].real() - FFT_torque[i].imag() );
         mFrequencyResponseFunction(i) = mCPSVelocity_vec[i] / mCPSTorque_vec[i];
+        
     }
    
 
-    calculateFrequencySeries();
+  //  calculateFrequencySeries();
 }
 
 void Frequency::calculateFrequencySeries()
@@ -104,5 +118,7 @@ void Frequency::calculateFrequencySeries()
     {
         mFrequencySeries.resize(mFrequencyResponseFunction.size());
         mFrequencySeries(i) = 1.0 / mFrequencyResponseFunction.size() / mSampleTime * i;
+        
+       
     }
 }

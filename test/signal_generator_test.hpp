@@ -7,7 +7,7 @@
 class SignalGeneratorTestFixture
 {
 public:
-    const std::string tempFile = "/home/kose/work/programming/least_square_identification/data/";
+    const std::string tempFile = "../../data/";
 
     std::string SignalProporties[5] = {"maxTorque", "minTorque", "pulseNumber", "duration", "deadBand"};
 };

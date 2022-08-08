@@ -6,7 +6,7 @@
 class LeastSquareTestFixture
 {
 public:
-    const std::string tempFile = "/home/kose/work/programming/least_square_identification/data/";
+    const std::string tempFile = "../../data/";
     const double ROOT_TOLERANCE = 1.E-5;
     std::string ResultName[4] = {"Inertia",
                                  "Viscous Damping",

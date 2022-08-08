@@ -21,8 +21,17 @@ Eigen::VectorXd Data::getVelocity()
 Eigen::VectorXd Data::getTorque()
 {
     return mTorque;
+    
+}
+Eigen::VectorXd Data::getTime()
+{
+    return time;
 }
 
+    double Data::getSampleTime()
+{
+    return mSampleTime;
+}
 void Data::dataRead()
 {
     std::ifstream is(mFile);
@@ -41,10 +50,13 @@ void Data::dataRead()
         res(i / num_of_cols, i % num_of_cols) = numbers[i];
     }
 
-    Eigen::VectorXd time;
+ 
+
     time = res.col(0);
 
     mVelocity = res.col(29) / 10000.0 * 2.0 * atan(1)*4.0 / 60.0; // mColOfVel = 29
 
     mTorque = res.col(11) / 1000.0 * 2.37; // mColOfTor = 11
+
+    mSampleTime = (time(1)-time(0))/1000;
 }
