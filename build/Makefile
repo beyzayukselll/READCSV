@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beyza/SytemID/least_square_identification
+CMAKE_SOURCE_DIR = /home/beyza/Desktop/csvRead
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beyza/SytemID/least_square_identification/build
+CMAKE_BINARY_DIR = /home/beyza/Desktop/csvRead/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beyza/SytemID/least_square_identification/build/CMakeFiles /home/beyza/SytemID/least_square_identification/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beyza/Desktop/csvRead/build/CMakeFiles /home/beyza/Desktop/csvRead/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beyza/SytemID/least_square_identification/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beyza/Desktop/csvRead/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,30 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named system_identification
+# Target rules for targets named readdata
 
 # Build rule for target.
-system_identification: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 system_identification
-.PHONY : system_identification
+readdata: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 readdata
+.PHONY : readdata
 
 # fast build rule for target.
-system_identification/fast:
-	$(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/build
-.PHONY : system_identification/fast
-
-#=============================================================================
-# Target rules for targets named test
-
-# Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test
-.PHONY : test
-
-# fast build rule for target.
-test/fast:
-	$(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/build
-.PHONY : test/fast
+readdata/fast:
+	$(MAKE) -f src/CMakeFiles/readdata.dir/build.make src/CMakeFiles/readdata.dir/build
+.PHONY : readdata/fast
 
 # Help Target
 help:
@@ -144,8 +131,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... system_identification"
-	@echo "... test"
+	@echo "... readdata"
 .PHONY : help
 
 

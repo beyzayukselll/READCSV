@@ -1,7 +1,7 @@
 
 cmake_minimum_required(VERSION 3.16.3)
 
-project(system_identification)  
+project(dataread)  
 
 # set(SOURCE_DIR "${PROJECT_SOURCE_DIR}/src")
 # set(TEST_DIR "${PROJECT_SOURCE_DIR}/test")
@@ -9,4 +9,4 @@ project(system_identification)
 # set(DATA_DIR "${PROJECT_SOURCE_DIR}/data")
 
 add_subdirectory(src)
-add_subdirectory(test)
+

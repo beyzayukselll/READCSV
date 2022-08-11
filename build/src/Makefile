@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beyza/SytemID/least_square_identification
+CMAKE_SOURCE_DIR = /home/beyza/Desktop/csvRead
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beyza/SytemID/least_square_identification/build
+CMAKE_BINARY_DIR = /home/beyza/Desktop/csvRead/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/beyza/SytemID/least_square_identification/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/beyza/SytemID/least_square_identification/build/CMakeFiles /home/beyza/SytemID/least_square_identification/build/src/CMakeFiles/progress.marks
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beyza/SytemID/least_square_identification/build/CMakeFiles 0
+	cd /home/beyza/Desktop/csvRead/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/beyza/Desktop/csvRead/build/CMakeFiles /home/beyza/Desktop/csvRead/build/src/CMakeFiles/progress.marks
+	cd /home/beyza/Desktop/csvRead/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beyza/Desktop/csvRead/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/beyza/Desktop/csvRead/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,114 +97,33 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/beyza/Desktop/csvRead/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/beyza/Desktop/csvRead/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/beyza/SytemID/least_square_identification/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/beyza/Desktop/csvRead/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/system_identification.dir/rule:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/system_identification.dir/rule
-.PHONY : src/CMakeFiles/system_identification.dir/rule
+src/CMakeFiles/readdata.dir/rule:
+	cd /home/beyza/Desktop/csvRead/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/readdata.dir/rule
+.PHONY : src/CMakeFiles/readdata.dir/rule
 
 # Convenience name for target.
-system_identification: src/CMakeFiles/system_identification.dir/rule
+readdata: src/CMakeFiles/readdata.dir/rule
 
-.PHONY : system_identification
+.PHONY : readdata
 
 # fast build rule for target.
-system_identification/fast:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/build
-.PHONY : system_identification/fast
-
-Data.o: Data.cpp.o
-
-.PHONY : Data.o
-
-# target to build an object file
-Data.cpp.o:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/Data.cpp.o
-.PHONY : Data.cpp.o
-
-Data.i: Data.cpp.i
-
-.PHONY : Data.i
-
-# target to preprocess a source file
-Data.cpp.i:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/Data.cpp.i
-.PHONY : Data.cpp.i
-
-Data.s: Data.cpp.s
-
-.PHONY : Data.s
-
-# target to generate assembly for a file
-Data.cpp.s:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/Data.cpp.s
-.PHONY : Data.cpp.s
-
-frequency.o: frequency.cpp.o
-
-.PHONY : frequency.o
-
-# target to build an object file
-frequency.cpp.o:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/frequency.cpp.o
-.PHONY : frequency.cpp.o
-
-frequency.i: frequency.cpp.i
-
-.PHONY : frequency.i
-
-# target to preprocess a source file
-frequency.cpp.i:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/frequency.cpp.i
-.PHONY : frequency.cpp.i
-
-frequency.s: frequency.cpp.s
-
-.PHONY : frequency.s
-
-# target to generate assembly for a file
-frequency.cpp.s:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/frequency.cpp.s
-.PHONY : frequency.cpp.s
-
-leastsquareid.o: leastsquareid.cpp.o
-
-.PHONY : leastsquareid.o
-
-# target to build an object file
-leastsquareid.cpp.o:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/leastsquareid.cpp.o
-.PHONY : leastsquareid.cpp.o
-
-leastsquareid.i: leastsquareid.cpp.i
-
-.PHONY : leastsquareid.i
-
-# target to preprocess a source file
-leastsquareid.cpp.i:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/leastsquareid.cpp.i
-.PHONY : leastsquareid.cpp.i
-
-leastsquareid.s: leastsquareid.cpp.s
-
-.PHONY : leastsquareid.s
-
-# target to generate assembly for a file
-leastsquareid.cpp.s:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/leastsquareid.cpp.s
-.PHONY : leastsquareid.cpp.s
+readdata/fast:
+	cd /home/beyza/Desktop/csvRead/build && $(MAKE) -f src/CMakeFiles/readdata.dir/build.make src/CMakeFiles/readdata.dir/build
+.PHONY : readdata/fast
 
 main.o: main.cpp.o
 
@@ -212,7 +131,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/main.cpp.o
+	cd /home/beyza/Desktop/csvRead/build && $(MAKE) -f src/CMakeFiles/readdata.dir/build.make src/CMakeFiles/readdata.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -221,7 +140,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/main.cpp.i
+	cd /home/beyza/Desktop/csvRead/build && $(MAKE) -f src/CMakeFiles/readdata.dir/build.make src/CMakeFiles/readdata.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -230,7 +149,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/main.cpp.s
+	cd /home/beyza/Desktop/csvRead/build && $(MAKE) -f src/CMakeFiles/readdata.dir/build.make src/CMakeFiles/readdata.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 plot.o: plot.cpp.o
@@ -239,7 +158,7 @@ plot.o: plot.cpp.o
 
 # target to build an object file
 plot.cpp.o:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/plot.cpp.o
+	cd /home/beyza/Desktop/csvRead/build && $(MAKE) -f src/CMakeFiles/readdata.dir/build.make src/CMakeFiles/readdata.dir/plot.cpp.o
 .PHONY : plot.cpp.o
 
 plot.i: plot.cpp.i
@@ -248,7 +167,7 @@ plot.i: plot.cpp.i
 
 # target to preprocess a source file
 plot.cpp.i:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/plot.cpp.i
+	cd /home/beyza/Desktop/csvRead/build && $(MAKE) -f src/CMakeFiles/readdata.dir/build.make src/CMakeFiles/readdata.dir/plot.cpp.i
 .PHONY : plot.cpp.i
 
 plot.s: plot.cpp.s
@@ -257,143 +176,8 @@ plot.s: plot.cpp.s
 
 # target to generate assembly for a file
 plot.cpp.s:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/plot.cpp.s
+	cd /home/beyza/Desktop/csvRead/build && $(MAKE) -f src/CMakeFiles/readdata.dir/build.make src/CMakeFiles/readdata.dir/plot.cpp.s
 .PHONY : plot.cpp.s
-
-pulse.o: pulse.cpp.o
-
-.PHONY : pulse.o
-
-# target to build an object file
-pulse.cpp.o:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/pulse.cpp.o
-.PHONY : pulse.cpp.o
-
-pulse.i: pulse.cpp.i
-
-.PHONY : pulse.i
-
-# target to preprocess a source file
-pulse.cpp.i:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/pulse.cpp.i
-.PHONY : pulse.cpp.i
-
-pulse.s: pulse.cpp.s
-
-.PHONY : pulse.s
-
-# target to generate assembly for a file
-pulse.cpp.s:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/pulse.cpp.s
-.PHONY : pulse.cpp.s
-
-read.o: read.cpp.o
-
-.PHONY : read.o
-
-# target to build an object file
-read.cpp.o:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/read.cpp.o
-.PHONY : read.cpp.o
-
-read.i: read.cpp.i
-
-.PHONY : read.i
-
-# target to preprocess a source file
-read.cpp.i:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/read.cpp.i
-.PHONY : read.cpp.i
-
-read.s: read.cpp.s
-
-.PHONY : read.s
-
-# target to generate assembly for a file
-read.cpp.s:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/read.cpp.s
-.PHONY : read.cpp.s
-
-sinesweep.o: sinesweep.cpp.o
-
-.PHONY : sinesweep.o
-
-# target to build an object file
-sinesweep.cpp.o:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/sinesweep.cpp.o
-.PHONY : sinesweep.cpp.o
-
-sinesweep.i: sinesweep.cpp.i
-
-.PHONY : sinesweep.i
-
-# target to preprocess a source file
-sinesweep.cpp.i:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/sinesweep.cpp.i
-.PHONY : sinesweep.cpp.i
-
-sinesweep.s: sinesweep.cpp.s
-
-.PHONY : sinesweep.s
-
-# target to generate assembly for a file
-sinesweep.cpp.s:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/sinesweep.cpp.s
-.PHONY : sinesweep.cpp.s
-
-torquesignal.o: torquesignal.cpp.o
-
-.PHONY : torquesignal.o
-
-# target to build an object file
-torquesignal.cpp.o:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/torquesignal.cpp.o
-.PHONY : torquesignal.cpp.o
-
-torquesignal.i: torquesignal.cpp.i
-
-.PHONY : torquesignal.i
-
-# target to preprocess a source file
-torquesignal.cpp.i:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/torquesignal.cpp.i
-.PHONY : torquesignal.cpp.i
-
-torquesignal.s: torquesignal.cpp.s
-
-.PHONY : torquesignal.s
-
-# target to generate assembly for a file
-torquesignal.cpp.s:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/torquesignal.cpp.s
-.PHONY : torquesignal.cpp.s
-
-write.o: write.cpp.o
-
-.PHONY : write.o
-
-# target to build an object file
-write.cpp.o:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/write.cpp.o
-.PHONY : write.cpp.o
-
-write.i: write.cpp.i
-
-.PHONY : write.i
-
-# target to preprocess a source file
-write.cpp.i:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/write.cpp.i
-.PHONY : write.cpp.i
-
-write.s: write.cpp.s
-
-.PHONY : write.s
-
-# target to generate assembly for a file
-write.cpp.s:
-	cd /home/beyza/SytemID/least_square_identification/build && $(MAKE) -f src/CMakeFiles/system_identification.dir/build.make src/CMakeFiles/system_identification.dir/write.cpp.s
-.PHONY : write.cpp.s
 
 # Help Target
 help:
@@ -403,37 +187,13 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... system_identification"
-	@echo "... Data.o"
-	@echo "... Data.i"
-	@echo "... Data.s"
-	@echo "... frequency.o"
-	@echo "... frequency.i"
-	@echo "... frequency.s"
-	@echo "... leastsquareid.o"
-	@echo "... leastsquareid.i"
-	@echo "... leastsquareid.s"
+	@echo "... readdata"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... plot.o"
 	@echo "... plot.i"
 	@echo "... plot.s"
-	@echo "... pulse.o"
-	@echo "... pulse.i"
-	@echo "... pulse.s"
-	@echo "... read.o"
-	@echo "... read.i"
-	@echo "... read.s"
-	@echo "... sinesweep.o"
-	@echo "... sinesweep.i"
-	@echo "... sinesweep.s"
-	@echo "... torquesignal.o"
-	@echo "... torquesignal.i"
-	@echo "... torquesignal.s"
-	@echo "... write.o"
-	@echo "... write.i"
-	@echo "... write.s"
 .PHONY : help
 
 
@@ -445,6 +205,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/beyza/SytemID/least_square_identification/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/beyza/Desktop/csvRead/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

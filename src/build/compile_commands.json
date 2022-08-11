@@ -1,0 +1,13 @@
+[
+{
+  "directory": "/home/beyza/Desktop/least_square_identification/src/build",
+  "command": "/usr/bin/c++   -I../ -I../include -I/usr/include/python3.8 -I/home/beyza/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o CMakeFiles/system_identification.dir/main.cpp.o -c /home/beyza/Desktop/least_square_identification/src/main.cpp",
+  "file": "/home/beyza/Desktop/least_square_identification/src/main.cpp"
+},
+
+{
+  "directory": "/home/beyza/Desktop/least_square_identification/src/build",
+  "command": "/usr/bin/c++   -I../ -I../include -I/usr/include/python3.8 -I/home/beyza/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3  -g   -o CMakeFiles/system_identification.dir/plot.cpp.o -c /home/beyza/Desktop/least_square_identification/src/plot.cpp",
+  "file": "/home/beyza/Desktop/least_square_identification/src/plot.cpp"
+}
+]

@@ -6,7 +6,10 @@
 class Plot
 {
 public:
-    void torquePlot(const Eigen::VectorXd & torque);
+  void logPlot(Eigen::VectorXd position,Eigen::VectorXd velocity,Eigen::VectorXd acc);
 
-    void frfPlot(const Eigen::VectorXd & frequencySeries, const Eigen::VectorXd & frf);
+
+    // void torquePlot(const Eigen::VectorXd & torque);
+
+    // void frfPlot(const Eigen::VectorXd & frequencySeries, const Eigen::VectorXd & frf);
 };

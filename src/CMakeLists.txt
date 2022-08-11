@@ -1,7 +1,7 @@
 
 cmake_minimum_required(VERSION 3.16.3)
 
-project(system_identification)  
+project(readdata)  
 
 file(GLOB APP_HEADER *.h)
 file(GLOB APP_SOURCE *.cpp)

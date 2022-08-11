@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/readdata.dir/main.cpp.o CMakeFiles/readdata.dir/plot.cpp.o  -o readdata  /usr/lib/x86_64-linux-gnu/libpython3.8.so 
