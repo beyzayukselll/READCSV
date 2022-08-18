@@ -1,7 +1,0 @@
-out
-build
-.vscode
-
-*.obj
-*.dll
-*.lib
