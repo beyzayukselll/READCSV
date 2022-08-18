@@ -1,4 +1,4 @@
-# Install script for directory: /home/beyza/Desktop/csvRead/src
+# Install script for directory: /home/beyza/working/csvRead/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

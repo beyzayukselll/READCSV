@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/beyza/Desktop/csvRead -I/home/beyza/Desktop/csvRead/include -I/usr/include/python3.8 -I/home/beyza/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3 
+CXX_INCLUDES = -I/home/beyza/working/csvRead -I/home/beyza/working/csvRead/include -I/usr/include/python3.8 -I/home/beyza/.local/lib/python3.8/site-packages/numpy/core/include -isystem /usr/local/include/eigen3 
 

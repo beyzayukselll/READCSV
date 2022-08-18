@@ -3,8 +3,8 @@
 
 src/CMakeFiles/readdata.dir/main.cpp.o
  ../include/matplotlibcpp.h
- /home/beyza/Desktop/csvRead/src/main.cpp
- /home/beyza/Desktop/csvRead/src/plot.h
+ /home/beyza/working/csvRead/src/main.cpp
+ /home/beyza/working/csvRead/src/plot.h
  /usr/include/python3.8/Python.h
  /usr/include/python3.8/abstract.h
  /usr/include/python3.8/bltinmodule.h
@@ -358,8 +358,8 @@ src/CMakeFiles/readdata.dir/main.cpp.o
  /usr/local/include/eigen3/Eigen/src/plugins/ReshapedMethods.h
 src/CMakeFiles/readdata.dir/plot.cpp.o
  ../include/matplotlibcpp.h
- /home/beyza/Desktop/csvRead/src/plot.cpp
- /home/beyza/Desktop/csvRead/src/plot.h
+ /home/beyza/working/csvRead/src/plot.cpp
+ /home/beyza/working/csvRead/src/plot.h
  /usr/include/python3.8/Python.h
  /usr/include/python3.8/abstract.h
  /usr/include/python3.8/bltinmodule.h

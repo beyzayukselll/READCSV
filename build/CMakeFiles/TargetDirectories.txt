@@ -1,5 +1,5 @@
-/home/beyza/Desktop/csvRead/build/CMakeFiles/rebuild_cache.dir
-/home/beyza/Desktop/csvRead/build/CMakeFiles/edit_cache.dir
-/home/beyza/Desktop/csvRead/build/src/CMakeFiles/rebuild_cache.dir
-/home/beyza/Desktop/csvRead/build/src/CMakeFiles/edit_cache.dir
-/home/beyza/Desktop/csvRead/build/src/CMakeFiles/readdata.dir
+/home/beyza/working/csvRead/build/CMakeFiles/rebuild_cache.dir
+/home/beyza/working/csvRead/build/CMakeFiles/edit_cache.dir
+/home/beyza/working/csvRead/build/src/CMakeFiles/rebuild_cache.dir
+/home/beyza/working/csvRead/build/src/CMakeFiles/edit_cache.dir
+/home/beyza/working/csvRead/build/src/CMakeFiles/readdata.dir

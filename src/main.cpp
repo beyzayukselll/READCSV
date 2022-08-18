@@ -81,21 +81,24 @@ int main()
 {
  
   
-    string filePath="../../mil-cnc-min_log/mil-cnc-min/trajectory_dump.csv";   
+    string filePath="/home/beyza/working/mil-cnc/out/build/pre1/cnc-app/trajectory_dump.csv";   
 
     Eigen::MatrixXd result = readCSV(filePath);    
    
-    int i=1;  
+ 
     Eigen::VectorXd pos=result.col(0);
     Eigen::VectorXd vel=result.col(1);
-    Eigen::VectorXd act=result.col(2);
+    Eigen::VectorXd acc=result.col(2);
    
+ 
   Plot plot ;
-  plot.logPlot(pos,vel,act);     
-      
+  plot.logPlot(pos,vel,acc,0.001);     
+
+  
 
 
-  std::cout << pos << "\n";
+
+
  
 
    

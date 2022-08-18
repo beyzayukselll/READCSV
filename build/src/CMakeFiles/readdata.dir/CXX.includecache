@@ -34,7 +34,7 @@ numpy/arrayobject.h
 opencv2/opencv.hpp
 -
 
-/home/beyza/Desktop/csvRead/src/main.cpp
+/home/beyza/working/csvRead/src/main.cpp
 iostream
 -
 Eigen/Dense
@@ -52,7 +52,7 @@ vector
 boost/algorithm/string.hpp
 -
 plot.h
-/home/beyza/Desktop/csvRead/src/plot.h
+/home/beyza/working/csvRead/src/plot.h
 sstream
 -
 string
@@ -64,11 +64,11 @@ cmath
 numeric
 -
 
-/home/beyza/Desktop/csvRead/src/plot.cpp
+/home/beyza/working/csvRead/src/plot.cpp
 plot.h
-/home/beyza/Desktop/csvRead/src/plot.h
+/home/beyza/working/csvRead/src/plot.h
 
-/home/beyza/Desktop/csvRead/src/plot.h
+/home/beyza/working/csvRead/src/plot.h
 iostream
 -
 matplotlibcpp.h

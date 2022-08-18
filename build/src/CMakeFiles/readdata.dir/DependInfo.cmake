@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/beyza/Desktop/csvRead/src/main.cpp" "/home/beyza/Desktop/csvRead/build/src/CMakeFiles/readdata.dir/main.cpp.o"
-  "/home/beyza/Desktop/csvRead/src/plot.cpp" "/home/beyza/Desktop/csvRead/build/src/CMakeFiles/readdata.dir/plot.cpp.o"
+  "/home/beyza/working/csvRead/src/main.cpp" "/home/beyza/working/csvRead/build/src/CMakeFiles/readdata.dir/main.cpp.o"
+  "/home/beyza/working/csvRead/src/plot.cpp" "/home/beyza/working/csvRead/build/src/CMakeFiles/readdata.dir/plot.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

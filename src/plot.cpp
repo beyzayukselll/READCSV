@@ -1,33 +1,31 @@
 #include "plot.h"
 
-void Plot::logPlot(Eigen::VectorXd position,Eigen::VectorXd velocity,Eigen::VectorXd acc)
+void Plot::logPlot(Eigen::VectorXd position, Eigen::VectorXd velocity, Eigen::VectorXd acc, double sampleTime)
 {
 
     std::vector<double> pos_vec;
     std::vector<double> vec_vec;
-   std::vector<double> act_vec;
-
+    std::vector<double> acc_vec;
+    std::vector<double> time_vec;
 
     for (int i = 0; i < position.size(); i++)
     {
         pos_vec.push_back(position(i));
         vec_vec.push_back(velocity(i));
-        act_vec.push_back(acc(i));              
-
+        acc_vec.push_back(acc(i));
+        time_vec.push_back(i * sampleTime);
     }
 
-
     matplotlibcpp::figure();
-   
-     matplotlibcpp::plot(pos_vec,"r--");
-    matplotlibcpp::plot(vec_vec,"b--");
-    matplotlibcpp::xlabel("Time in lecture"); 
-     matplotlibcpp::ylabel("velocity"); 
+
+    matplotlibcpp::plot(time_vec, pos_vec, "r");
+    matplotlibcpp::plot(time_vec, vec_vec, "b");
+    matplotlibcpp::plot(time_vec, acc_vec, "g");
+    matplotlibcpp::xlabel("Time [ms]");
+    matplotlibcpp::ylabel("amplitude");
     matplotlibcpp::title("Test Log");
-     matplotlibcpp::plot(act_vec,"b--");
     matplotlibcpp::grid(true);
     matplotlibcpp::show();
-
 }
 
 // void Plot::torquePlot(const Eigen::VectorXd & torque)

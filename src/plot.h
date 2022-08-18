@@ -6,7 +6,7 @@
 class Plot
 {
 public:
-  void logPlot(Eigen::VectorXd position,Eigen::VectorXd velocity,Eigen::VectorXd acc);
+  void logPlot(Eigen::VectorXd position,Eigen::VectorXd velocity,Eigen::VectorXd acc,double sampleTime);
 
 
     // void torquePlot(const Eigen::VectorXd & torque);

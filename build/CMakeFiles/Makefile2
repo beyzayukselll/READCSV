@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beyza/Desktop/csvRead
+CMAKE_SOURCE_DIR = /home/beyza/working/csvRead
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beyza/Desktop/csvRead/build
+CMAKE_BINARY_DIR = /home/beyza/working/csvRead/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -92,14 +92,14 @@ src/clean: src/CMakeFiles/readdata.dir/clean
 src/CMakeFiles/readdata.dir/all:
 	$(MAKE) -f src/CMakeFiles/readdata.dir/build.make src/CMakeFiles/readdata.dir/depend
 	$(MAKE) -f src/CMakeFiles/readdata.dir/build.make src/CMakeFiles/readdata.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beyza/Desktop/csvRead/build/CMakeFiles --progress-num=1,2,3 "Built target readdata"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beyza/working/csvRead/build/CMakeFiles --progress-num=1,2,3 "Built target readdata"
 .PHONY : src/CMakeFiles/readdata.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/readdata.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beyza/Desktop/csvRead/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beyza/working/csvRead/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/readdata.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beyza/Desktop/csvRead/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beyza/working/csvRead/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/readdata.dir/rule
 
 # Convenience name for target.
